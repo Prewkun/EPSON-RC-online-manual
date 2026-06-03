@@ -183,33 +183,34 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 <div id="page-tabs">
   <button id="menu-btn" onclick="toggleSidebar()">☰</button>
   <div class="page-tab active" id="tab-spel" onclick="switchPage('spel')">
-    ⚡ SPEL+ Language Reference
+    <span data-i18n="tab-spel">⚡ SPEL+ Language Reference</span>
     <span class="tab-count">734 cmds</span>
   </div>
   <div class="page-tab" id="tab-gui" onclick="switchPage('gui')">
-    🎨 GUI Builder Reference
+    <span data-i18n="tab-gui">🎨 GUI Builder Reference</span>
     <span class="tab-count">101 entries</span>
   </div>
   <div class="page-tab" id="tab-rc" onclick="switchPage('rc')">
-    📘 RC+ Users Guide
+    <span data-i18n="tab-rc">📘 RC+ Users Guide</span>
     <span class="tab-count">23 chapters</span>
   </div>
   <div class="page-tab" id="tab-idx" onclick="switchPage('idx')">
-    🔤 Index
+    <span data-i18n="tab-idx">🔤 Index</span>
     <span class="tab-count">A–Z</span>
   </div>
   <span style="margin-left:auto;background:rgba(247,168,79,.12);border:1px solid rgba(247,168,79,.3);color:var(--rc-accent);font-size:11px;padding:3px 10px;border-radius:10px;white-space:nowrap;cursor:default;align-self:center" title="Epson RC+ 8.0 Rev.1">RC+ 8.0 Rev.1</span>
   <button id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode" style="background:none;border:1px solid var(--border);border-radius:6px;color:var(--text2);font-size:14px;cursor:pointer;padding:2px 8px;margin-right:8px;align-self:center;transition:all .15s" aria-label="Toggle theme">🌙</button>
+  <button id="lang-toggle" onclick="toggleLang()" title="Switch language / เปลี่ยนภาษา" style="background:none;border:1px solid var(--border);border-radius:6px;color:var(--text2);font-size:12px;font-weight:700;cursor:pointer;padding:2px 10px;margin-right:8px;align-self:center;transition:all .15s;letter-spacing:.5px" aria-label="Toggle language between English and Thai">EN</button>
 </div>
 
 <nav id="sidebar" role="navigation" aria-label="Section navigation">
   <div id="sidebar-spel" style="display:flex;flex-direction:column;height:100%">
     <div class="sidebar-header">
-      <div class="sidebar-title spel-color">SPEL+ Commands</div>
-      <div class="sidebar-subtitle">Epson RC+ 8.0 · 21 categories</div>
+      <div class="sidebar-title spel-color" data-i18n="spel-sidebar-title">SPEL+ Commands</div>
+      <div class="sidebar-subtitle" data-i18n="spel-sidebar-sub">Epson RC+ 8.0 · 21 categories</div>
     </div>
     <div class="sidebar-search">
-      <input type="text" id="sidebar-filter" placeholder="Filter categories…" oninput="filterNav(this.value)">
+      <input type="text" id="sidebar-filter" placeholder="Filter categories…" data-i18n-placeholder="spel-filter-ph" oninput="filterNav(this.value)">
     </div>
     <ul id="nav-list"><li><a href="#" class="nav-link" onclick="scrollToSection('spel-system-management-commands',event)"><span class="nav-icon">⚙️</span><span class="nav-label">System Management Commands</span><span class="nav-count">30</span></a></li>
 <li><a href="#" class="nav-link" onclick="scrollToSection('spel-robot-control-commands',event)"><span class="nav-icon">🤖</span><span class="nav-label">Robot Control Commands</span><span class="nav-count">193</span></a></li>
@@ -236,64 +237,64 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
   </div>
   <div id="sidebar-gui" style="display:none;flex-direction:column;height:100%">
     <div class="sidebar-header">
-      <div class="sidebar-title gui-color">GUI Builder</div>
-      <div class="sidebar-subtitle">Epson RC+ 8.0 · 17 controls · 101 entries</div>
+      <div class="sidebar-title gui-color" data-i18n="gui-sidebar-title">GUI Builder</div>
+      <div class="sidebar-subtitle" data-i18n="gui-sidebar-sub">Epson RC+ 8.0 · 17 controls · 101 entries</div>
     </div>
     <div class="sidebar-search">
-      <input type="text" id="gui-sidebar-filter" placeholder="Filter entries…" oninput="filterGuiNav(this.value)">
+      <input type="text" id="gui-sidebar-filter" placeholder="Filter entries…" data-i18n-placeholder="gui-filter-ph" oninput="filterGuiNav(this.value)">
     </div>
     <ul id="gui-nav-list" style="list-style:none;overflow-y:auto;flex:1;padding:4px 0">
-      <li class="nav-group-label">Controls</li>
+      <li class="nav-group-label" data-i18n="gui-group-controls">Controls</li>
       <li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-form',event)"><span class="nav-icon">🪟</span><span class="nav-label">Form</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-button',event)"><span class="nav-icon">🔲</span><span class="nav-label">Button</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-label',event)"><span class="nav-icon">🏷️</span><span class="nav-label">Label</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-textbox',event)"><span class="nav-icon">📝</span><span class="nav-label">TextBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-radiobutton',event)"><span class="nav-icon">🔘</span><span class="nav-label">RadioButton</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-checkbox',event)"><span class="nav-icon">☑️</span><span class="nav-label">CheckBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-listbox',event)"><span class="nav-icon">📋</span><span class="nav-label">ListBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-combobox',event)"><span class="nav-icon">🔽</span><span class="nav-label">ComboBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-picturebox',event)"><span class="nav-icon">🖼️</span><span class="nav-label">PictureBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-groupbox',event)"><span class="nav-icon">📦</span><span class="nav-label">GroupBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-timer',event)"><span class="nav-icon">⏱️</span><span class="nav-label">Timer</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-videobox',event)"><span class="nav-icon">🎥</span><span class="nav-label">VideoBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-led',event)"><span class="nav-icon">💡</span><span class="nav-label">LED</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-statusbar',event)"><span class="nav-icon">📊</span><span class="nav-label">StatusBar</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-progressbar',event)"><span class="nav-icon">📈</span><span class="nav-label">ProgressBar</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-trackbar',event)"><span class="nav-icon">🎚️</span><span class="nav-label">TrackBar</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ctrl-grid',event)"><span class="nav-icon">📐</span><span class="nav-label">Grid</span></a></li>
-      <li class="nav-group-label">Properties &amp; Events</li>
+      <li class="nav-group-label" data-i18n="gui-group-props">Properties &amp; Events</li>
       <li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-acceptbutton',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">AcceptButton</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-additem',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">AddItem</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-addrow',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">AddRow</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-appendtext',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">AppendText</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-allowstatechange',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">AllowStateChange</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-backcolor',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">BackColor</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-backcolormode',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">BackColorMode</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-borderstyle',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">BorderStyle</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-camera',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Camera</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-cancelbutton',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">CancelButton</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-cellbackcolor',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">CellBackColor</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-cellchanged',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">CellChanged</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-cellforecolor',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">CellForeColor</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-celltext',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">CellText</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-checked',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Checked</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-click',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Click</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-closed',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Closed</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-controlbox',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ControlBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-controls',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Controls</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-count',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Count</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-dblclick',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">DblClick</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-dialogresult',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">DialogResult</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-dropdownstyle',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">DropDownStyle</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-enabled',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Enabled</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-eventtasktype',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">EventTaskType</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-font',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Font</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-fontbold',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FontBold</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-fontitalic',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FontItalic</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-fontname',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FontName</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-fontsize',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FontSize</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-forecolor',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ForeColor</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-formborderstyle',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FormBorderStyle</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-formtemplate',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">FormTemplate</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-gclose',event)"><span class="nav-icon" style="font-size:10px;color:#5cbf7c">S</span><span class="nav-label">GClose</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-gget',event)"><span class="nav-icon" style="font-size:10px;color:#5cbf7c">S</span><span class="nav-label">GGet</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-graphicsenabled',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">GraphicsEnabled</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-grideditor',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">GridEditor</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-gset',event)"><span class="nav-icon" style="font-size:10px;color:#5cbf7c">S</span><span class="nav-label">GSet</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-gshow',event)"><span class="nav-icon" style="font-size:10px;color:#5cbf7c">S</span><span class="nav-label">GShow</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-gshowdialog',event)"><span class="nav-icon" style="font-size:10px;color:#bf7c5c">F</span><span class="nav-label">GShowDialog</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-height',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Height</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-helpbutton',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">HelpButton</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-helpid',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">HelpID</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-image',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Image</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-imagealign',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ImageAlign</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-imageoff',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ImageOff</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-imageon',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ImageOn</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-interval',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Interval</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-iobit',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">IOBit</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-iotype',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">IOType</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-keypress',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">KeyPress</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-largechange',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">LargeChange</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-left',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Left</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-list',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">List</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-listcount',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ListCount</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-load',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Load</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-maximizebox',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">MaximizeBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-maximum',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Maximum</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-minimizebox',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">MinimizeBox</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-minimum',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Minimum</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-multiline',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">MultiLine</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-name',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Name</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-orientation',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Orientation</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-passwordchar',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">PasswordChar</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-pressdelay',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">PressDelay</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-presssound',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">PressSound</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-progressbarstyle',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ProgressBarStyle</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-readonly',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ReadOnly</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-removerow',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">RemoveRow</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-resize',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Resize</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-robotnumber',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">RobotNumber</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-rowcount',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">RowCount</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-scroll',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Scroll</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-scrollbars',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ScrollBars</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-selectedindex',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">SelectedIndex</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-showdatetime',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ShowDateTime</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-showestop',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ShowEStop</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-showprint',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ShowPrint</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-showrobot',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ShowRobot</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-showsafeguard',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ShowSafeguard</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-sizemode',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">SizeMode</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-smallchange',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">SmallChange</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-sorted',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Sorted</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-startposition',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">StartPosition</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-tabindex',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">TabIndex</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-text',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Text</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-textalign',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">TextAlign</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-tick',event)"><span class="nav-icon" style="font-size:10px;color:#f7a84f">E</span><span class="nav-label">Tick</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-tickfrequency',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">TickFrequency</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-tickstyle',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">TickStyle</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-tooltiptext',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">ToolTipText</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-top',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Top</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-type',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Type</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-update',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Update</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-value',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Value</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-variable',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Variable</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-videoenabled',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">VideoEnabled</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-visible',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Visible</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-width',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">Width</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-windowstate',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">WindowState</span></a></li><li><a href="#" class="nav-link" onclick="scrollToSection('gui-ref-wordwrap',event)"><span class="nav-icon" style="font-size:10px;color:#4f8ef7">P</span><span class="nav-label">WordWrap</span></a></li>
     </ul>
   </div>
   <div id="sidebar-rc" style="display:none;flex-direction:column;height:100%">
     <div class="sidebar-header">
-      <div class="sidebar-title rc-color">RC+ Users Guide</div>
-      <div class="sidebar-subtitle">Epson RC+ 8.0 · Project Management &amp; Development</div>
+      <div class="sidebar-title rc-color" data-i18n="rc-sidebar-title">RC+ Users Guide</div>
+      <div class="sidebar-subtitle" data-i18n="rc-sidebar-sub">Epson RC+ 8.0 · Project Management &amp; Development</div>
     </div>
     <div class="sidebar-search">
-      <input type="text" id="rc-sidebar-filter" placeholder="Filter chapters..." oninput="filterRcNav(this.value)">
+      <input type="text" id="rc-sidebar-filter" placeholder="Filter chapters..." data-i18n-placeholder="rc-filter-ph" oninput="filterRcNav(this.value)">
     </div>
     <ul id="rc-nav-list" style="list-style:none;overflow-y:auto;flex:1;padding:4px 0">
-<li class="nav-group-label">🚀 Getting Started</li>
+<li class="nav-group-label" data-i18n="rc-nav-start">🚀 Getting Started</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch1',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch1</span><span class="nav-label">Introduction</span><span class="nav-count" style="font-size:10px">12p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch2',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch2</span><span class="nav-label">Safety</span><span class="nav-count" style="font-size:10px">5p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch3',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch3</span><span class="nav-label">Getting Started</span><span class="nav-count" style="font-size:10px">1p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch4',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch4</span><span class="nav-label">Operation</span><span class="nav-count" style="font-size:10px">21p</span></a></li>
-<li class="nav-group-label">🖥️ The RC+ IDE</li>
+<li class="nav-group-label" data-i18n="rc-nav-ide">🖥️ The RC+ IDE</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch5',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch5</span><span class="nav-label">The Epson RC+ 8.0 GUI</span><span class="nav-count" style="font-size:10px">230p</span></a></li>
-<li class="nav-group-label">⚡ SPEL+ Development</li>
+<li class="nav-group-label" data-i18n="rc-nav-spel">⚡ SPEL+ Development</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch6',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch6</span><span class="nav-label">The SPEL+ Language</span><span class="nav-count" style="font-size:10px">81p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch7',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch7</span><span class="nav-label">Building SPEL+ Applications</span><span class="nav-count" style="font-size:10px">26p</span></a></li>
-<li class="nav-group-label">🤖 Simulator</li>
+<li class="nav-group-label" data-i18n="rc-nav-sim">🤖 Simulator</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch8',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch8</span><span class="nav-label">Simulator</span><span class="nav-count" style="font-size:10px">104p</span></a></li>
-<li class="nav-group-label">⚙️ Hardware & I/O</li>
+<li class="nav-group-label" data-i18n="rc-nav-hw">⚙️ Hardware & I/O</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch9',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch9</span><span class="nav-label">Motion System</span><span class="nav-count" style="font-size:10px">1p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch10',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch10</span><span class="nav-label">Robot Configuration</span><span class="nav-count" style="font-size:10px">10p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch11',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch11</span><span class="nav-label">Inputs and Outputs</span><span class="nav-count" style="font-size:10px">8p</span></a></li>
-<li class="nav-group-label">🌐 Connectivity</li>
+<li class="nav-group-label" data-i18n="rc-nav-conn">🌐 Connectivity</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch12',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch12</span><span class="nav-label">Remote Control</span><span class="nav-count" style="font-size:10px">47p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch13',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch13</span><span class="nav-label">RS-232C Communications</span><span class="nav-count" style="font-size:10px">3p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch14',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch14</span><span class="nav-label">TCP/IP Communications</span><span class="nav-count" style="font-size:10px">4p</span></a></li>
-<li class="nav-group-label">🔒 Security</li>
+<li class="nav-group-label" data-i18n="rc-nav-sec">🔒 Security</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch15',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch15</span><span class="nav-label">Security</span><span class="nav-count" style="font-size:10px">6p</span></a></li>
-<li class="nav-group-label">🏭 Advanced Features</li>
+<li class="nav-group-label" data-i18n="rc-nav-adv">🏭 Advanced Features</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch16',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch16</span><span class="nav-label">Conveyor Tracking</span><span class="nav-count" style="font-size:10px">121p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch17',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch17</span><span class="nav-label">ECP Motion</span><span class="nav-count" style="font-size:10px">3p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch18',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch18</span><span class="nav-label">Distance Tracking</span><span class="nav-count" style="font-size:10px">16p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch19',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch19</span><span class="nav-label">Real-Time I/O</span><span class="nav-count" style="font-size:10px">7p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch20',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch20</span><span class="nav-label">Additional Axis</span><span class="nav-count" style="font-size:10px">4p</span></a></li>
-<li class="nav-group-label">🎯 Calibration</li>
+<li class="nav-group-label" data-i18n="rc-nav-cal">🎯 Calibration</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch21',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch21</span><span class="nav-label">Absolute Accuracy Calibration</span><span class="nav-count" style="font-size:10px">6p</span></a></li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch22',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch22</span><span class="nav-label">Vision Sensor Calibration</span><span class="nav-count" style="font-size:10px">5p</span></a></li>
-<li class="nav-group-label">📦 Options & Appendices</li>
+<li class="nav-group-label" data-i18n="rc-nav-opts">📦 Options & Appendices</li>
 <li><a href="#" class="nav-link rc-nav-link" onclick="scrollToRcChapter('rc-ch23',event)"><span class="nav-icon" style="font-size:10px;color:var(--rc-accent);font-weight:700">Ch23</span><span class="nav-label">Installing Controller Options</span><span class="nav-count" style="font-size:10px">1p</span></a></li>
     </ul>
   <div id="sidebar-idx" style="display:none;flex-direction:column;height:100%;padding:16px 16px 0">
-    <div class="sidebar-title" style="color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">A–Z Index</div>
+    <div class="sidebar-title" style="color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px" data-i18n="idx-sidebar-title">A–Z Index</div>
     <div style="font-size:11px;color:var(--text3)">All SPEL+ and GUI Builder commands in alphabetical order.</div>
   </div>
   </div>
@@ -306,24 +307,24 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
     <header id="topbar">
       <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap">SPEL+ Language Reference</span>
       <div class="topbar-search">
-        <input type="text" id="cmd-search" placeholder="Search commands…" aria-label="Search SPEL+ commands" oninput="searchCmds(this.value,'spel')">
+        <input type="text" id="cmd-search" placeholder="Search commands…" data-i18n-placeholder="spel-search-ph" aria-label="Search SPEL+ commands" oninput="searchCmds(this.value,'spel')">
       </div>
       <span id="search-info"></span>
       <button onclick="expandAll('spel')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('spel')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
       <span style="font-size:11px;color:var(--text3);margin-left:auto">734 commands · 21 categories</span>
     </header>
     <section id="hero-spel" class="page-hero">
-      <div class="hero-eyebrow">Epson RC+ 8.0 (Ver.8.0) · Rev.1</div>
-      <div class="hero-title">SPEL+ Language<br>Reference</div>
-      <div class="hero-sub">Complete command reference for Epson robot programming language. Commands cross-linked with GUI Builder.</div>
+      <div class="hero-eyebrow" data-i18n="spel-eyebrow">Epson RC+ 8.0 (Ver.8.0) · Rev.1</div>
+      <div class="hero-title" data-i18n-html="spel-hero-title">SPEL+ Language<br>Reference</div>
+      <div class="hero-sub" data-i18n="spel-hero-sub">Complete command reference for Epson robot programming language. Commands cross-linked with GUI Builder.</div>
       <div class="hero-stats">
-        <div class="stat-chip"><span class="stat-num">734</span><span class="stat-label">Commands</span></div>
-        <div class="stat-chip"><span class="stat-num">21</span><span class="stat-label">Categories</span></div>
-        <div class="stat-chip"><span class="stat-num">8.0</span><span class="stat-label">RC+ Version</span></div>
-        <div class="stat-chip"><span class="stat-num">↔</span><span class="stat-label">GUI Linked</span></div>
+        <div class="stat-chip"><span class="stat-num">734</span><span class="stat-label" data-i18n="stat-commands">Commands</span></div>
+        <div class="stat-chip"><span class="stat-num">21</span><span class="stat-label" data-i18n="stat-categories">Categories</span></div>
+        <div class="stat-chip"><span class="stat-num">8.0</span><span class="stat-label" data-i18n="stat-rcver">RC+ Version</span></div>
+        <div class="stat-chip"><span class="stat-num">↔</span><span class="stat-label" data-i18n="stat-guilinked">GUI Linked</span></div>
       </div>
     </section>
-    <div class="safety-banner"><strong>⚠ SAFETY:</strong> Installation of robots and robotic equipment should only be performed by qualified personnel. Read all related manuals before use.</div>
+    <div class="safety-banner" data-i18n-html="safety-banner"><strong>⚠ SAFETY:</strong> Installation of robots and robotic equipment should only be performed by qualified personnel. Read all related manuals before use.</div>
     <div class="filter-chips" id="spel-chips">
       <span class="chip active" onclick="filterSpelCat('all',this)">All</span>
       <span class="chip" onclick="filterSpelCat('motion',this)">Motion</span>
@@ -14491,21 +14492,21 @@ Returns the current speed of the</code></pre></div></div>
     <header style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50">
       <span style="font-size:13px;font-weight:600;color:var(--gui-accent);white-space:nowrap">GUI Builder Reference</span>
       <div class="topbar-search">
-        <input type="text" id="gui-search" aria-label="Search GUI Builder entries" placeholder="Search properties &amp; events…" oninput="searchCmds(this.value,'gui')" style="border-color:rgba(92,191,124,.4)">
+        <input type="text" id="gui-search" aria-label="Search GUI Builder entries" placeholder="Search properties &amp; events…" data-i18n-placeholder="gui-search-ph" oninput="searchCmds(this.value,'gui')" style="border-color:rgba(92,191,124,.4)">
       </div>
       <span id="gui-search-info"></span>
       <button onclick="expandAll('gui')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('gui')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
       <span style="font-size:11px;color:var(--text3);margin-left:auto">17 controls · 101 entries</span>
     </header>
     <section id="hero-gui" class="page-hero">
-      <div class="hero-eyebrow">Epson RC+ 8.0 Option · Rev.1</div>
-      <div class="hero-title">GUI Builder 8.0<br>Reference</div>
-      <div class="hero-sub">Properties, events, and SPEL+ statements for building robot operator interfaces. All entries cross-linked with SPEL+ commands.</div>
+      <div class="hero-eyebrow" data-i18n="gui-eyebrow">Epson RC+ 8.0 Option · Rev.1</div>
+      <div class="hero-title" data-i18n-html="gui-hero-title">GUI Builder 8.0<br>Reference</div>
+      <div class="hero-sub" data-i18n="gui-hero-sub">Properties, events, and SPEL+ statements for building robot operator interfaces. All entries cross-linked with SPEL+ commands.</div>
       <div class="hero-stats">
-        <div class="stat-chip"><span class="stat-num">17</span><span class="stat-label">Controls</span></div>
-        <div class="stat-chip"><span class="stat-num">87</span><span class="stat-label">Properties</span></div>
-        <div class="stat-chip"><span class="stat-num">9</span><span class="stat-label">Events</span></div>
-        <div class="stat-chip"><span class="stat-num">5</span><span class="stat-label">SPEL+ Stmts</span></div>
+        <div class="stat-chip"><span class="stat-num">17</span><span class="stat-label" data-i18n="stat-controls">Controls</span></div>
+        <div class="stat-chip"><span class="stat-num">87</span><span class="stat-label" data-i18n="stat-properties">Properties</span></div>
+        <div class="stat-chip"><span class="stat-num">9</span><span class="stat-label" data-i18n="stat-events">Events</span></div>
+        <div class="stat-chip"><span class="stat-num">5</span><span class="stat-label" data-i18n="stat-spelstmts">SPEL+ Stmts</span></div>
       </div>
     </section>
     <div class="filter-chips" id="gui-chips">
@@ -16642,7 +16643,7 @@ Returns
     <header id="topbar-rc" style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50;width:100%;box-sizing:border-box;">
       <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap">RC+ Users Guide</span>
       <div class="topbar-search">
-        <input type="text" id="rc-search" aria-label="Search RC+ Users Guide chapters" placeholder="Search chapters..." oninput="searchRc(this.value)">
+        <input type="text" id="rc-search" aria-label="Search RC+ Users Guide chapters" placeholder="Search chapters..." data-i18n-placeholder="rc-search-ph" oninput="searchRc(this.value)">
       </div>
       <span id="rc-search-info" style="font-size:12px;color:var(--rc-accent);display:none"></span>
       <button onclick="expandAll('rc')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('rc')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
@@ -16650,13 +16651,13 @@ Returns
     </header>
     <section style="padding:40px 24px 32px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,#1f1510 0%,#1a1d27 60%,#1c1710 100%)">
       <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;color:var(--rc-accent)">Epson RC+ 8.0 (Ver.8.0) · Rev.1</div>
-      <div class="hero-title">RC+ Users Guide<br><span style="font-size:22px">Project Management &amp; Development</span></div>
-      <div class="hero-sub" style="margin-bottom:24px">Complete guide to the Epson RC+ 8.0 IDE — from first connection to advanced conveyor tracking and robot calibration. Use this guide alongside the SPEL+ Language Reference and GUI Builder Reference tabs.</div>
+      <div class="hero-title" data-i18n-html="rc-hero-title">RC+ Users Guide<br><span style="font-size:22px">Project Management &amp; Development</span></div>
+      <div class="hero-sub" style="margin-bottom:24px" data-i18n="rc-hero-sub">Complete guide to the Epson RC+ 8.0 IDE — from first connection to advanced conveyor tracking and robot calibration. Use this guide alongside the SPEL+ Language Reference and GUI Builder Reference tabs.</div>
       <div class="hero-stats">
-        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">23</span><span class="stat-label">Chapters</span></div>
-        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">742</span><span class="stat-label">Pages</span></div>
-        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">10</span><span class="stat-label">Topic Groups</span></div>
-        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">RC+ 8.0</span><span class="stat-label">Version</span></div>
+        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">23</span><span class="stat-label" data-i18n="stat-chapters">Chapters</span></div>
+        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">742</span><span class="stat-label" data-i18n="stat-pages">Pages</span></div>
+        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">10</span><span class="stat-label" data-i18n="stat-topicgroups">Topic Groups</span></div>
+        <div class="stat-chip"><span class="stat-num" style="color:var(--rc-accent)">RC+ 8.0</span><span class="stat-label" data-i18n="stat-version">Version</span></div>
       </div>
     </section>
     <div class="safety-banner">
@@ -17009,6 +17010,152 @@ function filterIndex(q){
   document.querySelectorAll('.cat-section').forEach(function(s){obs.observe(s);});
 })();
 
+
+// ====== TH/EN Language Toggle ======
+const I18N = {
+  en: {
+    'tab-spel': '⚡ SPEL+ Language Reference',
+    'tab-gui': '🎨 GUI Builder Reference',
+    'tab-rc': '📘 RC+ Users Guide',
+    'tab-idx': '🔤 Index',
+    'spel-sidebar-title': 'SPEL+ Commands',
+    'spel-sidebar-sub': 'Epson RC+ 8.0 · 21 categories',
+    'spel-filter-ph': 'Filter categories…',
+    'gui-sidebar-title': 'GUI Builder',
+    'gui-sidebar-sub': 'Epson RC+ 8.0 · 17 controls · 101 entries',
+    'gui-filter-ph': 'Filter entries…',
+    'gui-group-controls': 'Controls',
+    'gui-group-props': 'Properties & Events',
+    'rc-sidebar-title': 'RC+ Users Guide',
+    'rc-sidebar-sub': 'Epson RC+ 8.0 · Project Management & Development',
+    'rc-filter-ph': 'Filter chapters...',
+    'rc-nav-start': '🚀 Getting Started',
+    'rc-nav-ide': '🖥️ The RC+ IDE',
+    'rc-nav-spel': '⚡ SPEL+ Development',
+    'rc-nav-sim': '🤖 Simulator',
+    'rc-nav-hw': '⚙️ Hardware & I/O',
+    'rc-nav-conn': '🌐 Connectivity',
+    'rc-nav-sec': '🔒 Security',
+    'rc-nav-adv': '🏭 Advanced Features',
+    'rc-nav-cal': '🎯 Calibration',
+    'rc-nav-opts': '📦 Options & Appendices',
+    'idx-sidebar-title': 'A–Z Index',
+    'spel-eyebrow': 'Epson RC+ 8.0 (Ver.8.0) · Rev.1',
+    'spel-hero-title': 'SPEL+ Language<br>Reference',
+    'spel-hero-sub': 'Complete command reference for Epson robot programming language. Commands cross-linked with GUI Builder.',
+    'stat-commands': 'Commands',
+    'stat-categories': 'Categories',
+    'stat-rcver': 'RC+ Version',
+    'stat-guilinked': 'GUI Linked',
+    'safety-banner': '<strong>⚠ SAFETY:</strong> Installation of robots and robotic equipment should only be performed by qualified personnel. Read all related manuals before use.',
+    'spel-search-ph': 'Search commands…',
+    'gui-eyebrow': 'Epson RC+ 8.0 Option · Rev.1',
+    'gui-hero-title': 'GUI Builder 8.0<br>Reference',
+    'gui-hero-sub': 'Properties, events, and SPEL+ statements for building robot operator interfaces. All entries cross-linked with SPEL+ commands.',
+    'stat-controls': 'Controls',
+    'stat-properties': 'Properties',
+    'stat-events': 'Events',
+    'stat-spelstmts': 'SPEL+ Stmts',
+    'gui-search-ph': 'Search properties & events…',
+    'rc-hero-title': 'RC+ Users Guide<br><span style="font-size:22px">Project Management & Development</span>',
+    'rc-hero-sub': 'Complete guide to the Epson RC+ 8.0 IDE — from first connection to advanced conveyor tracking and robot calibration. Use this guide alongside the SPEL+ Language Reference and GUI Builder Reference tabs.',
+    'stat-chapters': 'Chapters',
+    'stat-pages': 'Pages',
+    'stat-topicgroups': 'Topic Groups',
+    'stat-version': 'Version',
+    'rc-search-ph': 'Search chapters...',
+  },
+  th: {
+    'tab-spel': '⚡ คู่มืออ้างอิงภาษา SPEL+',
+    'tab-gui': '🎨 คู่มืออ้างอิง GUI Builder',
+    'tab-rc': '📘 คู่มือผู้ใช้ RC+',
+    'tab-idx': '🔤 ดัชนี',
+    'spel-sidebar-title': 'คำสั่ง SPEL+',
+    'spel-sidebar-sub': 'Epson RC+ 8.0 · 21 หมวดหมู่',
+    'spel-filter-ph': 'กรองหมวดหมู่…',
+    'gui-sidebar-title': 'GUI Builder',
+    'gui-sidebar-sub': 'Epson RC+ 8.0 · 17 ตัวควบคุม · 101 รายการ',
+    'gui-filter-ph': 'กรองรายการ…',
+    'gui-group-controls': 'ตัวควบคุม',
+    'gui-group-props': 'คุณสมบัติ & เหตุการณ์',
+    'rc-sidebar-title': 'คู่มือผู้ใช้ RC+',
+    'rc-sidebar-sub': 'Epson RC+ 8.0 · การจัดการโปรเจกต์และการพัฒนา',
+    'rc-filter-ph': 'กรองบท...',
+    'rc-nav-start': '🚀 เริ่มต้นใช้งาน',
+    'rc-nav-ide': '🖥️ RC+ IDE',
+    'rc-nav-spel': '⚡ การพัฒนา SPEL+',
+    'rc-nav-sim': '🤖 โปรแกรมจำลอง',
+    'rc-nav-hw': '⚙️ ฮาร์ดแวร์ & I/O',
+    'rc-nav-conn': '🌐 การเชื่อมต่อ',
+    'rc-nav-sec': '🔒 ความปลอดภัย',
+    'rc-nav-adv': '🏭 คุณสมบัติขั้นสูง',
+    'rc-nav-cal': '🎯 การสอบเทียบ',
+    'rc-nav-opts': '📦 ตัวเลือกและภาคผนวก',
+    'idx-sidebar-title': 'ดัชนี A–Z',
+    'spel-eyebrow': 'Epson RC+ 8.0 (Ver.8.0) · Rev.1',
+    'spel-hero-title': 'อ้างอิงภาษา SPEL+<br>',
+    'spel-hero-sub': 'อ้างอิงคำสั่งครบถ้วนสำหรับภาษาโปรแกรมหุ่นยนต์ Epson เชื่อมโยงคำสั่งกับ GUI Builder',
+    'stat-commands': 'คำสั่ง',
+    'stat-categories': 'หมวดหมู่',
+    'stat-rcver': 'เวอร์ชัน RC+',
+    'stat-guilinked': 'เชื่อมโยง GUI',
+    'safety-banner': '<strong>⚠ ความปลอดภัย:</strong> การติดตั้งหุ่นยนต์และอุปกรณ์หุ่นยนต์ควรดำเนินการโดยบุคลากรที่มีคุณสมบัติเหมาะสมเท่านั้น กรุณาอ่านคู่มือที่เกี่ยวข้องทั้งหมดก่อนใช้งาน',
+    'spel-search-ph': 'ค้นหาคำสั่ง…',
+    'gui-eyebrow': 'Epson RC+ 8.0 Option · Rev.1',
+    'gui-hero-title': 'GUI Builder 8.0<br>อ้างอิง',
+    'gui-hero-sub': 'คุณสมบัติ เหตุการณ์ และคำสั่ง SPEL+ สำหรับสร้างอินเทอร์เฟสผู้ควบคุมหุ่นยนต์ รายการทั้งหมดเชื่อมโยงกับคำสั่ง SPEL+',
+    'stat-controls': 'ตัวควบคุม',
+    'stat-properties': 'คุณสมบัติ',
+    'stat-events': 'เหตุการณ์',
+    'stat-spelstmts': 'คำสั่ง SPEL+',
+    'gui-search-ph': 'ค้นหาคุณสมบัติและเหตุการณ์…',
+    'rc-hero-title': 'คู่มือผู้ใช้ RC+<br><span style="font-size:22px">การจัดการโปรเจกต์และการพัฒนา</span>',
+    'rc-hero-sub': 'คู่มือครบถ้วนสำหรับ Epson RC+ 8.0 IDE ตั้งแต่การเชื่อมต่อครั้งแรกจนถึงการติดตามสายพานขั้นสูงและการสอบเทียบหุ่นยนต์ ใช้คู่มือนี้ร่วมกับแท็บอ้างอิงภาษา SPEL+ และ GUI Builder',
+    'stat-chapters': 'บท',
+    'stat-pages': 'หน้า',
+    'stat-topicgroups': 'กลุ่มหัวข้อ',
+    'stat-version': 'เวอร์ชัน',
+    'rc-search-ph': 'ค้นหาบท...',
+  }
+};
+
+function applyLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
+      el.textContent = I18N[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-html');
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
+      el.innerHTML = I18N[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    if (I18N[lang] && I18N[lang][key] !== undefined) {
+      el.placeholder = I18N[lang][key];
+    }
+  });
+  var btn = document.getElementById('lang-toggle');
+  if (btn) btn.textContent = lang === 'th' ? 'EN' : 'TH';
+  document.documentElement.lang = lang === 'th' ? 'th' : 'en';
+  localStorage.setItem('rcplus-lang', lang);
+}
+
+function toggleLang() {
+  var current = localStorage.getItem('rcplus-lang') || 'en';
+  applyLang(current === 'en' ? 'th' : 'en');
+}
+
+(function() {
+  var saved = localStorage.getItem('rcplus-lang');
+  if (saved === 'th') {
+    document.addEventListener('DOMContentLoaded', function() { applyLang('th'); });
+  }
+})();
+// ====== End TH/EN Language Toggle ======
 </script>
 </body>
 </html>
