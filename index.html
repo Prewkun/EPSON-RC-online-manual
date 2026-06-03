@@ -17155,7 +17155,272 @@ function toggleLang() {
     document.addEventListener('DOMContentLoaded', function() { applyLang('th'); });
   }
 })();
-// ====== End TH/EN Language Toggle ======
+
+// ====== TH/EN Content Translations ======
+// Content translation dictionary for command briefs and descriptions
+// Machine-translated from English to Thai
+
+const CONTENT_TRANSLATIONS = {
+  'Accesses the communication port.': 'เข้าถึงพอร์ตการสื่อสาร',
+  'Changes orientation flag of N6-A1000**': 'เปลี่ยนธงการวางแนวของ N6 - A1000 **',
+  'Checks if TCP/IP connection is connected.': 'ตรวจสอบว่าการเชื่อมต่อ TCP/IP เชื่อมต่อ',
+  'Checks if communications port is connected.': 'ตรวจสอบว่าพอร์ตการสื่อสารเชื่อมต่อ',
+  'Checks if robot is in position (not moving).': 'ตรวจสอบว่าหุ่นยนต์อยู่ในตำแหน่งหรือไม่ (ไม่เคลื่อนที่)',
+  'Clear the input buffer of the communication port.': 'ล้างบัฟเฟอร์อินพุตของพอร์ตการสื่อสาร',
+  'Clears (undefines) a Plane definition.': 'ล้าง (ไม่ได้กำหนด) คำจำกัดความของระนาบ',
+  'Clears a pallet definition.': 'ล้างคำจำกัดความของพาเลท',
+  'Clears the EPSON RC+ 6.0 Run, Operator, or Command window': 'ล้างหน้าต่าง Run, Operator หรือ Command ของ EPSON RC + 6.0',
+  'Clears the XYLim definition.': 'ล้างนิยาม XYLim',
+  'Clears the definition of approach check area.': 'ล้างคำจำกัดความของพื้นที่ตรวจสอบแนวทาง',
+  'Clears the history of the command execution. 2 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1': 'ล้างประวัติการประมวลผลคำสั่ง 2 Epson RC + 8.0 (Ver.8.0) SPEL + Language Reference Rev.1',
+  'Clears the home position definition.': 'ล้างคำจำกัดความตำแหน่งบ้าน',
+  'Closes TCP/IP connection.': 'ปิดการเชื่อมต่อ TCP/IP',
+  'Closes the communications port.': 'ปิดพอร์ตการสื่อสาร',
+  'Closes the file that was opened with Open, OpenAppend, or Append statement.': 'ปิดไฟล์ที่เปิดด้วยคำสั่ง Open, OpenAppend หรือ Append',
+  'Converts degrees to radians.': 'แปลงองศาเป็นเรเดียน',
+  'Converts radians to degrees.': 'แปลงเรเดียนเป็นองศา',
+  'Converts robot angles to pulses.': 'แปลงมุมหุ่นยนต์เป็นพัลส์',
+  'Defines a pallet or returns a pallet point.': 'กำหนดพาเลทหรือส่งคืนจุดพาเลท',
+  'Defines the data and points required to move the arm along a curved': 'กำหนดข้อมูลและจุดที่จำเป็นในการเคลื่อนแขนไปตามแนวโค้ง',
+  'Displays / returns controller operation time.': 'แสดง/ส่งคืนเวลาการทำงานของตัวควบคุม',
+  'Displays controller setup.': 'แสดงการตั้งค่าตัวควบคุม',
+  'Displays the current position for the robot in joint coordinates.': 'แสดงตำแหน่งปัจจุบันสำหรับหุ่นยนต์ในพิกัดร่วมกัน',
+  'Displays the history of the command execution.': 'แสดงประวัติของการดำเนินการตามคำสั่ง',
+  'Ends the distance tracking function.': 'สิ้นสุดฟังก์ชันการติดตามระยะทาง',
+  'Executes Point to Point relative motion, in the current tool coordinate system.': 'ดำเนินการเคลื่อนที่สัมพัทธ์แบบจุดต่อจุดในระบบพิกัดเครื่องมือปัจจุบัน',
+  'Executes Point to Point relative motion, in the selected local': 'ดำเนินการเคลื่อนที่สัมพัทธ์แบบจุดต่อจุดในตัวเครื่องที่เลือก',
+  'Executes a Command window statement from a program and returns': 'ดำเนินการคำสั่งหน้าต่างคำสั่งจากโปรแกรมและส่งคืน',
+  'Executes linear interpolation relative motion, in the selected local': 'ดำเนินการการเคลื่อนที่สัมพัทธ์การแก้ไขเชิงเส้นในเครื่องที่เลือก',
+  'Executes linear interpolation relative motion, in the selected tool': 'ดำเนินการการเคลื่อนที่สัมพัทธ์การแก้ไขเชิงเส้นในเครื่องมือที่เลือก',
+  'Executes machine calibration for robots with incremental encoders.': 'ดำเนินการปรับเทียบเครื่องจักรสำหรับหุ่นยนต์ที่มีเอ็นโค้ดเดอร์เพิ่มขึ้น',
+  'Executes simultaneous four joint Point to Point motion, passing near': 'ดำเนินการเคลื่อนไหวแบบจุดต่อจุดพร้อมกันสี่จุดผ่านไปใกล้ๆ',
+  'Free joint the specified servo axis.': 'ข้อต่ออิสระแกนเซอร์โวที่ระบุ',
+  'Function Returns the Accel value automatically adjusted by OLAccel.': 'ฟังก์ชันจะส่งกลับค่า Accel ที่ปรับโดยอัตโนมัติโดย OLAccel',
+  'Function Returns the accumulated MOTOR ON time of the robot motors.': 'ฟังก์ชันส่งกลับมอเตอร์ที่สะสมไว้ในเวลาของมอเตอร์หุ่นยนต์',
+  'Function Returns the angle between the coordinate axes of Tool coordinate systems.': 'ฟังก์ชันส่งกลับมุมระหว่างแกนพิกัดของระบบพิกัดเครื่องมือ',
+  'Function Returns the difference between two specified points.': 'ฟังก์ชันแสดงผลความแตกต่างระหว่างจุดที่ระบุสองจุด',
+  'Function Returns the point data with the orientation flags converted to enable': 'ฟังก์ชันส่งกลับข้อมูลจุดที่มีการแปลงค่าสถานะการวางแนวเพื่อเปิดใช้งาน',
+  'Function Returns the state of the Auto LJM': 'ฟังก์ชันส่งกลับสถานะของ Auto LJM',
+  'Function Returns the state of the AutoOrientationFlag 6 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1': 'ฟังก์ชันแสดงสถานะของ AutoOrientationFlag 6 Epson RC + 8.0 (Ver.8.0) SPEL + Language Reference Rev.1',
+  'Function Returns the status of the distance tracking function.': 'ฟังก์ชันส่งกลับสถานะของฟังก์ชันการติดตามระยะทาง',
+  'Function Returns whether Fine or FineDist is used by the integer.': 'ฟังก์ชันแสดงผลว่า Fine หรือ FineDist ถูกใช้โดยจำนวนเต็มหรือไม่',
+  'Function Returns whether an ROT modifier parameter can be added when': 'ฟังก์ชันแสดงผลว่าสามารถเพิ่มพารามิเตอร์ตัวแก้ไข ROT ได้หรือไม่เมื่อ',
+  'Gets the current file position pointer.': 'รับตัวชี้ตำแหน่งไฟล์ปัจจุบัน',
+  'Jumps to a point using 3D gate motion.': 'กระโดดไปยังจุดหนึ่งโดยใช้การเคลื่อนไหวประตู 3 มิติ',
+  'Jumps to a point using 3D motion in continuous path.': 'กระโดดไปยังจุดหนึ่งโดยใช้การเคลื่อนไหว 3 มิติในเส้นทางต่อเนื่อง',
+  'Jumps to a point using point to point motion.': 'กระโดดไปยังจุดหนึ่งโดยใช้การเคลื่อนไหวแบบจุดต่อจุด',
+  'Many data points can be defined in the path to improve': 'จุดข้อมูลจำนวนมากสามารถกำหนดได้ในเส้นทางเพื่อปรับปรุง',
+  'Mcal. Required only for robots with incremental encoders.': 'Mcal. จำเป็นสำหรับหุ่นยนต์ที่มีเอ็นโค้ดเดอร์เพิ่มขึ้นเท่านั้น',
+  'Moves robot to user defined home position.': 'ย้ายหุ่นยนต์ไปยังตำแหน่งหลักที่ผู้ใช้กำหนด',
+  'Moves the arm in 3D using circular interpolation.': 'ขยับแขนในแบบ 3 มิติโดยใช้การแก้ไขแบบวงกลม',
+  'Moves the arm using circular interpolation.': 'ขยับแขนโดยใช้การแทรกสอดแบบวงกลม',
+  'Moves the file position pointer.': 'ย้ายตัวชี้ตำแหน่งไฟล์',
+  'Moves the robot to a point using point to point motion.': 'เคลื่อนหุ่นยนต์ไปยังจุดหนึ่งโดยใช้การเคลื่อนที่แบบจุดต่อจุด',
+  'Moves the robot to a position defined in pulses.': 'เคลื่อนหุ่นยนต์ไปยังตำแหน่งที่กำหนดไว้ในพัลส์',
+  'Moves the robot using linear interpolation.': 'เคลื่อนหุ่นยนต์โดยใช้การสอดแทรกเชิงเส้น',
+  'Opens file.': 'เปิดไฟล์',
+  'Perform a relative move of one joint in pulses.': 'ดำเนินการเคลื่อนที่สัมพัทธ์ของข้อต่อหนึ่งข้อในพัลส์',
+  'Perform a relative move of one joint.': 'ทำการเคลื่อนที่สัมพัทธ์ของข้อต่อหนึ่งข้อ',
+  'Performs the continuous spline path motion defined by the Curve instruction.': 'ดำเนินการเคลื่อนไหวเส้นทางแบบต่อเนื่องที่กำหนดโดยคำสั่ง Curve',
+  'RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1 3': 'RC + 8.0 (Ver.8.0) SPEL + Language Reference Rev.1 3',
+  'RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1 5': 'RC + 8.0 (Ver.8.0) SPEL + Language Reference Rev.1 5',
+  'Reads data from a communications port.': 'อ่านข้อมูลจากพอร์ตการสื่อสาร',
+  'Reads data from a file or communications port.': 'อ่านข้อมูลจากไฟล์หรือพอร์ตการสื่อสาร',
+  'Release free joint state of the specified servo axis.': 'ปล่อยสถานะข้อต่ออิสระของแกนเซอร์โวที่ระบุ',
+  'Replaces the current arm posture pulse values with the current CalPls values.': 'แทนที่ค่าพัลส์ท่าแขนปัจจุบันด้วยค่า CalPls ปัจจุบัน',
+  'Resets the controller.': 'รีเซ็ตตัวควบคุม',
+  'Retunes if the current robot orientation is Home position or not.': 'รีทูนหากการวางแนวหุ่นยนต์ในปัจจุบันเป็นตำแหน่งหลักหรือไม่',
+  'Return a joint value from a specified point.': 'ส่งคืนค่าร่วมกันจากจุดที่ระบุ',
+  'Return the Emergency Stop status.': 'คืนสถานะ Emergency Stop',
+  'Return the Safety Door open status.': 'คืนสถานะเปิดประตูนิรภัย',
+  'Returns a point from individual coordinates that can be used in a': 'ส่งกลับจุดจากพิกัดแต่ละจุดที่สามารถใช้ใน',
+  'Returns a robot point specified in joint angles.': 'ส่งกลับจุดหุ่นยนต์ที่ระบุไว้ในมุมร่วม',
+  'Returns a robot point stored by Find during a motion command.': 'ส่งกลับจุดหุ่นยนต์ที่จัดเก็บโดย Find ในระหว่างคำสั่งเคลื่อนไหว',
+  'Returns a robot which is in the approach check area.': 'ส่งคืนหุ่นยนต์ที่อยู่ในพื้นที่ตรวจสอบการเข้าใกล้',
+  'Returns a robot which is in the approach check plane.': 'ส่งคืนหุ่นยนต์ที่อยู่ในระนาบการตรวจสอบการเข้าใกล้',
+  'Returns a status indicating whether or not the PTP (Point to Point)': 'ส่งกลับสถานะที่ระบุว่า PTP (Point to Point) หรือไม่',
+  'Returns binary representation.': 'ส่งกลับการแสดงไบนารี',
+  'Returns calculated current tool center point velocity.': 'ส่งกลับความเร็วจุดศูนย์กลางของเครื่องมือปัจจุบันที่คำนวณได้',
+  'Returns controller information.': 'ส่งกลับข้อมูลตัวควบคุม',
+  'Returns controller status bits.': 'ส่งกลับบิตสถานะตัวควบคุม',
+  'Returns current position while moving.': 'ส่งกลับตำแหน่งปัจจุบันขณะเคลื่อนที่',
+  'Returns joint angle at current position.': 'ส่งกลับมุมข้อต่อที่ตำแหน่งปัจจุบัน',
+  'Returns maximum acceleration value limit available for Accel.': 'ส่งกลับขีดจำกัดค่าความเร่งสูงสุดสำหรับ Accel',
+  'Returns robot information.': 'แสดงข้อมูลหุ่นยนต์',
+  'Returns robot text information.': 'ส่งกลับข้อมูลข้อความหุ่นยนต์',
+  'Returns status of Find operation.': 'ส่งกลับสถานะของค้นหาการดำเนินการ',
+  'Returns status of MCal.': 'ส่งกลับสถานะของ MCal',
+  'Returns status of Sense operation.': 'ส่งกลับสถานะของการดำเนินการ Sense',
+  'Returns status of home position definition.': 'ส่งกลับสถานะของการกำหนดตำแหน่งบ้าน',
+  'Returns system time as a string.': 'ส่งกลับเวลาของระบบเป็นสตริง',
+  'Returns task information.': 'ส่งกลับข้อมูลงาน',
+  'Returns task text information.': 'ส่งกลับข้อมูลข้อความงาน',
+  'Returns the Teach mode status.': 'ส่งกลับสถานะโหมดสอน',
+  'Returns the Windows startup status.': 'ส่งกลับสถานะการเริ่มต้น Windows',
+  'Returns the check status of the approach check area.': 'แสดงสถานะการตรวจสอบของพื้นที่ตรวจสอบแนวทาง',
+  'Returns the check status of the approach check plane.': 'ส่งกลับสถานะการตรวจสอบของระนาบการตรวจสอบเข้าใกล้',
+  'Returns the current Till status. !…! Process statements during motion.': 'ส่งกลับสถานะจนถึงปัจจุบัน !…! ประมวลผลข้อความระหว่างการเคลื่อนไหว',
+  'Returns the current control device number.': 'ส่งกลับหมายเลขอุปกรณ์ควบคุมปัจจุบัน',
+  'Returns the current position of the specified robot.': 'ส่งกลับตำแหน่งปัจจุบันของหุ่นยนต์ที่ระบุ',
+  'Returns the distance between two robot points.': 'แสดงผลระยะทางระหว่างจุดสองจุด',
+  'Returns the end of the file.': 'ส่งกลับจุดสิ้นสุดของไฟล์',
+  'Returns the estimated time for a point to point motion command': 'ส่งกลับเวลาโดยประมาณสำหรับคำสั่งการเคลื่อนไหวแบบจุดต่อจุด',
+  'Returns the latest error information.': 'ส่งกลับข้อมูลข้อผิดพลาดล่าสุด',
+  'Returns the latest error status or warning status.': 'ส่งกลับสถานะข้อผิดพลาดล่าสุดหรือสถานะการเตือน',
+  'Returns the number of characters waiting in the port.': 'ส่งกลับจำนวนอักขระที่รอในพอร์ต',
+  'Returns the offset pulses used for software zero point correction.': 'ส่งกลับพัลส์ออฟเซตที่ใช้สำหรับการแก้ไขจุดศูนย์ของซอฟต์แวร์',
+  'Returns the position data as binary.': 'ส่งกลับข้อมูลตำแหน่งเป็นไบนารี',
+  'Returns the pulse value of one joint.': 'ส่งกลับค่าชีพจรของข้อต่อหนึ่งข้อ',
+  'Returns the pulse value of the specified joint.': 'ส่งกลับค่าพัลส์ของข้อต่อที่ระบุ',
+  'Returns the robot model name.': 'ส่งกลับชื่อโมเดลหุ่นยนต์',
+  'Returns the robot name.': 'ส่งกลับชื่อหุ่นยนต์',
+  'Returns the robot serial number.': 'ส่งกลับหมายเลขซีเรียลของหุ่นยนต์',
+  'Returns the robot type.': 'ส่งกลับประเภทหุ่นยนต์',
+  'Returns the setting of the approach check plane.': 'ส่งกลับการตั้งค่าของระนาบการตรวจสอบการเข้าใกล้',
+  'Returns the status of the most recent Jump command for the current robot.': 'ส่งกลับสถานะของคำสั่ง Jump ล่าสุดสำหรับหุ่นยนต์ปัจจุบัน',
+  'Returns the system date as a string.': 'ส่งกลับวันที่ของระบบเป็นสตริง',
+  'Returns whether XYLim has been defined or not.': 'ส่งคืนไม่ว่าจะมีการกำหนด XYLim ไว้หรือไม่ก็ตาม',
+  'Returns whether or not the PTP (Point to Point) motion from a': 'ส่งกลับการเคลื่อนไหว PTP (จุดต่อจุด) จากหรือไม่',
+  'Selects the current robot. (Returns the robot number by Robot Function)': 'เลือกหุ่นยนต์ปัจจุบัน (แสดงหมายเลขหุ่นยนต์ตามฟังก์ชันหุ่นยนต์)',
+  'Sends and receives data via TCP/IP.': 'ส่งและรับข้อมูลผ่าน TCP/IP',
+  'Sends data to communications port.': 'ส่งข้อมูลไปยังพอร์ตการสื่อสาร',
+  'Sets / returns Quick Pause status.': 'ตั้งค่า/ส่งกลับสถานะหยุดด่วน',
+  'Sets / returns acceleration and deceleration for linear motion.': 'ตั้งค่า/ส่งกลับการเร่งความเร็วและการชะลอตัวสำหรับการเคลื่อนที่เชิงเส้น',
+  'Sets / returns acceleration and deceleration for point to point motion.': 'ตั้งค่า/ส่งกลับการเร่งความเร็วและการชะลอตัวสำหรับการเคลื่อนที่แบบจุดต่อจุด',
+  'Sets / returns acceleration and deceleration for tool rotation.': 'ตั้งค่า/ส่งกลับการเร่งความเร็วและการชะลอความเร็วสำหรับการหมุนเครื่องมือ',
+  'Sets / returns arch parameters for Jump motion.': 'ตั้งค่า/ส่งกลับพารามิเตอร์ของซุ้มประตูสำหรับการเคลื่อนไหวของการกระโดด',
+  'Sets / returns joint limits for one joint.': 'ตั้งค่า/คืนขีดจำกัดข้อต่อสำหรับข้อต่อเดียว',
+  'Sets / returns motor status.': 'ตั้งค่า/ส่งกลับสถานะมอเตอร์',
+  'Sets / returns servo power mode.': 'ตั้งค่า/ส่งกลับโหมดกำลังเซอร์โว',
+  'Sets / returns speed for linear motion commands.': 'ตั้งค่า/ส่งกลับความเร็วสำหรับคำสั่งการเคลื่อนที่เชิงเส้น',
+  'Sets / returns speed for point to point motion commands.': 'ตั้งค่า/ส่งกลับความเร็วสำหรับคำสั่งการเคลื่อนไหวแบบจุดต่อจุด',
+  'Sets / returns speed for tool rotation.': 'ตั้งค่า/ส่งกลับความเร็วสำหรับการหมุนเครื่องมือ',
+  'Sets / returns the R axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน R ของจุด',
+  'Sets / returns the S axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน S ของจุด',
+  'Sets / returns the T axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน T ของจุด',
+  'Sets / returns the U axis coordinate of a point.': 'ตั้งค่า/ส่งกลับค่าพิกัดแกน U ของจุด',
+  'Sets / returns the V axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน V ของจุด',
+  'Sets / returns the W axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน W ของจุด',
+  'Sets / returns the X axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน X ของจุด',
+  'Sets / returns the Y axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน Y ของจุด',
+  'Sets / returns the Z axis coordinate of a point.': 'ตั้งค่า/ส่งกลับพิกัดแกน Z ของจุด',
+  'Sets / returns the condition to stop the manipulator above the target': 'ตั้งค่า/ส่งคืนเงื่อนไขเพื่อหยุดหุ่นยนต์ที่อยู่เหนือเป้าหมาย',
+  'Sets / returns the margin for error detection when the operation starts': 'ตั้งค่า/ส่งกลับส่วนต่างกำไรสำหรับการตรวจจับข้อผิดพลาดเมื่อการดำเนินการเริ่มต้น',
+  'Sets CP (Continuous Path) motion mode.': 'ตั้งค่าโหมดการเคลื่อนไหว CP (เส้นทางต่อเนื่อง)',
+  'Sets limits for all joints.': 'ตั้งค่าขีดจำกัดสำหรับข้อต่อทั้งหมด',
+  'Sets motion order for Home command.': 'ตั้งค่าลำดับการเคลื่อนไหวสำหรับคำสั่ง Home',
+  'Sets or displays the XYLim monitor method or returns the status.': 'ตั้งค่าหรือแสดงวิธีการตรวจสอบ XYLim หรือส่งกลับสถานะ',
+  'Sets or displays the permissible XY motion range limits for the robot.': 'ตั้งค่าหรือแสดงขีดจำกัดช่วงการเคลื่อนไหว XY ที่อนุญาตสำหรับหุ่นยนต์',
+  'Sets system time.': 'ตั้งเวลาของระบบ',
+  'Sets the Auto LJM': 'ตั้งค่า Auto LJM',
+  'Sets the Singularity avoiding function': 'ตั้งค่าฟังก์ชันการหลีกเลี่ยงภาวะเอกฐาน',
+  'Sets the current display device.': 'ตั้งค่าอุปกรณ์แสดงผลปัจจุบัน',
+  'Sets the deceleration speed of quick pause for the change of tool': 'ตั้งค่าความเร็วในการชะลอตัวของการหยุดชั่วคราวอย่างรวดเร็วสำหรับการเปลี่ยนเครื่องมือ',
+  'Sets the deceleration speed of quick pause in the CP motion.': 'ตั้งค่าความเร็วในการชะลอตัวของการหยุดชั่วคราวอย่างรวดเร็วในการเคลื่อนไหวของ CP',
+  'Sets the distance tracking function.': 'ตั้งค่าฟังก์ชันการติดตามระยะทาง',
+  'Sets the error clear time.': 'ตั้งค่าเวลาการล้างข้อผิดพลาด',
+  'Sets the system date.': 'ตั้งค่าวันที่ของระบบ',
+  'Sets the upper Z limit for the Jump command.': 'ตั้งค่าขีดจำกัด Z บนสำหรับคำสั่ง JUMP',
+  'Sets user defined home position.': 'ตั้งค่าตำแหน่งหลักที่ผู้ใช้กำหนด',
+  'Shuts down Epson RC+ and optionally shuts down or restarts Windows.': 'ปิด Epson RC + และเลือกปิดหรือรีสตาร์ท Windows ได้',
+  'Specifies a task which shows an execution line on the LCD.': 'ระบุงานที่แสดงบรรทัดการดำเนินการบนจอแอลซีดี',
+  'Specifies and displays offset value of the axis correction accuracy': 'ระบุและแสดงค่าออฟเซ็ตของความแม่นยำในการแก้ไขแกน',
+  'Specifies and displays the approach check area.': 'ระบุและแสดงพื้นที่ตรวจสอบแนวทาง',
+  'Specifies and displays the approach check plane.': 'ระบุและแสดงระนาบการตรวจสอบแนวทาง',
+  'Specifies and displays the moving joint order for machine': 'ระบุและแสดงคำสั่งย้ายข้อต่อสำหรับเครื่องจักร',
+  'Specifies and displays the position and orientation pulse values for calibration.': 'ระบุและแสดงตำแหน่งและค่าพัลส์ทิศทางสำหรับการปรับเทียบ',
+  'Specifies and displays the positioning error limits (Unit: mm) 4 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1': 'ระบุและแสดงขีดจำกัดข้อผิดพลาดในการกำหนดตำแหน่ง (หน่วย: มม.) 4 Epson RC + 8.0 (Ver.8.0) SPEL + Language Reference Rev.1',
+  'Specifies and displays the positioning error limits. (Unit: pulse)': 'ระบุและแสดงขีดจำกัดข้อผิดพลาดในการวางตำแหน่ง (หน่วย: PULSE)',
+  'Specifies motion stop when input occurs.': 'ระบุการหยุดการเคลื่อนไหวเมื่ออินพุตเกิดขึ้น',
+  'Specifies or displays the acceleration, deceleration and speed': 'ระบุหรือแสดงอัตราเร่งการชะลอตัวและความเร็ว',
+  'Specifies or displays the condition to store coordinates during motion.': 'ระบุหรือแสดงเงื่อนไขเพื่อจัดเก็บพิกัดระหว่างการเคลื่อนไหว',
+  'Specifies or displays the inertia settings for the robot arm.': 'ระบุหรือแสดงการตั้งค่าความเฉื่อยสำหรับแขนหุ่นยนต์',
+  'Specifies or displays the weight settings for the robot arm.': 'ระบุหรือแสดงการตั้งค่าน้ำหนักสำหรับแขนหุ่นยนต์',
+  'Start the reserved robot motion.': 'เริ่มการเคลื่อนไหวของหุ่นยนต์ที่จองไว้',
+  'Starts the distance tracking function.': 'เริ่มฟังก์ชันการติดตามระยะทาง',
+  'Turns brake on or off for specified joint of the current robot.': 'เปิดหรือปิดเบรกสำหรับข้อต่อที่ระบุของหุ่นยนต์ปัจจุบัน',
+  'Turns off execution line display on the LCD.': 'ปิดการแสดงเส้นการดำเนินการบนจอ LCD',
+  'Waits for robot to decelerate and stop at position before executing': 'รอให้หุ่นยนต์ลดความเร็วและหยุดที่ตำแหน่งก่อนดำเนินการ',
+  'Writes data to a file or communications port.': 'เขียนข้อมูลไปยังไฟล์หรือพอร์ตการสื่อสาร',
+  'a move command to a destination.': 'คำสั่งย้ายไปยังปลายทาง',
+  'area.': 'พื้นที่',
+  'boost parameter for small distance PTP (point to point) motion.': 'เพิ่มพารามิเตอร์สำหรับการเคลื่อนไหว PTP (จุดต่อจุด) ระยะทางขนาดเล็ก',
+  'changing the axis correction accuracy.': 'การเปลี่ยนความแม่นยำในการแก้ไขแกน',
+  'during the CP motion.': 'ในระหว่างการเคลื่อนไหวของ CP',
+  'error status.': 'สถานะข้อผิดพลาด',
+  'executing it.': 'การดำเนินการ',
+  'expression.': 'นิพจน์',
+  'from the current position to a target position is possible.': 'จากตำแหน่งปัจจุบันไปยังตำแหน่งเป้าหมายเป็นไปได้',
+  'joint motion when moving to a specified point based on the': 'การเคลื่อนไหวของข้อต่อเมื่อเคลื่อนที่ไปยังจุดที่ระบุตาม',
+  'next statement while path motion is active.': 'ข้อความถัดไปในขณะที่การเคลื่อนไหวของเส้นทางทำงานอยู่',
+  'not through the specified points.': 'ไม่ผ่านจุดที่กำหนด',
+  'of the path.': 'ของเส้นทาง',
+  'point.': 'คะแนน',
+  'position to a target position is a small travel distance.': 'ตำแหน่งไปยังตำแหน่งเป้าหมายคือระยะการเดินทางที่น้อย',
+  'system.': 'ระบบ ',
+  'the TP print panel.': 'แผงการพิมพ์ TP',
+  'the position higher than LimZ value.': 'ตำแหน่งที่สูงกว่าค่า LimZ',
+  'when Sense is specified by Jump command.': 'เมื่อมีการระบุ Sense โดยคำสั่ง JUMP',
+};
+
+// Function to apply content translations to command briefs
+function applyContentTranslations(lang) {
+  if (lang !== 'th') return; // Only apply for Thai
+  
+  document.querySelectorAll('.cmd-brief').forEach(function(el) {
+    var english = el.textContent.trim();
+    if (CONTENT_TRANSLATIONS[english]) {
+      el.setAttribute('data-en', english);
+      el.textContent = CONTENT_TRANSLATIONS[english];
+    }
+  });
+  
+  document.querySelectorAll('.cmd-desc').forEach(function(el) {
+    var english = el.textContent.trim();
+    // For descriptions, we store and translate on demand
+    if (!el.getAttribute('data-en')) {
+      el.setAttribute('data-en', english);
+    }
+  });
+}
+
+// Function to restore English content
+function restoreEnglishContent() {
+  document.querySelectorAll('.cmd-brief[data-en]').forEach(function(el) {
+    el.textContent = el.getAttribute('data-en');
+  });
+  
+  document.querySelectorAll('.cmd-desc[data-en]').forEach(function(el) {
+    el.textContent = el.getAttribute('data-en');
+  });
+}
+
+// Hook into existing language toggle
+var originalApplyLang = window.applyLang;
+window.applyLang = function(lang) {
+  // Call original UI translation
+  originalApplyLang(lang);
+  
+  // Apply content translations
+  if (lang === 'th') {
+    applyContentTranslations('th');
+  } else {
+    restoreEnglishContent();
+  }
+};
+
+// Initialize content translation for saved language
+(function() {
+  var saved = localStorage.getItem('rcplus-lang');
+  if (saved === 'th') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyContentTranslations('th');
+    });
+  }
+})();
+
+console.log('Content translation system initialized. ' + Object.keys(CONTENT_TRANSLATIONS).length + ' terms available.');
+// ====== End TH/EN Content Translations ======
 </script>
 </body>
 </html>
