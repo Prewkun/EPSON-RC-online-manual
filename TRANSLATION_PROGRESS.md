@@ -25,6 +25,7 @@ where work left off.
 | **PR 6b** | cmd-desc translations — SPEL+ E–J (72 entries) | ⏳ Open |
 | **PR 6c** | cmd-desc translations — SPEL+ K–R (82 entries) | ⏳ Open |
 | **PR 6d** | cmd-desc translations — SPEL+ S–Z + fragments (81 entries) | ⏳ Open |
+| **PR 6e** | cmd-desc translations — GUI Builder (124 entries) | ⏳ Open |
 
 ---
 
