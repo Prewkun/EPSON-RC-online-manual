@@ -17,8 +17,8 @@ where work left off.
 | **PR 2c** | Command briefs — `F`(missed), `G`(missed), `H`–`O` (68 entries) | ✅ Merged |
 | **PR 2d** | Command briefs — `P`, `Q`, `R` (131 entries) | ✅ Merged |
 | **PR 2e** | Command briefs — `S`–`W` + lowercase fragments (136 entries) | ✅ Merged |
-| **PR 3** | Structural labels — Example, See Also:, Applies to:, nav/stat labels | ⏳ Open |
-| **PR 4** | `applyLang()` comprehensive wire-up + initialization / restore fix | ⬜ Pending |
+| **PR 3** | Structural labels — Example, See Also:, Applies to:, nav/stat labels | ✅ Merged |
+| **PR 4** | `applyLang()` consolidation — cmd-brief integrated, monkey-patch removed, single init | ⏳ Open |
 
 ---
 
