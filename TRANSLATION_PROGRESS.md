@@ -23,6 +23,9 @@ where work left off.
 | **PR 5b** | See Also hyperlinks — GUI Builder section (100 entries, 62/100 sections linked, 24.9% token coverage*) | ✅ Merged |
 | **PR 6a** | cmd-desc translations — SPEL+ A–D (89 entries) + `DESC_TRANSLATIONS` dict + `applyLang()` wiring | ⏳ Open |
 | **PR 6b** | cmd-desc translations — SPEL+ E–J (72 entries) | ⏳ Open |
+| **PR 6c** | cmd-desc translations — SPEL+ K–R (82 entries) | ⏳ Open |
+| **PR 6d** | cmd-desc translations — SPEL+ S–Z + fragments (81 entries) | ⏳ Open |
+| **PR 6e** | cmd-desc translations — GUI Builder (124 entries) | ⏳ Open |
 
 ---
 
