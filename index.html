@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Epson RC+ 8.0 – SPEL+, GUI Builder &amp; Users Guide</title>
 <style>
 :root{
@@ -119,19 +119,48 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 .meta-label{color:var(--text3);font-weight:600;flex-shrink:0;min-width:60px}
 .meta-val code{font-family:var(--mono);color:var(--accent);font-size:11px;margin-right:4px}
 #no-results,#gui-no-results{display:none;text-align:center;padding:60px 20px;color:var(--text3)}
-#back-top{position:fixed;bottom:24px;right:24px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:38px;height:38px;font-size:16px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:200;display:flex;align-items:center;justify-content:center}
+#back-top{position:fixed;bottom:max(24px,env(safe-area-inset-bottom,0px));right:max(24px,env(safe-area-inset-right,0px));background:var(--accent);color:#fff;border:none;border-radius:50%;width:38px;height:38px;font-size:16px;cursor:pointer;opacity:0;transition:opacity .3s;z-index:200;display:flex;align-items:center;justify-content:center}
 #back-top.visible{opacity:1}
-#menu-btn{display:none;background:none;border:none;color:var(--text);font-size:20px;cursor:pointer;padding:4px}
+#menu-btn{display:none;background:none;border:none;color:var(--text);font-size:20px;cursor:pointer;padding:4px;touch-action:manipulation}
+#sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+button,a,.chip,.nav-link,.cmd-header,.page-tab{touch-action:manipulation}
 @media(max-width:768px){
-  #sidebar{transform:translateX(-100%)}
-  #sidebar.open{transform:translateX(0)}
+  #sidebar{transform:translateX(-100%);z-index:400;transition:transform .25s ease,box-shadow .25s ease}
+  #sidebar.open{transform:translateX(0);box-shadow:4px 0 32px rgba(0,0,0,.5)}
+  body.sidebar-open{overflow:hidden}
+  body.sidebar-open #sidebar-overlay{display:block}
   #main{margin-left:0;width:100%}
-  #menu-btn{display:block}
-  .page-hero{padding:24px 16px}
-  #content,#gui-content,#rc-content{padding:0 14px 60px}
+  #menu-btn{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0;font-size:18px}
+  #page-tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #page-tabs::-webkit-scrollbar{display:none}
+  .page-tab{padding:0 12px;font-size:12px;white-space:nowrap;min-height:44px}
+  .tab-count{display:none}
+  .page-hero{padding:20px 16px 16px}
   .hero-title{font-size:22px}
-  .cmd-brief{display:none}
+  .hero-sub{font-size:13px}
+  .hero-stats{gap:8px}
+  .stat-chip{padding:6px 10px}
+  .stat-num{font-size:16px}
+  #topbar{flex-wrap:wrap;padding:6px 12px;gap:6px}
+  #topbar>span[data-i18n]{display:none}
+  #topbar>span:last-child{display:none}
+  .topbar-search{max-width:none;flex:1;min-width:0}
+  .filter-chips{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding:8px 12px;gap:6px;scrollbar-width:none}
+  .filter-chips::-webkit-scrollbar{display:none}
+  #content,#gui-content,#rc-content{padding:0 12px 80px}
+  .cmd-name{min-width:90px;font-size:12px}
+  .cmd-brief{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100vw - 200px);display:block}
+  .cmd-header{padding:11px 12px;min-height:44px;align-items:center}
+  .nav-link{padding:10px 16px;min-height:44px}
+  .cat-section{scroll-margin-top:100px}
+  .safety-banner{margin:12px 0;font-size:12px}
+  .rc-subsec{grid-template-columns:1fr auto;gap:2px 8px}
+  .rc-subsec-title{font-size:11px}
   .gui-overview-grid{grid-template-columns:1fr}
+  .cmd-syntax pre,.cmd-example pre{font-size:11px}
+  #back-top{bottom:max(72px,calc(56px + env(safe-area-inset-bottom,0px)));right:16px}
+  #page-tabs{padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+  #sidebar{padding-bottom:env(safe-area-inset-bottom,0px)}
 }
 
 #tab-rc.active{border-bottom-color:var(--rc-accent);color:var(--rc-accent)}
@@ -203,6 +232,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
   <button id="lang-toggle" onclick="toggleLang()" title="Switch language / เปลี่ยนภาษา" style="background:none;border:1px solid var(--border);border-radius:6px;color:var(--text2);font-size:12px;font-weight:700;cursor:pointer;padding:2px 10px;margin-right:8px;align-self:center;transition:all .15s;letter-spacing:.5px" aria-label="Toggle language between English and Thai">EN</button>
 </div>
 
+<div id="sidebar-overlay" onclick="toggleSidebar()" aria-hidden="true"></div>
 <nav id="sidebar" role="navigation" aria-label="Section navigation">
   <div id="sidebar-spel" style="display:flex;flex-direction:column;height:100%">
     <div class="sidebar-header">
@@ -16631,14 +16661,26 @@ function scrollToSection(id,e){
   if(e)e.preventDefault();
   const el=document.getElementById(id);
   if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
-  if(window.innerWidth<=768)document.getElementById('sidebar').classList.remove('open');
+  if(window.innerWidth<=768)closeSidebar();
 }
+
+function closeSidebar(){
+  document.getElementById('sidebar').classList.remove('open');
+  document.body.classList.remove('sidebar-open');
+}
+
+function toggleSidebar(){
+  const isOpen=document.getElementById('sidebar').classList.toggle('open');
+  document.body.classList.toggle('sidebar-open',isOpen);
+}
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape')closeSidebar();
+});
 
 window.addEventListener('scroll',()=>{
   document.getElementById('back-top').classList.toggle('visible',window.scrollY>400);
 });
-
-function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');}
 
 
 function filterRcNav(q){
@@ -16756,7 +16798,7 @@ function scrollToRcChapter(id,e){
   if(allChip)filterRcGroup('all',allChip);
   const el=document.getElementById(id);
   if(el){el.scrollIntoView({behavior:'smooth',block:'start'});el.classList.add('open');}
-  if(window.innerWidth<=768)document.getElementById('sidebar').classList.remove('open');
+  if(window.innerWidth<=768)closeSidebar();
 }
 
 // UX-7: A-Z Index builder
