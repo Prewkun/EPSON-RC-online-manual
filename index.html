@@ -295,7 +295,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
     </ul>
   <div id="sidebar-idx" style="display:none;flex-direction:column;height:100%;padding:16px 16px 0">
     <div class="sidebar-title" style="color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px" data-i18n="idx-sidebar-title">A–Z Index</div>
-    <div style="font-size:11px;color:var(--text3)">All SPEL+ and GUI Builder commands in alphabetical order.</div>
+    <div style="font-size:11px;color:var(--text3)" data-i18n="idx-sidebar-sub">All SPEL+ and GUI Builder commands in alphabetical order.</div>
   </div>
   </div>
 </nav>
@@ -305,13 +305,13 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
   <!-- SPEL+ PAGE -->
   <div id="page-spel" style="width:100%;overflow-x:hidden">
     <header id="topbar">
-      <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap">SPEL+ Language Reference</span>
+      <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap" data-i18n="topbar-spel">SPEL+ Language Reference</span>
       <div class="topbar-search">
         <input type="text" id="cmd-search" placeholder="Search commands…" data-i18n-placeholder="spel-search-ph" aria-label="Search SPEL+ commands" oninput="searchCmds(this.value,'spel')">
       </div>
       <span id="search-info"></span>
-      <button onclick="expandAll('spel')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('spel')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
-      <span style="font-size:11px;color:var(--text3);margin-left:auto">734 commands · 21 categories</span>
+      <button onclick="expandAll('spel')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-expand-all">Expand All</button><button onclick="collapseAll('spel')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-collapse-all">Collapse All</button>
+      <span style="font-size:11px;color:var(--text3);margin-left:auto" data-i18n="spel-topbar-count">734 commands · 21 categories</span>
     </header>
     <section id="hero-spel" class="page-hero">
       <div class="hero-eyebrow" data-i18n="spel-eyebrow">Epson RC+ 8.0 (Ver.8.0) · Rev.1</div>
@@ -326,13 +326,13 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
     </section>
     <div class="safety-banner" data-i18n-html="safety-banner"><strong>⚠ SAFETY:</strong> Installation of robots and robotic equipment should only be performed by qualified personnel. Read all related manuals before use.</div>
     <div class="filter-chips" id="spel-chips">
-      <span class="chip active" onclick="filterSpelCat('all',this)">All</span>
-      <span class="chip" onclick="filterSpelCat('motion',this)">Motion</span>
-      <span class="chip" onclick="filterSpelCat('io',this)">I/O</span>
-      <span class="chip" onclick="filterSpelCat('file',this)">Files</span>
-      <span class="chip" onclick="filterSpelCat('math',this)">Math</span>
-      <span class="chip" onclick="filterSpelCat('string',this)">Strings</span>
-      <span class="chip" onclick="filterSpelCat('system',this)">System</span>
+      <span class="chip active" onclick="filterSpelCat('all',this)" data-i18n="chip-all">All</span>
+      <span class="chip" onclick="filterSpelCat('motion',this)" data-i18n="chip-motion">Motion</span>
+      <span class="chip" onclick="filterSpelCat('io',this)" data-i18n="chip-io">I/O</span>
+      <span class="chip" onclick="filterSpelCat('file',this)" data-i18n="chip-files">Files</span>
+      <span class="chip" onclick="filterSpelCat('math',this)" data-i18n="chip-math">Math</span>
+      <span class="chip" onclick="filterSpelCat('string',this)" data-i18n="chip-strings">Strings</span>
+      <span class="chip" onclick="filterSpelCat('system',this)" data-i18n="chip-system">System</span>
     </div>
     <div id="content">
       <section class="cat-section" id="spel-system-management-commands">
@@ -14490,12 +14490,12 @@ Returns the current speed of the</code></pre></div></div>
   <!-- GUI BUILDER PAGE -->
   <div id="page-gui" style="display:none">
     <header style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50">
-      <span style="font-size:13px;font-weight:600;color:var(--gui-accent);white-space:nowrap">GUI Builder Reference</span>
+      <span style="font-size:13px;font-weight:600;color:var(--gui-accent);white-space:nowrap" data-i18n="topbar-gui">GUI Builder Reference</span>
       <div class="topbar-search">
         <input type="text" id="gui-search" aria-label="Search GUI Builder entries" placeholder="Search properties &amp; events…" data-i18n-placeholder="gui-search-ph" oninput="searchCmds(this.value,'gui')" style="border-color:rgba(92,191,124,.4)">
       </div>
       <span id="gui-search-info"></span>
-      <button onclick="expandAll('gui')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('gui')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
+      <button onclick="expandAll('gui')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-expand-all">Expand All</button><button onclick="collapseAll('gui')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-collapse-all">Collapse All</button>
       <span style="font-size:11px;color:var(--text3);margin-left:auto">17 controls · 101 entries</span>
     </header>
     <section id="hero-gui" class="page-hero">
@@ -14510,12 +14510,12 @@ Returns the current speed of the</code></pre></div></div>
       </div>
     </section>
     <div class="filter-chips" id="gui-chips">
-      <span class="chip active" onclick="filterGuiType('all',this)">All</span>
-      <span class="chip" onclick="filterGuiType('controls',this)">Controls</span>
-      <span class="chip" onclick="filterGuiType('props',this)">Properties</span>
-      <span class="chip" onclick="filterGuiType('events',this)">Events</span>
-      <span class="chip" onclick="filterGuiType('stmts',this)">SPEL+ Stmts</span>
-      <span class="chip" onclick="filterGuiType('xref',this)">↔ Has SPEL+ Ref</span>
+      <span class="chip active" onclick="filterGuiType('all',this)" data-i18n="gui-chip-all">All</span>
+      <span class="chip" onclick="filterGuiType('controls',this)" data-i18n="gui-chip-controls">Controls</span>
+      <span class="chip" onclick="filterGuiType('props',this)" data-i18n="gui-chip-props">Properties</span>
+      <span class="chip" onclick="filterGuiType('events',this)" data-i18n="gui-chip-events">Events</span>
+      <span class="chip" onclick="filterGuiType('stmts',this)" data-i18n="gui-chip-stmts">SPEL+ Stmts</span>
+      <span class="chip" onclick="filterGuiType('xref',this)" data-i18n="gui-chip-xref">↔ Has SPEL+ Ref</span>
     </div>
     <div id="gui-content">
       
@@ -16641,12 +16641,12 @@ Returns
   <!-- RC+ USERS GUIDE PAGE -->
   <div id="page-rc" style="display:none;width:100%;overflow-x:hidden">
     <header id="topbar-rc" style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50;width:100%;box-sizing:border-box;">
-      <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap">RC+ Users Guide</span>
+      <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap" data-i18n="topbar-rc">RC+ Users Guide</span>
       <div class="topbar-search">
         <input type="text" id="rc-search" aria-label="Search RC+ Users Guide chapters" placeholder="Search chapters..." data-i18n-placeholder="rc-search-ph" oninput="searchRc(this.value)">
       </div>
       <span id="rc-search-info" style="font-size:12px;color:var(--rc-accent);display:none"></span>
-      <button onclick="expandAll('rc')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Expand All</button><button onclick="collapseAll('rc')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap">Collapse All</button>
+      <button onclick="expandAll('rc')" title="Expand all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-expand-all">Expand All</button><button onclick="collapseAll('rc')" title="Collapse all" style="background:var(--surface2);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap" data-i18n="btn-collapse-all">Collapse All</button>
       <span style="font-size:11px;color:var(--text3);margin-left:auto">23 chapters · 742 pages</span>
     </header>
     <section style="padding:40px 24px 32px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,#1f1510 0%,#1a1d27 60%,#1c1710 100%)">
@@ -16664,14 +16664,17 @@ Returns
       <strong>⚠️ Safety First:</strong> Read all safety information in Chapter 2 before operating any robot system. Ensure safety devices are installed and personnel are clear of the robot work envelope during operation.
     </div>
     <div class="filter-chips" id="rc-chips">
-      <span class="chip active" onclick="filterRcGroup('all',this)">All</span>
-      <span class="chip" onclick="filterRcGroup('rc-getting-started',this)">🚀 Getting Started</span>
-      <span class="chip" onclick="filterRcGroup('rc-ide',this)">🖥 RC+ IDE</span>
-      <span class="chip" onclick="filterRcGroup('rc-spel-dev',this)">⚡ SPEL+ Dev</span>
-      <span class="chip" onclick="filterRcGroup('rc-simulator',this)">🤖 Simulator</span>
-      <span class="chip" onclick="filterRcGroup('rc-hardware',this)">⚙️ Hardware</span>
-      <span class="chip" onclick="filterRcGroup('rc-connectivity',this)">🌐 Connectivity</span>
-      <span class="chip" onclick="filterRcGroup('rc-advanced',this)">🏭 Advanced</span>
+      <span class="chip active" onclick="filterRcGroup('all',this)" data-i18n="rc-chip-all">All</span>
+      <span class="chip" onclick="filterRcGroup('rc-getting-started',this)" data-i18n="rc-chip-gs">🚀 Getting Started</span>
+      <span class="chip" onclick="filterRcGroup('rc-ide',this)" data-i18n="rc-chip-ide">🖥 RC+ IDE</span>
+      <span class="chip" onclick="filterRcGroup('rc-spel-dev',this)" data-i18n="rc-chip-spel">⚡ SPEL+ Dev</span>
+      <span class="chip" onclick="filterRcGroup('rc-simulator',this)" data-i18n="rc-chip-sim">🤖 Simulator</span>
+      <span class="chip" onclick="filterRcGroup('rc-hardware',this)" data-i18n="rc-chip-hw">⚙️ Hardware</span>
+      <span class="chip" onclick="filterRcGroup('rc-connectivity',this)" data-i18n="rc-chip-conn">🌐 Connectivity</span>
+      <span class="chip" onclick="filterRcGroup('rc-security',this)" data-i18n="rc-chip-sec">🔒 Security</span>
+      <span class="chip" onclick="filterRcGroup('rc-advanced',this)" data-i18n="rc-chip-adv">🏭 Advanced</span>
+      <span class="chip" onclick="filterRcGroup('rc-calibration',this)" data-i18n="rc-chip-cal">🎯 Calibration</span>
+      <span class="chip" onclick="filterRcGroup('rc-options',this)" data-i18n="rc-chip-opts">📦 Options</span>
     </div>
     <div id="rc-content" style="padding:0 24px 60px">
       <div id="rc-no-results" style="display:none;text-align:center;padding:60px 20px;color:var(--text3)">No chapters matched your search.</div>
@@ -17064,6 +17067,37 @@ const I18N = {
     'stat-topicgroups': 'Topic Groups',
     'stat-version': 'Version',
     'rc-search-ph': 'Search chapters...',
+    'btn-expand-all': 'Expand All',
+    'btn-collapse-all': 'Collapse All',
+    'chip-all': 'All',
+    'chip-motion': 'Motion',
+    'chip-io': 'I/O',
+    'chip-files': 'Files',
+    'chip-math': 'Math',
+    'chip-strings': 'Strings',
+    'chip-system': 'System',
+    'gui-chip-all': 'All',
+    'gui-chip-controls': 'Controls',
+    'gui-chip-props': 'Properties',
+    'gui-chip-events': 'Events',
+    'gui-chip-stmts': 'SPEL+ Stmts',
+    'gui-chip-xref': 'With SPEL+ XRef',
+    'rc-chip-all': 'All Chapters',
+    'rc-chip-gs': 'Getting Started',
+    'rc-chip-ide': 'RC+ IDE',
+    'rc-chip-spel': 'SPEL+ Dev',
+    'rc-chip-sim': 'Simulator',
+    'rc-chip-hw': 'Hardware & I/O',
+    'rc-chip-conn': 'Connectivity',
+    'rc-chip-sec': 'Security',
+    'rc-chip-adv': 'Advanced',
+    'rc-chip-cal': 'Calibration',
+    'rc-chip-opts': 'Options',
+    'topbar-spel': 'SPEL+ Language Reference',
+    'topbar-gui': 'GUI Builder Reference',
+    'topbar-rc': 'RC+ Users Guide',
+    'idx-sidebar-sub': 'All SPEL+ and GUI Builder commands in alphabetical order.',
+    'spel-topbar-count': '734 commands · 21 categories',
   },
   th: {
     'tab-spel': '⚡ คู่มืออ้างอิงภาษา SPEL+',
@@ -17116,7 +17150,79 @@ const I18N = {
     'stat-topicgroups': 'กลุ่มหัวข้อ',
     'stat-version': 'เวอร์ชัน',
     'rc-search-ph': 'ค้นหาบท...',
+    'btn-expand-all': 'ขยายทั้งหมด',
+    'btn-collapse-all': 'ยุบทั้งหมด',
+    'chip-all': 'ทั้งหมด',
+    'chip-motion': 'การเคลื่อนไหว',
+    'chip-io': 'I/O',
+    'chip-files': 'ไฟล์',
+    'chip-math': 'คณิตศาสตร์',
+    'chip-strings': 'สตริง',
+    'chip-system': 'ระบบ',
+    'gui-chip-all': 'ทั้งหมด',
+    'gui-chip-controls': 'ตัวควบคุม',
+    'gui-chip-props': 'คุณสมบัติ',
+    'gui-chip-events': 'เหตุการณ์',
+    'gui-chip-stmts': 'คำสั่ง SPEL+',
+    'gui-chip-xref': 'มี SPEL+ XRef',
+    'rc-chip-all': 'ทุกบท',
+    'rc-chip-gs': 'เริ่มต้นใช้งาน',
+    'rc-chip-ide': 'RC+ IDE',
+    'rc-chip-spel': 'พัฒนา SPEL+',
+    'rc-chip-sim': 'โปรแกรมจำลอง',
+    'rc-chip-hw': 'ฮาร์ดแวร์ & I/O',
+    'rc-chip-conn': 'การเชื่อมต่อ',
+    'rc-chip-sec': 'ความปลอดภัย',
+    'rc-chip-adv': 'ขั้นสูง',
+    'rc-chip-cal': 'การสอบเทียบ',
+    'rc-chip-opts': 'ตัวเลือก',
+    'topbar-spel': 'คู่มืออ้างอิงภาษา SPEL+',
+    'topbar-gui': 'คู่มืออ้างอิง GUI Builder',
+    'topbar-rc': 'คู่มือผู้ใช้ RC+',
+    'idx-sidebar-sub': 'คำสั่ง SPEL+ และ GUI Builder ทั้งหมดเรียงตามตัวอักษร',
+    'spel-topbar-count': '734 คำสั่ง · 21 หมวดหมู่',
   }
+};
+
+const CAT_HEADERS_TH = {
+  // SPEL+ categories
+  'System Management Commands': 'คำสั่งการจัดการระบบ',
+  'Robot Control Commands': 'คำสั่งควบคุมหุ่นยนต์',
+  'Torque Commands': 'คำสั่งแรงบิด',
+  'Input / Output Commands': 'คำสั่ง Input / Output',
+  'Point Management Commands': 'คำสั่งการจัดการจุด',
+  'Coordinate Change Commands': 'คำสั่งเปลี่ยนระบบพิกัด',
+  'Program Control Commands': 'คำสั่งควบคุมโปรแกรม',
+  'Program Execution Commands': 'คำสั่งการรันโปรแกรม',
+  'Pseudo Statements': 'คำสั่งเทียม',
+  'File Management Commands': 'คำสั่งการจัดการไฟล์',
+  'Fieldbus Commands': 'คำสั่ง Fieldbus',
+  'Numeric Value Commands': 'คำสั่งค่าตัวเลข',
+  'String Commands': 'คำสั่งสตริง',
+  'Logical Operators': 'ตัวดำเนินการตรรกะ',
+  'Security Commands': 'คำสั่งความปลอดภัย',
+  'Conveyor Tracking Commands': 'คำสั่งติดตามสายพาน',
+  'DB Commands': 'คำสั่ง DB',
+  'PG Commands': 'คำสั่ง PG',
+  'Collision Detection Commands': 'คำสั่งตรวจจับการชน',
+  'Parts Consumption Commands': 'คำสั่งการใช้ชิ้นส่วน',
+  'Simulator Commands': 'คำสั่งโปรแกรมจำลอง',
+  // RC+ topic group headers
+  'Getting Started': 'เริ่มต้นใช้งาน',
+  'The RC+ IDE': 'RC+ IDE',
+  'SPEL+ Development': 'การพัฒนา SPEL+',
+  'Simulator': 'โปรแกรมจำลอง',
+  'Hardware & I/O': 'ฮาร์ดแวร์ & I/O',
+  'Connectivity': 'การเชื่อมต่อ',
+  'Security': 'ความปลอดภัย',
+  'Advanced Features': 'คุณสมบัติขั้นสูง',
+  'Calibration': 'การสอบเทียบ',
+  'Options & Appendices': 'ตัวเลือกและภาคผนวก',
+  // GUI section headers
+  'Overview': 'ภาพรวม',
+  'Properties Reference': 'อ้างอิงคุณสมบัติ',
+  'Events Reference': 'อ้างอิงเหตุการณ์',
+  'SPEL+ Statements & Functions': 'คำสั่งและฟังก์ชัน SPEL+',
 };
 
 function applyLang(lang) {
@@ -17136,6 +17242,17 @@ function applyLang(lang) {
     var key = el.getAttribute('data-i18n-placeholder');
     if (I18N[lang] && I18N[lang][key] !== undefined) {
       el.placeholder = I18N[lang][key];
+    }
+  });
+  // Translate category headers
+  document.querySelectorAll('.cat-header h2').forEach(function(el) {
+    if (lang === 'th') {
+      var enText = el.getAttribute('data-en-cat') || el.textContent.trim();
+      el.setAttribute('data-en-cat', enText);
+      if (CAT_HEADERS_TH[enText]) el.textContent = CAT_HEADERS_TH[enText];
+    } else {
+      var saved = el.getAttribute('data-en-cat');
+      if (saved) el.textContent = saved;
     }
   });
   var btn = document.getElementById('lang-toggle');
