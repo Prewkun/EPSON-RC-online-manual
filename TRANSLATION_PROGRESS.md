@@ -20,7 +20,9 @@ where work left off.
 | **PR 3** | Structural labels — Example, See Also:, Applies to:, nav/stat labels | ✅ Merged |
 | **PR 4** | `applyLang()` consolidation — cmd-brief integrated, monkey-patch removed, single init | ✅ Merged |
 | **PR 5a** | See Also hyperlinks — SPEL+ section (374 entries, 433/474 sections linked, 81.6% token coverage) | ⏳ Open |
-| **PR 5b** | See Also hyperlinks — GUI Builder section (100 entries, 62/100 sections linked, 24.9% token coverage*) | ⏳ Open |
+| **PR 5b** | See Also hyperlinks — GUI Builder section (100 entries, 62/100 sections linked, 24.9% token coverage*) | ✅ Merged |
+| **PR 6a** | cmd-desc translations — SPEL+ A–D (89 entries) + `DESC_TRANSLATIONS` dict + `applyLang()` wiring | ⏳ Open |
+| **PR 6b** | cmd-desc translations — SPEL+ E–J (72 entries) | ⏳ Open |
 
 ---
 
