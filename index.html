@@ -17350,6 +17350,20 @@ function applyLang(lang) {
       if (saved) el.textContent = saved;
     }
   });
+  // Command brief translations
+  if (lang === 'th') {
+    document.querySelectorAll('.cmd-brief').forEach(function(el) {
+      var english = el.textContent.trim();
+      if (CONTENT_TRANSLATIONS[english]) {
+        el.setAttribute('data-en', english);
+        el.textContent = CONTENT_TRANSLATIONS[english];
+      }
+    });
+  } else {
+    document.querySelectorAll('.cmd-brief[data-en]').forEach(function(el) {
+      el.textContent = el.getAttribute('data-en');
+    });
+  }
   var btn = document.getElementById('lang-toggle');
   if (btn) btn.textContent = lang === 'th' ? 'EN' : 'TH';
   document.documentElement.lang = lang === 'th' ? 'th' : 'en';
@@ -17360,13 +17374,6 @@ function toggleLang() {
   var current = localStorage.getItem('rcplus-lang') || 'en';
   applyLang(current === 'en' ? 'th' : 'en');
 }
-
-(function() {
-  var saved = localStorage.getItem('rcplus-lang');
-  if (saved === 'th') {
-    document.addEventListener('DOMContentLoaded', function() { applyLang('th'); });
-  }
-})();
 
 // ====== TH/EN Content Translations ======
 // Content translation dictionary for command briefs and descriptions
@@ -18213,63 +18220,17 @@ const CONTENT_TRANSLATIONS = {
 
 };
 
-// Function to apply content translations to command briefs
-function applyContentTranslations(lang) {
-  if (lang !== 'th') return; // Only apply for Thai
-  
-  document.querySelectorAll('.cmd-brief').forEach(function(el) {
-    var english = el.textContent.trim();
-    if (CONTENT_TRANSLATIONS[english]) {
-      el.setAttribute('data-en', english);
-      el.textContent = CONTENT_TRANSLATIONS[english];
-    }
-  });
-  
-  document.querySelectorAll('.cmd-desc').forEach(function(el) {
-    var english = el.textContent.trim();
-    // For descriptions, we store and translate on demand
-    if (!el.getAttribute('data-en')) {
-      el.setAttribute('data-en', english);
-    }
-  });
-}
-
-// Function to restore English content
-function restoreEnglishContent() {
-  document.querySelectorAll('.cmd-brief[data-en]').forEach(function(el) {
-    el.textContent = el.getAttribute('data-en');
-  });
-  
-  document.querySelectorAll('.cmd-desc[data-en]').forEach(function(el) {
-    el.textContent = el.getAttribute('data-en');
-  });
-}
-
-// Hook into existing language toggle
-var originalApplyLang = window.applyLang;
-window.applyLang = function(lang) {
-  // Call original UI translation
-  originalApplyLang(lang);
-  
-  // Apply content translations
-  if (lang === 'th') {
-    applyContentTranslations('th');
-  } else {
-    restoreEnglishContent();
-  }
-};
-
-// Initialize content translation for saved language
+// Initialize: restore saved language on page load
 (function() {
   var saved = localStorage.getItem('rcplus-lang');
   if (saved === 'th') {
-    document.addEventListener('DOMContentLoaded', function() {
-      applyContentTranslations('th');
-    });
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() { applyLang('th'); });
+    } else {
+      applyLang('th');
+    }
   }
 })();
-
-console.log('Content translation system initialized. ' + Object.keys(CONTENT_TRANSLATIONS).length + ' terms available.');
 // ====== End TH/EN Content Translations ======
 </script>
 </body>
