@@ -14,8 +14,8 @@ where work left off.
 | **PR 1** | UI chips, buttons, topbars, 35 category/section headers | ✅ Merged |
 | **PR 2a** | Command briefs — `#`, `A`, `B`, `C` (65 entries) | ✅ Merged |
 | **PR 2b** | Command briefs — `D`, `E`, `F`, `G` (241 entries) | ✅ Merged |
-| **PR 2c** | Command briefs — `F`(missed), `G`(missed), `H`–`O` (68 entries) | ⏳ Open |
-| **PR 2d** | Command briefs — `N`, `O`, `P`, `Q`, `R`, `S` | ⬜ Pending |
+| **PR 2c** | Command briefs — `F`(missed), `G`(missed), `H`–`O` (68 entries) | ✅ Merged |
+| **PR 2d** | Command briefs — `P`, `Q`, `R` (131 entries) | ⏳ Open |
 | **PR 2e** | Command briefs — `T`–`Z` + remaining fragments + RC+/GUI chapter briefs | ⬜ Pending |
 | **PR 3** | Structural labels — "See Also:", "Example", sidebar nav labels, RC+ subsection titles | ⬜ Pending |
 | **PR 4** | `applyLang()` comprehensive wire-up + initialization / restore fix | ⬜ Pending |
@@ -30,7 +30,7 @@ where work left off.
 | After PR 2a | 265 | 812 | 32.6% |
 | After PR 2b | 505 | 812 | 62.2% |
 | After PR 2c | 568 | 812 | 69.9% |
-| After PR 2d | ~680 | 812 | ~83.7% |
+| After PR 2d | 699 | 812 | 86.1% |
 | After PR 2e | ~812 | 812 | 100% |
 
 ---
@@ -45,7 +45,7 @@ it easy for a new session to locate the boundary in `CONTENT_TRANSLATIONS`.
 | PR 2a ✅ | `# Allows string…` | `coordinate axis in local…` | 65 |
 | PR 2b ✅ | `Declare a function.` | `GShowDialog displays…` | 241 |
 | PR 2c ⏳ | `Function Gripper…` (F/G missed) + `Hand_Off…` | `or choose a button…` | 68 |
-| PR 2d | `Parse a string…` | `SLS is enabled.` | ~131 |
+| PR 2d ⏳ | `Parse a string…` | `Runs an Epson RC+ dialog…` | 131 |
 | PR 2e | `Safety` | `word port contains…` | ~136 |
 
 ---
