@@ -18,7 +18,8 @@ where work left off.
 | **PR 2d** | Command briefs — `P`, `Q`, `R` (131 entries) | ✅ Merged |
 | **PR 2e** | Command briefs — `S`–`W` + lowercase fragments (136 entries) | ✅ Merged |
 | **PR 3** | Structural labels — Example, See Also:, Applies to:, nav/stat labels | ✅ Merged |
-| **PR 4** | `applyLang()` consolidation — cmd-brief integrated, monkey-patch removed, single init | ⏳ Open |
+| **PR 4** | `applyLang()` consolidation — cmd-brief integrated, monkey-patch removed, single init | ✅ Merged |
+| **PR 5a** | See Also hyperlinks — SPEL+ section (374 entries, 433/474 sections linked, 81.6% token coverage) | ⏳ Open |
 
 ---
 
