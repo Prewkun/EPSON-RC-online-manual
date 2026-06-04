@@ -20,6 +20,7 @@ where work left off.
 | **PR 3** | Structural labels — Example, See Also:, Applies to:, nav/stat labels | ✅ Merged |
 | **PR 4** | `applyLang()` consolidation — cmd-brief integrated, monkey-patch removed, single init | ✅ Merged |
 | **PR 5a** | See Also hyperlinks — SPEL+ section (374 entries, 433/474 sections linked, 81.6% token coverage) | ⏳ Open |
+| **PR 5b** | See Also hyperlinks — GUI Builder section (100 entries, 62/100 sections linked, 24.9% token coverage*) | ⏳ Open |
 
 ---
 
@@ -73,6 +74,10 @@ it easy for a new session to locate the boundary in `CONTENT_TRANSLATIONS`.
    for b in missing[:20]: print(repr(b))
    ```
 6. Write translations for the next batch, insert them into `CONTENT_TRANSLATIONS`, update this file, commit, push, and open a PR.
+
+---
+
+*GUI coverage is lower because many GUI See Also entries reference control-type category names (`Button`, `Form`, `ComboBox`, etc.) which don't have individual `gui-ref-*` page IDs — they're category-level names in the GUI Builder architecture.
 
 ---
 

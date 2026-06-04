@@ -17029,9 +17029,10 @@ window.addEventListener('DOMContentLoaded',function(){
   }
 });
 
-// PR5a: Wire See Also links in SPEL+ section on page load
+// PR5a/5b: Wire See Also links in SPEL+ and GUI sections on page load
 window.addEventListener('DOMContentLoaded', function() {
   wireSeealsoLinks(document.getElementById('content'));
+  wireSeealsoLinks(document.getElementById('gui-content'));
 });
 
 // UX-3/Bug-4: RC+ chapter deep-link
