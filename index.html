@@ -17225,6 +17225,79 @@ const CAT_HEADERS_TH = {
   'SPEL+ Statements & Functions': 'คำสั่งและฟังก์ชัน SPEL+',
 };
 
+const NAV_LABELS_TH = {
+  // Nav-group labels (sidebar section headers)
+  'Controls': 'ตัวควบคุม',
+  'Properties & Events': 'คุณสมบัติและเหตุการณ์',
+  '🚀 Getting Started': '🚀 เริ่มต้นใช้งาน',
+  '🖥️ The RC+ IDE': '🖥️ RC+ IDE',
+  '⚡ SPEL+ Development': '⚡ การพัฒนา SPEL+',
+  '🤖 Simulator': '🤖 ซิมูเลเตอร์',
+  '⚙️ Hardware & I/O': '⚙️ ฮาร์ดแวร์และ I/O',
+  '🌐 Connectivity': '🌐 การเชื่อมต่อ',
+  '🔒 Security': '🔒 ความปลอดภัย',
+  '🏭 Advanced Features': '🏭 ฟีเจอร์ขั้นสูง',
+  '🎯 Calibration': '🎯 การสอบเทียบ',
+  '📦 Options & Appendices': '📦 ตัวเลือกและภาคผนวก',
+  // Stat labels
+  'Categories': 'หมวดหมู่',
+  'Chapters': 'บท',
+  'Commands': 'คำสั่ง',
+  'Events': 'เหตุการณ์',
+  'GUI Linked': 'เชื่อมโยง GUI',
+  'Pages': 'หน้า',
+  'Properties': 'คุณสมบัติ',
+  'RC+ Version': 'เวอร์ชัน RC+',
+  'SPEL+ Stmts': 'คำสั่ง SPEL+',
+  'Topic Groups': 'กลุ่มหัวข้อ',
+  'Version': 'เวอร์ชัน',
+  // Nav labels — RC+ chapter/section titles
+  'Absolute Accuracy Calibration': 'การสอบเทียบความแม่นยำสัมบูรณ์',
+  'Additional Axis': 'แกนเพิ่มเติม',
+  'Building SPEL+ Applications': 'การสร้างแอปพลิเคชัน SPEL+',
+  'Conveyor Tracking': 'การติดตามสายพานลำเลียง',
+  'Distance Tracking': 'การติดตามระยะทาง',
+  'ECP Motion': 'การเคลื่อนที่ ECP',
+  'Getting Started': 'เริ่มต้นใช้งาน',
+  'Input / Output Commands': 'คำสั่ง Input / Output',
+  'Inputs and Outputs': 'อินพุตและเอาต์พุต',
+  'Installing Controller Options': 'การติดตั้งตัวเลือกคอนโทรลเลอร์',
+  'Introduction': 'บทนำ',
+  'Motion System': 'ระบบการเคลื่อนที่',
+  'Operation': 'การดำเนินงาน',
+  'RS-232C Communications': 'การสื่อสาร RS-232C',
+  'Real-Time I/O': 'I/O แบบเรียลไทม์',
+  'Remote Control': 'การควบคุมระยะไกล',
+  'Robot Configuration': 'การกำหนดค่าหุ่นยนต์',
+  'Safety': 'ความปลอดภัย',
+  'Simulator': 'ซิมูเลเตอร์',
+  'TCP/IP Communications': 'การสื่อสาร TCP/IP',
+  'The Epson RC+ 8.0 GUI': 'GUI ของ Epson RC+ 8.0',
+  'The SPEL+ Language': 'ภาษา SPEL+',
+  'Vision Sensor Calibration': 'การสอบเทียบเซ็นเซอร์ภาพ',
+  // Nav labels — SPEL+ category names (mirrors CAT_HEADERS_TH)
+  'System Management Commands': 'คำสั่งการจัดการระบบ',
+  'Robot Control Commands': 'คำสั่งควบคุมหุ่นยนต์',
+  'Torque Commands': 'คำสั่งแรงบิด',
+  'Point Management Commands': 'คำสั่งการจัดการจุด',
+  'Coordinate Change Commands': 'คำสั่งเปลี่ยนระบบพิกัด',
+  'Program Control Commands': 'คำสั่งควบคุมโปรแกรม',
+  'Program Execution Commands': 'คำสั่งการรันโปรแกรม',
+  'Pseudo Statements': 'คำสั่งเทียม',
+  'File Management Commands': 'คำสั่งการจัดการไฟล์',
+  'Fieldbus Commands': 'คำสั่ง Fieldbus',
+  'Numeric Value Commands': 'คำสั่งค่าตัวเลข',
+  'String Commands': 'คำสั่งสตริง',
+  'Logical Operators': 'ตัวดำเนินการตรรกะ',
+  'Security Commands': 'คำสั่งความปลอดภัย',
+  'Conveyor Tracking Commands': 'คำสั่งติดตามสายพาน',
+  'DB Commands': 'คำสั่ง DB',
+  'PG Commands': 'คำสั่ง PG',
+  'Collision Detection Commands': 'คำสั่งตรวจจับการชน',
+  'Parts Consumption Commands': 'คำสั่งการใช้ชิ้นส่วน',
+  'Simulator Commands': 'คำสั่งโปรแกรมจำลอง',
+};
+
 function applyLang(lang) {
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key = el.getAttribute('data-i18n');
@@ -17252,6 +17325,28 @@ function applyLang(lang) {
       if (CAT_HEADERS_TH[enText]) el.textContent = CAT_HEADERS_TH[enText];
     } else {
       var saved = el.getAttribute('data-en-cat');
+      if (saved) el.textContent = saved;
+    }
+  });
+  // Translate structural labels (Example, See Also:, Applies to:, Properties:)
+  [
+    ['example-label', 'Example', 'ตัวอย่าง'],
+    ['seealso-label', 'See Also:', 'ดูเพิ่มเติม:'],
+    ['applies-label', 'Applies to:', 'ใช้กับ:'],
+    ['meta-label', 'Properties:', 'คุณสมบัติ:'],
+  ].forEach(function(t) {
+    document.querySelectorAll('.' + t[0]).forEach(function(el) {
+      el.textContent = (lang === 'th') ? t[2] : t[1];
+    });
+  });
+  // Translate nav labels, nav-group labels, and stat labels
+  document.querySelectorAll('.nav-label, .nav-group-label, .stat-label').forEach(function(el) {
+    if (lang === 'th') {
+      var enText = el.getAttribute('data-en-nav') || el.textContent.trim();
+      el.setAttribute('data-en-nav', enText);
+      if (NAV_LABELS_TH[enText]) el.textContent = NAV_LABELS_TH[enText];
+    } else {
+      var saved = el.getAttribute('data-en-nav');
       if (saved) el.textContent = saved;
     }
   });
