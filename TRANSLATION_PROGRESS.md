@@ -12,8 +12,8 @@ where work left off.
 | Layer | Description | Status |
 |---|---|---|
 | **PR 1** | UI chips, buttons, topbars, 35 category/section headers | ✅ Merged |
-| **PR 2a** | Command briefs — `#`, `A`, `B`, `C` (65 entries) | ⏳ Open |
-| **PR 2b** | Command briefs — `D`, `E`, `F`, `G` | ⬜ Pending |
+| **PR 2a** | Command briefs — `#`, `A`, `B`, `C` (65 entries) | ✅ Merged |
+| **PR 2b** | Command briefs — `D`, `E`, `F`, `G` (241 entries) | ⏳ Open |
 | **PR 2c** | Command briefs — `H`, `I`, `J`, `K`, `L`, `M` | ⬜ Pending |
 | **PR 2d** | Command briefs — `N`, `O`, `P`, `Q`, `R`, `S` | ⬜ Pending |
 | **PR 2e** | Command briefs — `T`–`Z` + remaining fragments + RC+/GUI chapter briefs | ⬜ Pending |
@@ -28,7 +28,7 @@ where work left off.
 |---|---|---|---|
 | Baseline (before PR 1) | 200 | 812 | 24.6% |
 | After PR 2a | 265 | 812 | 32.6% |
-| After PR 2b | ~320 | 812 | ~39% |
+| After PR 2b | 505 | 812 | 62.2% |
 | After PR 2c | ~390 | 812 | ~48% |
 | After PR 2d | ~520 | 812 | ~64% |
 | After PR 2e | ~812 | 812 | 100% |
