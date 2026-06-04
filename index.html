@@ -16756,6 +16756,90 @@ function switchToSpel(name){
 
 function toggleCmd(h){h.parentElement.classList.toggle('open')}
 
+// PR5a: Wire hyperlinks in SPEL+ See Also sections
+function wireSeealsoLinks(scope) {
+  var spelMap = {}, guiMap = {};
+  document.querySelectorAll('[id^="spel-cmd-"]').forEach(function(el) {
+    spelMap[el.id.replace('spel-cmd-', '')] = true;
+  });
+  document.querySelectorAll('[id^="gui-ref-"]').forEach(function(el) {
+    guiMap[el.id.replace('gui-ref-', '')] = true;
+  });
+
+  function norm(s) {
+    return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  // Strip common qualifiers to find the base command name
+  var SUFFIXES = [' Function Example', ' Function', ' Statement', ' function'];
+
+  function resolve(token) {
+    var n = norm(token);
+    if (spelMap[n]) return { type: 'spel', name: token };
+    if (guiMap[n]) return { type: 'gui', name: token };
+    for (var i = 0; i < SUFFIXES.length; i++) {
+      if (token.endsWith(SUFFIXES[i])) {
+        var base = token.slice(0, -SUFFIXES[i].length);
+        var nb = norm(base);
+        if (spelMap[nb]) return { type: 'spel', name: base };
+        if (guiMap[nb]) return { type: 'gui', name: base };
+      }
+    }
+    return null;
+  }
+
+  var container = scope || document;
+  container.querySelectorAll('.cmd-seealso').forEach(function(div) {
+    var labelSpan = div.querySelector('.seealso-label');
+    if (!labelSpan) return;
+
+    // Collect raw text from non-span children; stop at first newline to skip code bleed
+    var rawText = '';
+    div.childNodes.forEach(function(node) {
+      if (node === labelSpan) return;
+      if (node.nodeType === Node.TEXT_NODE) rawText += node.textContent;
+    });
+    rawText = rawText.split('\n')[0].trim();
+    if (rawText.startsWith(',')) rawText = rawText.slice(1).trim();
+
+    var tokens = rawText.split(',').map(function(t) { return t.trim(); }).filter(Boolean);
+    if (!tokens.length) return;
+
+    var resolvedList = tokens.map(resolve);
+    if (!resolvedList.some(Boolean)) return;
+
+    // Rebuild children: keep label span, replace text with linked badges
+    var toRemove = [];
+    div.childNodes.forEach(function(node) {
+      if (node !== labelSpan) toRemove.push(node);
+    });
+    toRemove.forEach(function(n) { n.parentNode.removeChild(n); });
+
+    div.appendChild(document.createTextNode(' '));
+    tokens.forEach(function(tok, idx) {
+      var r = resolvedList[idx];
+      if (r) {
+        var a = document.createElement('a');
+        a.className = 'xref-badge';
+        a.href = '#';
+        a.textContent = tok;
+        (function(name, type) {
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            type === 'spel' ? switchToSpel(name) : switchToGui(name);
+          });
+        })(r.name, r.type);
+        div.appendChild(a);
+      } else {
+        div.appendChild(document.createTextNode(tok));
+      }
+      if (idx < tokens.length - 1) {
+        div.appendChild(document.createTextNode(', '));
+      }
+    });
+  });
+}
+
 let st={};
 function searchCmds(q,page){
   clearTimeout(st[page]);
@@ -16943,6 +17027,12 @@ window.addEventListener('DOMContentLoaded',function(){
       setTimeout(function(){el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'center'});},200);
     }
   }
+});
+
+// PR5a/5b: Wire See Also links in SPEL+ and GUI sections on page load
+window.addEventListener('DOMContentLoaded', function() {
+  wireSeealsoLinks(document.getElementById('content'));
+  wireSeealsoLinks(document.getElementById('gui-content'));
 });
 
 // UX-3/Bug-4: RC+ chapter deep-link
