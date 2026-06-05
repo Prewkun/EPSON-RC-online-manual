@@ -3618,7 +3618,11 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Use PTPTime to calculate the time it would take for a point to point motion command (Go). Use syntax 1 to calculate time from the current position to the destination. Use syntax 2 to calculate time from a start point to a destination point. The actual motion operation is not performed when this function is executed. The current position, arm, and tool settings do not change. If the position is one that cannot be arrived at or if the arm or tool settings are incorrect, 0 is returned. If a robot includes an additional axis and it is the servo axis, the function will consider the motion time of the additional axis. If the additional axis is a PG axis, the motion time of the robot will be returned.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-cx">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CX</code>
@@ -6541,7 +6545,11 @@ CloseNet #201</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Wait for TCP/IP port connection to be established.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-read">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Read</code>
@@ -6587,7 +6595,11 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Write is different from Print in that it does not add an end of line terminator.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-line-3">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">line</code>
@@ -6644,7 +6656,11 @@ CloseCom #1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">InputBox displays the dialog and waits for the operator to click OK or Cancel. data is a string that contains what the operator typed in.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-text-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">text</code>
@@ -7295,7 +7311,11 @@ localNum = PLocal(pick)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">PDescription save a description in specified point data of controller memory. Description saved in memory of the controller is delated from memory when creating or executing a program. Execute the “SavePoints” to save in point file if necessary.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-pdescription-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PDescription$</code>
@@ -8723,7 +8743,11 @@ Function InitRobot
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">If any one caseExpr is equivalent to selectExpr, then the statements after the Case statement are executed. After execution, program control transfers to the statement following the Send statement. If no caseExpr is equivalent to selectExpr, the Default statements are executed and program control transfers to the statement following the Send statement. If no caseExpr is equivalent to selectExpr and Default is omitted, nothing is executed and program control transfers to the statement immediately following the Send statement. selectExpr may include constants, variables, and logical operators that use And, Or and Xor. caseExpr also may include constants, variables, and logical operators that use And, Or and Xor. In this case, the calculation result of caseExpr is compared to that of selectExpr and do not specify the variable in caseExpr because the motion becomes complicated.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-do-loop">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Do...Loop</code>
@@ -9141,7 +9165,11 @@ assigns a task number to the function, so you don&#x27;t have to keep track of w
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">To execute this command programmatically, you must turn on the [Enable advanced task commands] checkbox in the [Setup] menu-[System Configuration]-[Controller]-[Preferences] page of the Epson RC+. However, even if this preference is enabled, you cannot execute the Cont statement from a task executed by Trap SGClose. The Cont command resumes the controller tasks paused by the Pause statement or safeguard open and continues all tasks execution. It has the same function as the [Continue] button on the Run Window, Operator Window, and the Continue Remote input. If you execute the Cont command during WaitRecover status (waiting for the recover after safeguard open), it will turn on all the robot motors and execute the recover motion. Then, the program will be resumed. If you just want to turn on motors and execute recover motion, use the Recover command. CAUTION When executing Cont command from a program, you must understand the command specification and confirm that the system has the proper conditions for the Cont command. Improper use such as continuous execution of a command within a loop may deteriorate the system safety.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-executed-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">executed</code>
@@ -9929,7 +9957,11 @@ Next i
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Opens the specified file using the specified fileNumber. This statement is used to open and write data to the specified file. (To append data, refer to the AOpen explanation.) If the specified filename does not exist on the disks current directory, WOpen creates the file and writes to it. If the specified filename exists, WOpen erases all of the data in the file and writes to it. fileNumber identifies the file while it is open and cannot be used to refer to a different file until the current file is closed. fileNumber is used by other file operations such as Print#, Write, Seek, and Close. Close closes the file and releases the file number. It is recommended that you use the FreeFile function to obtain the file number so that more than one task are not using the same number. Notes A network path is available. File writing is buffered. The buffered data can be written with Flush statement. Also, when closing a file with Close statement, the buffered data can be written.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-input-3">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Input</code>
@@ -10046,7 +10078,11 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Reads binary data from a file or communications port.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-write-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Write</code>
@@ -12126,7 +12162,11 @@ Print &quot;Conveyor 1 position error: &quot;, Cnv_PosErr(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Repeating the operation of stopping and starting the conveyor during conveyor tracking worsens the position deviation between the tracking position and target due to the delay in the robot&#x27;s tracking of the conveyor&#x27;s speed changes. Position deviation can be improved by predicting the conveyor speed after the time set using the offset value. Cnv_PosErrOffset is available only in variable speed conveyor mode. In the case of quantity-priority mode and accuracypriority mode, the position deviation cannot be improved by using the offset value. Notes This command will only work if the Conveyor Tracking option is active.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-tracking-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">tracking</code>
@@ -12246,7 +12286,11 @@ Cnv_QueList 1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Cnv_QueMove is used to move one or more items from a conveyor queue to its associated downstream conveyor queue. If index is specified, the first item (index #0) of the queue is moved.</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-conveyor-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">conveyor</code>
@@ -13277,7 +13321,11 @@ healthSpeed = H</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
+<<<<<<< HEAD
           <div class="cmd-body"><div class="cmd-desc">Starts calculation of the usable months and elements (torque, speed, and driving amount) for the parts on the specified robot in a particular robot operation cycle. If this command is executed again when the calculation is already started, the previous calculation result will be initialized. Notes This command does not function in Auto mode. This command does not function in dry run mode (including the virtual controller).</div></div>
+=======
+          <div class="cmd-body"></div>
+>>>>>>> main
         </div><div class="cmd-card" id="spel-cmd-healthrbstop">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HealthRBStop</code>
