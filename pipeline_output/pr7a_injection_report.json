@@ -1,0 +1,519 @@
+{
+  "run": "v2",
+  "injected_count": 9,
+  "missed_count": 116,
+  "pdf_coverage": 520,
+  "injected": [
+    {
+      "card_id": "spel-cmd-p",
+      "cmd_name": "P#",
+      "desc_len": 2370
+    },
+    {
+      "card_id": "spel-cmd-function",
+      "cmd_name": "Function",
+      "desc_len": 618
+    },
+    {
+      "card_id": "spel-cmd-gosub",
+      "cmd_name": "GoSub",
+      "desc_len": 1215
+    },
+    {
+      "card_id": "spel-cmd-select",
+      "cmd_name": "Select",
+      "desc_len": 886
+    },
+    {
+      "card_id": "spel-cmd-trap",
+      "cmd_name": "Trap",
+      "desc_len": 3078
+    },
+    {
+      "card_id": "spel-cmd-ifdef",
+      "cmd_name": "#ifdef",
+      "desc_len": 710
+    },
+    {
+      "card_id": "spel-cmd-ifndef",
+      "cmd_name": "#ifndef",
+      "desc_len": 580
+    },
+    {
+      "card_id": "spel-cmd-parsestr",
+      "cmd_name": "ParseStr",
+      "desc_len": 43
+    },
+    {
+      "card_id": "spel-cmd-function-2",
+      "cmd_name": "Function",
+      "desc_len": 618
+    }
+  ],
+  "missed": [
+    {
+      "card_id": "spel-cmd-date",
+      "cmd_name": "Date"
+    },
+    {
+      "card_id": "spel-cmd-text",
+      "cmd_name": "text"
+    },
+    {
+      "card_id": "spel-cmd-clears",
+      "cmd_name": "Clears"
+    },
+    {
+      "card_id": "spel-cmd-athome",
+      "cmd_name": "AtHome"
+    },
+    {
+      "card_id": "spel-cmd-mcalcomplete",
+      "cmd_name": "MCalComplete"
+    },
+    {
+      "card_id": "spel-cmd-calibration",
+      "cmd_name": "calibration"
+    },
+    {
+      "card_id": "spel-cmd-at",
+      "cmd_name": "at"
+    },
+    {
+      "card_id": "spel-cmd-coordinate",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-but",
+      "cmd_name": "but"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-2",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-3",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-4",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-path",
+      "cmd_name": "path."
+    },
+    {
+      "card_id": "spel-cmd-precision",
+      "cmd_name": "precision"
+    },
+    {
+      "card_id": "spel-cmd-palletclr",
+      "cmd_name": "PalletClr"
+    },
+    {
+      "card_id": "spel-cmd-orientation",
+      "cmd_name": "orientation"
+    },
+    {
+      "card_id": "spel-cmd-robotmodel",
+      "cmd_name": "RobotModel$"
+    },
+    {
+      "card_id": "spel-cmd-robotname",
+      "cmd_name": "RobotName$"
+    },
+    {
+      "card_id": "spel-cmd-robotserial",
+      "cmd_name": "RobotSerial$"
+    },
+    {
+      "card_id": "spel-cmd-motion",
+      "cmd_name": "motion"
+    },
+    {
+      "card_id": "spel-cmd-issuing",
+      "cmd_name": "issuing"
+    },
+    {
+      "card_id": "spel-cmd-point",
+      "cmd_name": "point"
+    },
+    {
+      "card_id": "spel-cmd-algorithmic",
+      "cmd_name": "algorithmic"
+    },
+    {
+      "card_id": "spel-cmd-current",
+      "cmd_name": "current"
+    },
+    {
+      "card_id": "spel-cmd-least",
+      "cmd_name": "least"
+    },
+    {
+      "card_id": "spel-cmd-reference",
+      "cmd_name": "reference"
+    },
+    {
+      "card_id": "spel-cmd-avoiding",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-2",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-3",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-4",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-singularity",
+      "cmd_name": "singularity"
+    },
+    {
+      "card_id": "spel-cmd-singularity-2",
+      "cmd_name": "singularity"
+    },
+    {
+      "card_id": "spel-cmd-nearest",
+      "cmd_name": "nearest"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-5",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-executing",
+      "cmd_name": "executing"
+    },
+    {
+      "card_id": "spel-cmd-that",
+      "cmd_name": "that"
+    },
+    {
+      "card_id": "spel-cmd-reaches",
+      "cmd_name": "reaches"
+    },
+    {
+      "card_id": "spel-cmd-reaches-2",
+      "cmd_name": "reaches"
+    },
+    {
+      "card_id": "spel-cmd-each",
+      "cmd_name": "Each"
+    },
+    {
+      "card_id": "spel-cmd-line",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-communications",
+      "cmd_name": "communications"
+    },
+    {
+      "card_id": "spel-cmd-line-2",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-lines",
+      "cmd_name": "lines"
+    },
+    {
+      "card_id": "spel-cmd-communication",
+      "cmd_name": "communication"
+    },
+    {
+      "card_id": "spel-cmd-line-3",
+      "cmd_name": "line"
+    },
+    {
+      "card_id": "spel-cmd-text-2",
+      "cmd_name": "text"
+    },
+    {
+      "card_id": "spel-cmd-choose",
+      "cmd_name": "choose"
+    },
+    {
+      "card_id": "spel-cmd-point-2",
+      "cmd_name": "point"
+    },
+    {
+      "card_id": "spel-cmd-of",
+      "cmd_name": "of"
+    },
+    {
+      "card_id": "spel-cmd-registration",
+      "cmd_name": "registration"
+    },
+    {
+      "card_id": "spel-cmd-work",
+      "cmd_name": "work"
+    },
+    {
+      "card_id": "spel-cmd-returns",
+      "cmd_name": "returns"
+    },
+    {
+      "card_id": "spel-cmd-else",
+      "cmd_name": "Else"
+    },
+    {
+      "card_id": "spel-cmd-executed",
+      "cmd_name": "executed"
+    },
+    {
+      "card_id": "spel-cmd-false",
+      "cmd_name": "False."
+    },
+    {
+      "card_id": "spel-cmd-synunlock",
+      "cmd_name": "SynUnlock"
+    },
+    {
+      "card_id": "spel-cmd-executed-2",
+      "cmd_name": "executed"
+    },
+    {
+      "card_id": "spel-cmd-was",
+      "cmd_name": "was"
+    },
+    {
+      "card_id": "spel-cmd-undef",
+      "cmd_name": "#undef"
+    },
+    {
+      "card_id": "spel-cmd-communications-2",
+      "cmd_name": "communications"
+    },
+    {
+      "card_id": "spel-cmd-more",
+      "cmd_name": "more"
+    },
+    {
+      "card_id": "spel-cmd-line-4",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-end",
+      "cmd_name": "end"
+    },
+    {
+      "card_id": "spel-cmd-curdir",
+      "cmd_name": "CurDir$"
+    },
+    {
+      "card_id": "spel-cmd-curdrive",
+      "cmd_name": "CurDrive$"
+    },
+    {
+      "card_id": "spel-cmd-curdisk",
+      "cmd_name": "CurDisk$"
+    },
+    {
+      "card_id": "spel-cmd-hexadecimal",
+      "cmd_name": "hexadecimal"
+    },
+    {
+      "card_id": "spel-cmd-dimension",
+      "cmd_name": "dimension"
+    },
+    {
+      "card_id": "spel-cmd-variable",
+      "cmd_name": "Variable"
+    },
+    {
+      "card_id": "spel-cmd-getcurrentuser",
+      "cmd_name": "GetCurrentUser$"
+    },
+    {
+      "card_id": "spel-cmd-conveyor",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-system",
+      "cmd_name": "system"
+    },
+    {
+      "card_id": "spel-cmd-tracking",
+      "cmd_name": "tracking"
+    },
+    {
+      "card_id": "spel-cmd-tracking-2",
+      "cmd_name": "tracking"
+    },
+    {
+      "card_id": "spel-cmd-conveyor-2",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-conveyor-3",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-command",
+      "cmd_name": "command"
+    },
+    {
+      "card_id": "spel-cmd-accelerating",
+      "cmd_name": "accelerating"
+    },
+    {
+      "card_id": "spel-cmd-notification",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-2",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-3",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-4",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-hand-on",
+      "cmd_name": "Hand_On"
+    },
+    {
+      "card_id": "spel-cmd-electric",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-on-2",
+      "cmd_name": "Hand_On"
+    },
+    {
+      "card_id": "spel-cmd-electric-2",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-off",
+      "cmd_name": "Hand_Off"
+    },
+    {
+      "card_id": "spel-cmd-electric-3",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-off-2",
+      "cmd_name": "Hand_Off"
+    },
+    {
+      "card_id": "spel-cmd-electric-4",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-tw",
+      "cmd_name": "Hand_TW"
+    },
+    {
+      "card_id": "spel-cmd-hand-def",
+      "cmd_name": "Hand_Def"
+    },
+    {
+      "card_id": "spel-cmd-hand-type",
+      "cmd_name": "Hand_Type"
+    },
+    {
+      "card_id": "spel-cmd-hand-label",
+      "cmd_name": "Hand_Label$"
+    },
+    {
+      "card_id": "spel-cmd-hand-number",
+      "cmd_name": "Hand_Number"
+    },
+    {
+      "card_id": "spel-cmd-safety",
+      "cmd_name": "Safety"
+    },
+    {
+      "card_id": "spel-cmd-adjusts",
+      "cmd_name": "adjusts"
+    },
+    {
+      "card_id": "spel-cmd-is",
+      "cmd_name": "is"
+    },
+    {
+      "card_id": "spel-cmd-monitoring",
+      "cmd_name": "monitoring"
+    },
+    {
+      "card_id": "spel-cmd-vrt",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-technology",
+      "cmd_name": "Technology"
+    },
+    {
+      "card_id": "spel-cmd-vrt-2",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-3",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-clr",
+      "cmd_name": "VRT_Clr"
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion",
+      "cmd_name": "VRT_CPMotion"
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion-2",
+      "cmd_name": "VRT_CPMotion"
+    },
+    {
+      "card_id": "spel-cmd-vrt-def",
+      "cmd_name": "VRT_Def"
+    },
+    {
+      "card_id": "spel-cmd-vrt-description",
+      "cmd_name": "VRT_Description"
+    },
+    {
+      "card_id": "spel-cmd-vrt-description-2",
+      "cmd_name": "VRT_Description$"
+    },
+    {
+      "card_id": "spel-cmd-vrt-label",
+      "cmd_name": "VRT_Label"
+    },
+    {
+      "card_id": "spel-cmd-vrt-label-2",
+      "cmd_name": "VRT_Label$"
+    },
+    {
+      "card_id": "spel-cmd-vrt-number",
+      "cmd_name": "VRT_Number"
+    },
+    {
+      "card_id": "spel-cmd-vrt-set",
+      "cmd_name": "VRT_Set"
+    },
+    {
+      "card_id": "spel-cmd-vrt-4",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-set-2",
+      "cmd_name": "VRT_Set"
+    },
+    {
+      "card_id": "spel-cmd-define-2",
+      "cmd_name": "define"
+    }
+  ]
+}
