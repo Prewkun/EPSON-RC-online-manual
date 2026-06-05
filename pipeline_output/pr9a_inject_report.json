@@ -1,0 +1,3367 @@
+{
+  "run": "pr9a",
+  "example_headers_in_pdf": 643,
+  "unique_cmd_examples": 526,
+  "injected_count": 567,
+  "not_found_count": 129,
+  "injected": [
+    {
+      "card_id": "spel-cmd-reset",
+      "cmd_name": "Reset",
+      "example_len": 41
+    },
+    {
+      "card_id": "spel-cmd-sysconfig",
+      "cmd_name": "SysConfig",
+      "example_len": 11
+    },
+    {
+      "card_id": "spel-cmd-syserr",
+      "cmd_name": "SysErr",
+      "example_len": 699
+    },
+    {
+      "card_id": "spel-cmd-date",
+      "cmd_name": "Date",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-time",
+      "cmd_name": "Time",
+      "example_len": 48
+    },
+    {
+      "card_id": "spel-cmd-date-2",
+      "cmd_name": "Date$",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-time-2",
+      "cmd_name": "Time$",
+      "example_len": 48
+    },
+    {
+      "card_id": "spel-cmd-hour",
+      "cmd_name": "Hour",
+      "example_len": 63
+    },
+    {
+      "card_id": "spel-cmd-stat",
+      "cmd_name": "Stat",
+      "example_len": 270
+    },
+    {
+      "card_id": "spel-cmd-ctrlinfo",
+      "cmd_name": "CtrlInfo",
+      "example_len": 45
+    },
+    {
+      "card_id": "spel-cmd-robotinfo",
+      "cmd_name": "RobotInfo",
+      "example_len": 97
+    },
+    {
+      "card_id": "spel-cmd-robotinfo-2",
+      "cmd_name": "RobotInfo$",
+      "example_len": 97
+    },
+    {
+      "card_id": "spel-cmd-taskinfo",
+      "cmd_name": "TaskInfo",
+      "example_len": 100
+    },
+    {
+      "card_id": "spel-cmd-taskinfo-2",
+      "cmd_name": "TaskInfo$",
+      "example_len": 100
+    },
+    {
+      "card_id": "spel-cmd-dispdev",
+      "cmd_name": "DispDev",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-estopon",
+      "cmd_name": "EStopOn",
+      "example_len": 916
+    },
+    {
+      "card_id": "spel-cmd-ctrldev",
+      "cmd_name": "CtrlDev",
+      "example_len": 48
+    },
+    {
+      "card_id": "spel-cmd-cls",
+      "cmd_name": "Cls",
+      "example_len": 207
+    },
+    {
+      "card_id": "spel-cmd-toff",
+      "cmd_name": "Toff",
+      "example_len": 223
+    },
+    {
+      "card_id": "spel-cmd-ton",
+      "cmd_name": "Ton",
+      "example_len": 38
+    },
+    {
+      "card_id": "spel-cmd-safetyon",
+      "cmd_name": "SafetyOn",
+      "example_len": 561
+    },
+    {
+      "card_id": "spel-cmd-eval",
+      "cmd_name": "Eval",
+      "example_len": 304
+    },
+    {
+      "card_id": "spel-cmd-teachon",
+      "cmd_name": "TeachOn",
+      "example_len": 317
+    },
+    {
+      "card_id": "spel-cmd-windowsstatus",
+      "cmd_name": "WindowsStatus",
+      "example_len": 60
+    },
+    {
+      "card_id": "spel-cmd-history",
+      "cmd_name": "History",
+      "example_len": 43
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingset",
+      "cmd_name": "AIO_TrackingSet",
+      "example_len": 777
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingstart",
+      "cmd_name": "AIO_TrackingStart",
+      "example_len": 865
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingend",
+      "cmd_name": "AIO_TrackingEnd",
+      "example_len": 888
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingon",
+      "cmd_name": "AIO_TrackingOn",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-calib",
+      "cmd_name": "Calib",
+      "example_len": 343
+    },
+    {
+      "card_id": "spel-cmd-calpls",
+      "cmd_name": "CalPls",
+      "example_len": 238
+    },
+    {
+      "card_id": "spel-cmd-hofs",
+      "cmd_name": "Hofs",
+      "example_len": 310
+    },
+    {
+      "card_id": "spel-cmd-jointaccuracy",
+      "cmd_name": "JointAccuracy",
+      "example_len": 439
+    },
+    {
+      "card_id": "spel-cmd-hofsjointaccuracy",
+      "cmd_name": "HofsJointAccuracy",
+      "example_len": 507
+    },
+    {
+      "card_id": "spel-cmd-mcal",
+      "cmd_name": "MCal",
+      "example_len": 74
+    },
+    {
+      "card_id": "spel-cmd-mcalcomplete",
+      "cmd_name": "MCalComplete",
+      "example_len": 35
+    },
+    {
+      "card_id": "spel-cmd-mcordr",
+      "cmd_name": "MCordr",
+      "example_len": 549
+    },
+    {
+      "card_id": "spel-cmd-power",
+      "cmd_name": "Power",
+      "example_len": 387
+    },
+    {
+      "card_id": "spel-cmd-motor",
+      "cmd_name": "Motor",
+      "example_len": 79
+    },
+    {
+      "card_id": "spel-cmd-mhour",
+      "cmd_name": "MHour",
+      "example_len": 34
+    },
+    {
+      "card_id": "spel-cmd-sfree",
+      "cmd_name": "SFree",
+      "example_len": 432
+    },
+    {
+      "card_id": "spel-cmd-slock",
+      "cmd_name": "SLock",
+      "example_len": 423
+    },
+    {
+      "card_id": "spel-cmd-syncrobots",
+      "cmd_name": "SyncRobots",
+      "example_len": 345
+    },
+    {
+      "card_id": "spel-cmd-jump",
+      "cmd_name": "Jump",
+      "example_len": 1272
+    },
+    {
+      "card_id": "spel-cmd-jump3",
+      "cmd_name": "Jump3",
+      "example_len": 449
+    },
+    {
+      "card_id": "spel-cmd-jumptlz",
+      "cmd_name": "JumpTLZ",
+      "example_len": 159
+    },
+    {
+      "card_id": "spel-cmd-arch",
+      "cmd_name": "Arch",
+      "example_len": 284
+    },
+    {
+      "card_id": "spel-cmd-limz",
+      "cmd_name": "LimZ",
+      "example_len": 257
+    },
+    {
+      "card_id": "spel-cmd-limzmargin",
+      "cmd_name": "LimZMargin",
+      "example_len": 91
+    },
+    {
+      "card_id": "spel-cmd-sense",
+      "cmd_name": "Sense",
+      "example_len": 473
+    },
+    {
+      "card_id": "spel-cmd-js",
+      "cmd_name": "JS",
+      "example_len": 146
+    },
+    {
+      "card_id": "spel-cmd-jt",
+      "cmd_name": "JT",
+      "example_len": 152
+    },
+    {
+      "card_id": "spel-cmd-go",
+      "cmd_name": "Go",
+      "example_len": 1371
+    },
+    {
+      "card_id": "spel-cmd-pass",
+      "cmd_name": "Pass",
+      "example_len": 213
+    },
+    {
+      "card_id": "spel-cmd-pulse",
+      "cmd_name": "Pulse",
+      "example_len": 329
+    },
+    {
+      "card_id": "spel-cmd-bgo",
+      "cmd_name": "BGo",
+      "example_len": 696
+    },
+    {
+      "card_id": "spel-cmd-bmove",
+      "cmd_name": "BMove",
+      "example_len": 735
+    },
+    {
+      "card_id": "spel-cmd-tgo",
+      "cmd_name": "TGo",
+      "example_len": 582
+    },
+    {
+      "card_id": "spel-cmd-tmove",
+      "cmd_name": "TMove",
+      "example_len": 617
+    },
+    {
+      "card_id": "spel-cmd-till",
+      "cmd_name": "Till",
+      "example_len": 380
+    },
+    {
+      "card_id": "spel-cmd-tillon",
+      "cmd_name": "TillOn",
+      "example_len": 92
+    },
+    {
+      "card_id": "spel-cmd-speed",
+      "cmd_name": "Speed",
+      "example_len": 416
+    },
+    {
+      "card_id": "spel-cmd-accel",
+      "cmd_name": "Accel",
+      "example_len": 833
+    },
+    {
+      "card_id": "spel-cmd-speedfactor",
+      "cmd_name": "SpeedFactor",
+      "example_len": 187
+    },
+    {
+      "card_id": "spel-cmd-inertia",
+      "cmd_name": "Inertia",
+      "example_len": 15
+    },
+    {
+      "card_id": "spel-cmd-weight",
+      "cmd_name": "Weight",
+      "example_len": 261
+    },
+    {
+      "card_id": "spel-cmd-move",
+      "cmd_name": "Move",
+      "example_len": 1307
+    },
+    {
+      "card_id": "spel-cmd-cvmove",
+      "cmd_name": "CVMove",
+      "example_len": 364
+    },
+    {
+      "card_id": "spel-cmd-speeds",
+      "cmd_name": "SpeedS",
+      "example_len": 497
+    },
+    {
+      "card_id": "spel-cmd-accels",
+      "cmd_name": "AccelS",
+      "example_len": 503
+    },
+    {
+      "card_id": "spel-cmd-speedr",
+      "cmd_name": "SpeedR",
+      "example_len": 10
+    },
+    {
+      "card_id": "spel-cmd-accelr",
+      "cmd_name": "AccelR",
+      "example_len": 15
+    },
+    {
+      "card_id": "spel-cmd-accelmax",
+      "cmd_name": "AccelMax",
+      "example_len": 114
+    },
+    {
+      "card_id": "spel-cmd-brake",
+      "cmd_name": "Brake",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-home",
+      "cmd_name": "Home",
+      "example_len": 193
+    },
+    {
+      "card_id": "spel-cmd-homeclr",
+      "cmd_name": "HomeClr",
+      "example_len": 113
+    },
+    {
+      "card_id": "spel-cmd-homedef",
+      "cmd_name": "HomeDef",
+      "example_len": 229
+    },
+    {
+      "card_id": "spel-cmd-homeset",
+      "cmd_name": "HomeSet",
+      "example_len": 297
+    },
+    {
+      "card_id": "spel-cmd-hordr",
+      "cmd_name": "Hordr",
+      "example_len": 578
+    },
+    {
+      "card_id": "spel-cmd-inpos",
+      "cmd_name": "InPos",
+      "example_len": 263
+    },
+    {
+      "card_id": "spel-cmd-curpos",
+      "cmd_name": "CurPos",
+      "example_len": 131
+    },
+    {
+      "card_id": "spel-cmd-tcpspeed",
+      "cmd_name": "TCPSpeed",
+      "example_len": 176
+    },
+    {
+      "card_id": "spel-cmd-pallet",
+      "cmd_name": "Pallet",
+      "example_len": 414
+    },
+    {
+      "card_id": "spel-cmd-palletclr",
+      "cmd_name": "PalletClr",
+      "example_len": 11
+    },
+    {
+      "card_id": "spel-cmd-fine",
+      "cmd_name": "Fine",
+      "example_len": 237
+    },
+    {
+      "card_id": "spel-cmd-finedist",
+      "cmd_name": "FineDist",
+      "example_len": 216
+    },
+    {
+      "card_id": "spel-cmd-finestatus",
+      "cmd_name": "FineStatus",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-qp",
+      "cmd_name": "QP",
+      "example_len": 207
+    },
+    {
+      "card_id": "spel-cmd-qpdecelr",
+      "cmd_name": "QPDecelR",
+      "example_len": 143
+    },
+    {
+      "card_id": "spel-cmd-qpdecels",
+      "cmd_name": "QPDecelS",
+      "example_len": 144
+    },
+    {
+      "card_id": "spel-cmd-cp",
+      "cmd_name": "CP",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-box",
+      "cmd_name": "Box",
+      "example_len": 448
+    },
+    {
+      "card_id": "spel-cmd-boxclr",
+      "cmd_name": "BoxClr",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-boxdef",
+      "cmd_name": "BoxDef",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-plane",
+      "cmd_name": "Plane",
+      "example_len": 520
+    },
+    {
+      "card_id": "spel-cmd-planeclr",
+      "cmd_name": "PlaneClr",
+      "example_len": 10
+    },
+    {
+      "card_id": "spel-cmd-planedef",
+      "cmd_name": "PlaneDef",
+      "example_len": 180
+    },
+    {
+      "card_id": "spel-cmd-insidebox",
+      "cmd_name": "InsideBox",
+      "example_len": 189
+    },
+    {
+      "card_id": "spel-cmd-insideplane",
+      "cmd_name": "InsidePlane",
+      "example_len": 192
+    },
+    {
+      "card_id": "spel-cmd-getrobotinsidebox",
+      "cmd_name": "GetRobotInsideBox",
+      "example_len": 698
+    },
+    {
+      "card_id": "spel-cmd-getrobotinsideplane",
+      "cmd_name": "GetRobotInsidePlane",
+      "example_len": 710
+    },
+    {
+      "card_id": "spel-cmd-find",
+      "cmd_name": "Find",
+      "example_len": 105
+    },
+    {
+      "card_id": "spel-cmd-findpos",
+      "cmd_name": "FindPos",
+      "example_len": 105
+    },
+    {
+      "card_id": "spel-cmd-posfound",
+      "cmd_name": "PosFound",
+      "example_len": 112
+    },
+    {
+      "card_id": "spel-cmd-waitpos",
+      "cmd_name": "WaitPos",
+      "example_len": 80
+    },
+    {
+      "card_id": "spel-cmd-robot",
+      "cmd_name": "Robot",
+      "example_len": 84
+    },
+    {
+      "card_id": "spel-cmd-robotmodel",
+      "cmd_name": "RobotModel$",
+      "example_len": 40
+    },
+    {
+      "card_id": "spel-cmd-robotname",
+      "cmd_name": "RobotName$",
+      "example_len": 38
+    },
+    {
+      "card_id": "spel-cmd-robotserial",
+      "cmd_name": "RobotSerial$",
+      "example_len": 49
+    },
+    {
+      "card_id": "spel-cmd-robottype",
+      "cmd_name": "RobotType",
+      "example_len": 55
+    },
+    {
+      "card_id": "spel-cmd-targetok",
+      "cmd_name": "TargetOK",
+      "example_len": 79
+    },
+    {
+      "card_id": "spel-cmd-rotok",
+      "cmd_name": "ROTOK",
+      "example_len": 55
+    },
+    {
+      "card_id": "spel-cmd-jrange",
+      "cmd_name": "JRange",
+      "example_len": 157
+    },
+    {
+      "card_id": "spel-cmd-range",
+      "cmd_name": "Range",
+      "example_len": 229
+    },
+    {
+      "card_id": "spel-cmd-xylim",
+      "cmd_name": "XYLim",
+      "example_len": 161
+    },
+    {
+      "card_id": "spel-cmd-xylimclr",
+      "cmd_name": "XYLimClr",
+      "example_len": 117
+    },
+    {
+      "card_id": "spel-cmd-xylimdef",
+      "cmd_name": "XYLimDef",
+      "example_len": 117
+    },
+    {
+      "card_id": "spel-cmd-xylimmode",
+      "cmd_name": "XYLimMode",
+      "example_len": 76529
+    },
+    {
+      "card_id": "spel-cmd-xy",
+      "cmd_name": "XY",
+      "example_len": 31
+    },
+    {
+      "card_id": "spel-cmd-dist",
+      "cmd_name": "Dist",
+      "example_len": 37
+    },
+    {
+      "card_id": "spel-cmd-difftoolorientation",
+      "cmd_name": "DiffToolOrientation",
+      "example_len": 116
+    },
+    {
+      "card_id": "spel-cmd-diffpoint",
+      "cmd_name": "DiffPoint",
+      "example_len": 196
+    },
+    {
+      "card_id": "spel-cmd-ptpboost",
+      "cmd_name": "PTPBoost",
+      "example_len": 19
+    },
+    {
+      "card_id": "spel-cmd-ptpboostok",
+      "cmd_name": "PTPBoostOK",
+      "example_len": 46
+    },
+    {
+      "card_id": "spel-cmd-ptptime",
+      "cmd_name": "PTPTime",
+      "example_len": 161
+    },
+    {
+      "card_id": "spel-cmd-cx",
+      "cmd_name": "CX",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cy",
+      "cmd_name": "CY",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cz",
+      "cmd_name": "CZ",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cu",
+      "cmd_name": "CU",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cv",
+      "cmd_name": "CV",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cw",
+      "cmd_name": "CW",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cr",
+      "cmd_name": "CR",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cs",
+      "cmd_name": "CS",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-ct",
+      "cmd_name": "CT",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-pls",
+      "cmd_name": "Pls",
+      "example_len": 340
+    },
+    {
+      "card_id": "spel-cmd-agl",
+      "cmd_name": "Agl",
+      "example_len": 121
+    },
+    {
+      "card_id": "spel-cmd-pagl",
+      "cmd_name": "PAgl",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-ja",
+      "cmd_name": "JA",
+      "example_len": 75
+    },
+    {
+      "card_id": "spel-cmd-agltopls",
+      "cmd_name": "AglToPls",
+      "example_len": 30
+    },
+    {
+      "card_id": "spel-cmd-degtorad",
+      "cmd_name": "DegToRad",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-radtodeg",
+      "cmd_name": "RadToDeg",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-joint",
+      "cmd_name": "Joint",
+      "example_len": 75
+    },
+    {
+      "card_id": "spel-cmd-jtran",
+      "cmd_name": "JTran",
+      "example_len": 11
+    },
+    {
+      "card_id": "spel-cmd-ptran",
+      "cmd_name": "PTran",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-realpls",
+      "cmd_name": "RealPls",
+      "example_len": 123
+    },
+    {
+      "card_id": "spel-cmd-realpos",
+      "cmd_name": "RealPos",
+      "example_len": 52
+    },
+    {
+      "card_id": "spel-cmd-realaccel",
+      "cmd_name": "RealAccel",
+      "example_len": 339
+    },
+    {
+      "card_id": "spel-cmd-ppls",
+      "cmd_name": "PPls",
+      "example_len": 35
+    },
+    {
+      "card_id": "spel-cmd-ljm",
+      "cmd_name": "LJM",
+      "example_len": 1192
+    },
+    {
+      "card_id": "spel-cmd-autoljm",
+      "cmd_name": "AutoLJM",
+      "example_len": 34
+    },
+    {
+      "card_id": "spel-cmd-autoljm-2",
+      "cmd_name": "AutoLJM",
+      "example_len": 34
+    },
+    {
+      "card_id": "spel-cmd-autoorientationflag",
+      "cmd_name": "AutoOrientationFlag",
+      "example_len": 304
+    },
+    {
+      "card_id": "spel-cmd-autoorientationflag-2",
+      "cmd_name": "AutoOrientationFlag",
+      "example_len": 304
+    },
+    {
+      "card_id": "spel-cmd-avoidsingularity",
+      "cmd_name": "AvoidSingularity",
+      "example_len": 133
+    },
+    {
+      "card_id": "spel-cmd-avoidsingularity-2",
+      "cmd_name": "AvoidSingularity",
+      "example_len": 133
+    },
+    {
+      "card_id": "spel-cmd-singularityangle",
+      "cmd_name": "SingularityAngle",
+      "example_len": 74
+    },
+    {
+      "card_id": "spel-cmd-singularityangle-2",
+      "cmd_name": "SingularityAngle",
+      "example_len": 74
+    },
+    {
+      "card_id": "spel-cmd-singularityspeed",
+      "cmd_name": "SingularitySpeed",
+      "example_len": 78
+    },
+    {
+      "card_id": "spel-cmd-singularityspeed-2",
+      "cmd_name": "SingularitySpeed",
+      "example_len": 78
+    },
+    {
+      "card_id": "spel-cmd-singularitydist",
+      "cmd_name": "SingularityDist",
+      "example_len": 73
+    },
+    {
+      "card_id": "spel-cmd-singularitydist-2",
+      "cmd_name": "SingularityDist",
+      "example_len": 73
+    },
+    {
+      "card_id": "spel-cmd-abortmotion",
+      "cmd_name": "AbortMotion",
+      "example_len": 598
+    },
+    {
+      "card_id": "spel-cmd-align",
+      "cmd_name": "Align",
+      "example_len": 81
+    },
+    {
+      "card_id": "spel-cmd-alignecp",
+      "cmd_name": "AlignECP",
+      "example_len": 54
+    },
+    {
+      "card_id": "spel-cmd-softcp",
+      "cmd_name": "SoftCP",
+      "example_len": 36
+    },
+    {
+      "card_id": "spel-cmd-softcp-2",
+      "cmd_name": "SoftCP",
+      "example_len": 36
+    },
+    {
+      "card_id": "spel-cmd-here",
+      "cmd_name": "Here",
+      "example_len": 17
+    },
+    {
+      "card_id": "spel-cmd-where",
+      "cmd_name": "Where",
+      "example_len": 579
+    },
+    {
+      "card_id": "spel-cmd-performmode",
+      "cmd_name": "PerformMode",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-performmode-2",
+      "cmd_name": "PerformMode",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-vsd",
+      "cmd_name": "VSD",
+      "example_len": 90
+    },
+    {
+      "card_id": "spel-cmd-vsd-2",
+      "cmd_name": "VSD",
+      "example_len": 90
+    },
+    {
+      "card_id": "spel-cmd-cp-offset",
+      "cmd_name": "CP_Offset",
+      "example_len": 42
+    },
+    {
+      "card_id": "spel-cmd-cp-offset-2",
+      "cmd_name": "CP_Offset",
+      "example_len": 42
+    },
+    {
+      "card_id": "spel-cmd-avgspeedclear",
+      "cmd_name": "AvgSpeedClear",
+      "example_len": 522
+    },
+    {
+      "card_id": "spel-cmd-avgspeed",
+      "cmd_name": "AvgSpeed",
+      "example_len": 109
+    },
+    {
+      "card_id": "spel-cmd-avgspeed-2",
+      "cmd_name": "AvgSpeed",
+      "example_len": 109
+    },
+    {
+      "card_id": "spel-cmd-peakspeedclear",
+      "cmd_name": "PeakSpeedClear",
+      "example_len": 517
+    },
+    {
+      "card_id": "spel-cmd-peakspeed",
+      "cmd_name": "PeakSpeed",
+      "example_len": 117
+    },
+    {
+      "card_id": "spel-cmd-peakspeed-2",
+      "cmd_name": "PeakSpeed",
+      "example_len": 117
+    },
+    {
+      "card_id": "spel-cmd-tcspeed",
+      "cmd_name": "TCSpeed",
+      "example_len": 849
+    },
+    {
+      "card_id": "spel-cmd-tclim",
+      "cmd_name": "TCLim",
+      "example_len": 554
+    },
+    {
+      "card_id": "spel-cmd-realtorque",
+      "cmd_name": "RealTorque",
+      "example_len": 71
+    },
+    {
+      "card_id": "spel-cmd-atclr",
+      "cmd_name": "ATCLR",
+      "example_len": 466
+    },
+    {
+      "card_id": "spel-cmd-atrq",
+      "cmd_name": "ATRQ",
+      "example_len": 76
+    },
+    {
+      "card_id": "spel-cmd-ptclr",
+      "cmd_name": "PTCLR",
+      "example_len": 456
+    },
+    {
+      "card_id": "spel-cmd-ptrq",
+      "cmd_name": "PTRQ",
+      "example_len": 76
+    },
+    {
+      "card_id": "spel-cmd-olaccel",
+      "cmd_name": "OLAccel",
+      "example_len": 225
+    },
+    {
+      "card_id": "spel-cmd-olrate",
+      "cmd_name": "OLRate",
+      "example_len": 221
+    },
+    {
+      "card_id": "spel-cmd-limittorque",
+      "cmd_name": "LimitTorque",
+      "example_len": 278
+    },
+    {
+      "card_id": "spel-cmd-limittorque-2",
+      "cmd_name": "LimitTorque",
+      "example_len": 278
+    },
+    {
+      "card_id": "spel-cmd-limittorquelp",
+      "cmd_name": "LimitTorqueLP",
+      "example_len": 291
+    },
+    {
+      "card_id": "spel-cmd-limittorquelp-2",
+      "cmd_name": "LimitTorqueLP",
+      "example_len": 291
+    },
+    {
+      "card_id": "spel-cmd-limittorquestop",
+      "cmd_name": "LimitTorqueStop",
+      "example_len": 360
+    },
+    {
+      "card_id": "spel-cmd-limittorquestop-2",
+      "cmd_name": "LimitTorqueStop",
+      "example_len": 360
+    },
+    {
+      "card_id": "spel-cmd-limittorquestoplp",
+      "cmd_name": "LimitTorqueStopLP",
+      "example_len": 378
+    },
+    {
+      "card_id": "spel-cmd-limittorquestoplp-2",
+      "cmd_name": "LimitTorqueStopLP",
+      "example_len": 378
+    },
+    {
+      "card_id": "spel-cmd-on",
+      "cmd_name": "On",
+      "example_len": 451
+    },
+    {
+      "card_id": "spel-cmd-off",
+      "cmd_name": "Off",
+      "example_len": 454
+    },
+    {
+      "card_id": "spel-cmd-oport",
+      "cmd_name": "Oport",
+      "example_len": 650
+    },
+    {
+      "card_id": "spel-cmd-sw",
+      "cmd_name": "Sw",
+      "example_len": 417
+    },
+    {
+      "card_id": "spel-cmd-in",
+      "cmd_name": "In",
+      "example_len": 1426
+    },
+    {
+      "card_id": "spel-cmd-inw",
+      "cmd_name": "InW",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-inbcd",
+      "cmd_name": "InBCD",
+      "example_len": 202
+    },
+    {
+      "card_id": "spel-cmd-out",
+      "cmd_name": "Out",
+      "example_len": 586
+    },
+    {
+      "card_id": "spel-cmd-outw",
+      "cmd_name": "OutW",
+      "example_len": 10
+    },
+    {
+      "card_id": "spel-cmd-opbcd",
+      "cmd_name": "OpBCD",
+      "example_len": 543
+    },
+    {
+      "card_id": "spel-cmd-memon",
+      "cmd_name": "MemOn",
+      "example_len": 1008
+    },
+    {
+      "card_id": "spel-cmd-memoff",
+      "cmd_name": "MemOff",
+      "example_len": 993
+    },
+    {
+      "card_id": "spel-cmd-memsw",
+      "cmd_name": "MemSw",
+      "example_len": 839
+    },
+    {
+      "card_id": "spel-cmd-memin",
+      "cmd_name": "MemIn",
+      "example_len": 643
+    },
+    {
+      "card_id": "spel-cmd-memout",
+      "cmd_name": "MemOut",
+      "example_len": 613
+    },
+    {
+      "card_id": "spel-cmd-meminw",
+      "cmd_name": "MemInW",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-memoutw",
+      "cmd_name": "MemOutW",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-wait",
+      "cmd_name": "Wait",
+      "example_len": 1319
+    },
+    {
+      "card_id": "spel-cmd-tmout",
+      "cmd_name": "TMOut",
+      "example_len": 26
+    },
+    {
+      "card_id": "spel-cmd-tw",
+      "cmd_name": "Tw",
+      "example_len": 149
+    },
+    {
+      "card_id": "spel-cmd-input",
+      "cmd_name": "Input",
+      "example_len": 477
+    },
+    {
+      "card_id": "spel-cmd-print",
+      "cmd_name": "Print",
+      "example_len": 315
+    },
+    {
+      "card_id": "spel-cmd-input-2",
+      "cmd_name": "Input",
+      "example_len": 477
+    },
+    {
+      "card_id": "spel-cmd-print-2",
+      "cmd_name": "Print",
+      "example_len": 315
+    },
+    {
+      "card_id": "spel-cmd-lof",
+      "cmd_name": "Lof",
+      "example_len": 132
+    },
+    {
+      "card_id": "spel-cmd-setin",
+      "cmd_name": "SetIn",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-setinw",
+      "cmd_name": "SetInW",
+      "example_len": 52
+    },
+    {
+      "card_id": "spel-cmd-setsw",
+      "cmd_name": "SetSw",
+      "example_len": 46
+    },
+    {
+      "card_id": "spel-cmd-iolabel",
+      "cmd_name": "IOLabel$",
+      "example_len": 75
+    },
+    {
+      "card_id": "spel-cmd-ionumber",
+      "cmd_name": "IONumber",
+      "example_len": 106
+    },
+    {
+      "card_id": "spel-cmd-iodef",
+      "cmd_name": "IODef",
+      "example_len": 142
+    },
+    {
+      "card_id": "spel-cmd-opencom",
+      "cmd_name": "OpenCom",
+      "example_len": 93
+    },
+    {
+      "card_id": "spel-cmd-opencom-2",
+      "cmd_name": "OpenCom",
+      "example_len": 93
+    },
+    {
+      "card_id": "spel-cmd-closecom",
+      "cmd_name": "CloseCom",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-setcom",
+      "cmd_name": "SetCom",
+      "example_len": 61
+    },
+    {
+      "card_id": "spel-cmd-chkcom",
+      "cmd_name": "ChkCom",
+      "example_len": 37
+    },
+    {
+      "card_id": "spel-cmd-opennet",
+      "cmd_name": "OpenNet",
+      "example_len": 434
+    },
+    {
+      "card_id": "spel-cmd-opennet-2",
+      "cmd_name": "OpenNet",
+      "example_len": 434
+    },
+    {
+      "card_id": "spel-cmd-outreal",
+      "cmd_name": "OutReal",
+      "example_len": 17
+    },
+    {
+      "card_id": "spel-cmd-closenet",
+      "cmd_name": "CloseNet",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-setnet",
+      "cmd_name": "SetNet",
+      "example_len": 47
+    },
+    {
+      "card_id": "spel-cmd-chknet",
+      "cmd_name": "ChkNet",
+      "example_len": 39
+    },
+    {
+      "card_id": "spel-cmd-waitnet",
+      "cmd_name": "WaitNet",
+      "example_len": 434
+    },
+    {
+      "card_id": "spel-cmd-read",
+      "cmd_name": "Read",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-readbin",
+      "cmd_name": "ReadBin",
+      "example_len": 184
+    },
+    {
+      "card_id": "spel-cmd-write",
+      "cmd_name": "Write",
+      "example_len": 64
+    },
+    {
+      "card_id": "spel-cmd-writebin",
+      "cmd_name": "WriteBin",
+      "example_len": 119
+    },
+    {
+      "card_id": "spel-cmd-inputbox",
+      "cmd_name": "InputBox",
+      "example_len": 564
+    },
+    {
+      "card_id": "spel-cmd-msgbox",
+      "cmd_name": "MsgBox",
+      "example_len": 893
+    },
+    {
+      "card_id": "spel-cmd-rundialog",
+      "cmd_name": "RunDialog",
+      "example_len": 136
+    },
+    {
+      "card_id": "spel-cmd-latchenable",
+      "cmd_name": "LatchEnable",
+      "example_len": 240
+    },
+    {
+      "card_id": "spel-cmd-latchstate",
+      "cmd_name": "LatchState",
+      "example_len": 240
+    },
+    {
+      "card_id": "spel-cmd-latchpos",
+      "cmd_name": "LatchPos",
+      "example_len": 1115
+    },
+    {
+      "card_id": "spel-cmd-setlatch",
+      "cmd_name": "SetLatch",
+      "example_len": 789
+    },
+    {
+      "card_id": "spel-cmd-aio-in",
+      "cmd_name": "AIO_In",
+      "example_len": 296
+    },
+    {
+      "card_id": "spel-cmd-aio-out",
+      "cmd_name": "AIO_Out",
+      "example_len": 61
+    },
+    {
+      "card_id": "spel-cmd-aio-out-2",
+      "cmd_name": "AIO_Out",
+      "example_len": 61
+    },
+    {
+      "card_id": "spel-cmd-aio-outw",
+      "cmd_name": "AIO_OutW",
+      "example_len": 18
+    },
+    {
+      "card_id": "spel-cmd-aio-outw-2",
+      "cmd_name": "AIO_OutW",
+      "example_len": 18
+    },
+    {
+      "card_id": "spel-cmd-aio-set",
+      "cmd_name": "AIO_Set",
+      "example_len": 293
+    },
+    {
+      "card_id": "spel-cmd-aio-set-2",
+      "cmd_name": "AIO_Set",
+      "example_len": 293
+    },
+    {
+      "card_id": "spel-cmd-on-2",
+      "cmd_name": "on",
+      "example_len": 451
+    },
+    {
+      "card_id": "spel-cmd-clearpoints",
+      "cmd_name": "ClearPoints",
+      "example_len": 311
+    },
+    {
+      "card_id": "spel-cmd-loadpoints",
+      "cmd_name": "LoadPoints",
+      "example_len": 220
+    },
+    {
+      "card_id": "spel-cmd-savepoints",
+      "cmd_name": "SavePoints",
+      "example_len": 80
+    },
+    {
+      "card_id": "spel-cmd-importpoints",
+      "cmd_name": "ImportPoints",
+      "example_len": 102
+    },
+    {
+      "card_id": "spel-cmd-exportpoints",
+      "cmd_name": "ExportPoints",
+      "example_len": 175
+    },
+    {
+      "card_id": "spel-cmd-pdef",
+      "cmd_name": "PDef",
+      "example_len": 118
+    },
+    {
+      "card_id": "spel-cmd-pdel",
+      "cmd_name": "PDel",
+      "example_len": 219
+    },
+    {
+      "card_id": "spel-cmd-plabel",
+      "cmd_name": "PLabel",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-plabel-2",
+      "cmd_name": "PLabel$",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-pnumber",
+      "cmd_name": "PNumber",
+      "example_len": 122
+    },
+    {
+      "card_id": "spel-cmd-plist",
+      "cmd_name": "PList",
+      "example_len": 799
+    },
+    {
+      "card_id": "spel-cmd-plocal",
+      "cmd_name": "PLocal",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-pdescription",
+      "cmd_name": "PDescription",
+      "example_len": 25
+    },
+    {
+      "card_id": "spel-cmd-pdescription-2",
+      "cmd_name": "PDescription$",
+      "example_len": 25
+    },
+    {
+      "card_id": "spel-cmd-workque-add",
+      "cmd_name": "WorkQue_Add",
+      "example_len": 243
+    },
+    {
+      "card_id": "spel-cmd-workque-autoremove",
+      "cmd_name": "WorkQue_AutoRemove",
+      "example_len": 26
+    },
+    {
+      "card_id": "spel-cmd-workque-autoremove-2",
+      "cmd_name": "WorkQue_AutoRemove",
+      "example_len": 26
+    },
+    {
+      "card_id": "spel-cmd-workque-get",
+      "cmd_name": "WorkQue_Get",
+      "example_len": 136
+    },
+    {
+      "card_id": "spel-cmd-workque-len",
+      "cmd_name": "WorkQue_Len",
+      "example_len": 195
+    },
+    {
+      "card_id": "spel-cmd-workque-list",
+      "cmd_name": "WorkQue_List",
+      "example_len": 369
+    },
+    {
+      "card_id": "spel-cmd-workque-reject",
+      "cmd_name": "WorkQue_Reject",
+      "example_len": 21
+    },
+    {
+      "card_id": "spel-cmd-workque-reject-2",
+      "cmd_name": "WorkQue_Reject",
+      "example_len": 21
+    },
+    {
+      "card_id": "spel-cmd-workque-remove",
+      "cmd_name": "WorkQue_Remove",
+      "example_len": 123
+    },
+    {
+      "card_id": "spel-cmd-workque-sort",
+      "cmd_name": "WorkQue_Sort",
+      "example_len": 30
+    },
+    {
+      "card_id": "spel-cmd-workque-sort-2",
+      "cmd_name": "WorkQue_Sort",
+      "example_len": 30
+    },
+    {
+      "card_id": "spel-cmd-workque-userdata",
+      "cmd_name": "WorkQue_UserData",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-workque-userdata-2",
+      "cmd_name": "WorkQue_UserData",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-areacorrection",
+      "cmd_name": "AreaCorrection",
+      "example_len": 625
+    },
+    {
+      "card_id": "spel-cmd-areacorrectionclr",
+      "cmd_name": "AreaCorrectionClr",
+      "example_len": 19
+    },
+    {
+      "card_id": "spel-cmd-areacorrectiondef",
+      "cmd_name": "AreaCorrectionDef",
+      "example_len": 204
+    },
+    {
+      "card_id": "spel-cmd-areacorrectioninv",
+      "cmd_name": "AreaCorrectionInv",
+      "example_len": 600
+    },
+    {
+      "card_id": "spel-cmd-areacorrectionoffset",
+      "cmd_name": "AreaCorrectionOffset",
+      "example_len": 220
+    },
+    {
+      "card_id": "spel-cmd-areacorrectionset",
+      "cmd_name": "AreaCorrectionSet",
+      "example_len": 664
+    },
+    {
+      "card_id": "spel-cmd-arm",
+      "cmd_name": "Arm",
+      "example_len": 479
+    },
+    {
+      "card_id": "spel-cmd-armset",
+      "cmd_name": "ArmSet",
+      "example_len": 535
+    },
+    {
+      "card_id": "spel-cmd-armdef",
+      "cmd_name": "ArmDef",
+      "example_len": 220
+    },
+    {
+      "card_id": "spel-cmd-armclr",
+      "cmd_name": "ArmClr",
+      "example_len": 8
+    },
+    {
+      "card_id": "spel-cmd-armcalib",
+      "cmd_name": "ArmCalib",
+      "example_len": 87
+    },
+    {
+      "card_id": "spel-cmd-armcalibclr",
+      "cmd_name": "ArmCalibClr",
+      "example_len": 11
+    },
+    {
+      "card_id": "spel-cmd-armcalibdef",
+      "cmd_name": "ArmCalibDef",
+      "example_len": 185
+    },
+    {
+      "card_id": "spel-cmd-armcalibset",
+      "cmd_name": "ArmCalibSet",
+      "example_len": 96
+    },
+    {
+      "card_id": "spel-cmd-tool",
+      "cmd_name": "Tool",
+      "example_len": 505
+    },
+    {
+      "card_id": "spel-cmd-tlset",
+      "cmd_name": "TLSet",
+      "example_len": 515
+    },
+    {
+      "card_id": "spel-cmd-tldef",
+      "cmd_name": "TLDef",
+      "example_len": 182
+    },
+    {
+      "card_id": "spel-cmd-ecp",
+      "cmd_name": "ECP",
+      "example_len": 32
+    },
+    {
+      "card_id": "spel-cmd-ecpset",
+      "cmd_name": "ECPSet",
+      "example_len": 37
+    },
+    {
+      "card_id": "spel-cmd-ecpdef",
+      "cmd_name": "ECPDef",
+      "example_len": 176
+    },
+    {
+      "card_id": "spel-cmd-ecpclr",
+      "cmd_name": "ECPClr",
+      "example_len": 8
+    },
+    {
+      "card_id": "spel-cmd-base",
+      "cmd_name": "Base",
+      "example_len": 103
+    },
+    {
+      "card_id": "spel-cmd-local",
+      "cmd_name": "Local",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-localdef",
+      "cmd_name": "LocalDef",
+      "example_len": 180
+    },
+    {
+      "card_id": "spel-cmd-localclr",
+      "cmd_name": "LocalClr",
+      "example_len": 10
+    },
+    {
+      "card_id": "spel-cmd-elbow",
+      "cmd_name": "Elbow",
+      "example_len": 165
+    },
+    {
+      "card_id": "spel-cmd-hand",
+      "cmd_name": "Hand",
+      "example_len": 161
+    },
+    {
+      "card_id": "spel-cmd-wrist",
+      "cmd_name": "Wrist",
+      "example_len": 141
+    },
+    {
+      "card_id": "spel-cmd-j4flag",
+      "cmd_name": "J4Flag",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-j6flag",
+      "cmd_name": "J6Flag",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-j1flag",
+      "cmd_name": "J1Flag",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-j2flag",
+      "cmd_name": "J2Flag",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-j1angle",
+      "cmd_name": "J1Angle",
+      "example_len": 40
+    },
+    {
+      "card_id": "spel-cmd-j4angle",
+      "cmd_name": "J4Angle",
+      "example_len": 40
+    },
+    {
+      "card_id": "spel-cmd-vxcalib",
+      "cmd_name": "VxCalib",
+      "example_len": 447
+    },
+    {
+      "card_id": "spel-cmd-vxtrans",
+      "cmd_name": "VxTrans",
+      "example_len": 38
+    },
+    {
+      "card_id": "spel-cmd-vxcalinfo",
+      "cmd_name": "VxCalInfo",
+      "example_len": 21
+    },
+    {
+      "card_id": "spel-cmd-vxcaldelete",
+      "cmd_name": "VxCalDelete",
+      "example_len": 26
+    },
+    {
+      "card_id": "spel-cmd-vxcalsave",
+      "cmd_name": "VxCalSave",
+      "example_len": 24
+    },
+    {
+      "card_id": "spel-cmd-vxcalload",
+      "cmd_name": "VxCalLoad",
+      "example_len": 24
+    },
+    {
+      "card_id": "spel-cmd-function",
+      "cmd_name": "Function",
+      "example_len": 941
+    },
+    {
+      "card_id": "spel-cmd-gosub",
+      "cmd_name": "GoSub",
+      "example_len": 388
+    },
+    {
+      "card_id": "spel-cmd-return",
+      "cmd_name": "Return",
+      "example_len": 469
+    },
+    {
+      "card_id": "spel-cmd-goto",
+      "cmd_name": "GoTo",
+      "example_len": 284
+    },
+    {
+      "card_id": "spel-cmd-call",
+      "cmd_name": "Call",
+      "example_len": 167
+    },
+    {
+      "card_id": "spel-cmd-else",
+      "cmd_name": "Else",
+      "example_len": 855
+    },
+    {
+      "card_id": "spel-cmd-declare",
+      "cmd_name": "Declare",
+      "example_len": 661
+    },
+    {
+      "card_id": "spel-cmd-trap",
+      "cmd_name": "Trap",
+      "example_len": 804
+    },
+    {
+      "card_id": "spel-cmd-onerr",
+      "cmd_name": "OnErr",
+      "example_len": 943
+    },
+    {
+      "card_id": "spel-cmd-era",
+      "cmd_name": "Era",
+      "example_len": 414
+    },
+    {
+      "card_id": "spel-cmd-erf",
+      "cmd_name": "Erf$",
+      "example_len": 722
+    },
+    {
+      "card_id": "spel-cmd-erl",
+      "cmd_name": "Erl",
+      "example_len": 644
+    },
+    {
+      "card_id": "spel-cmd-err",
+      "cmd_name": "Err",
+      "example_len": 891
+    },
+    {
+      "card_id": "spel-cmd-ert",
+      "cmd_name": "Ert",
+      "example_len": 609
+    },
+    {
+      "card_id": "spel-cmd-errb",
+      "cmd_name": "Errb",
+      "example_len": 749
+    },
+    {
+      "card_id": "spel-cmd-errmsg",
+      "cmd_name": "ErrMsg$",
+      "example_len": 609
+    },
+    {
+      "card_id": "spel-cmd-signal",
+      "cmd_name": "Signal",
+      "example_len": 87
+    },
+    {
+      "card_id": "spel-cmd-synclock",
+      "cmd_name": "SyncLock",
+      "example_len": 823
+    },
+    {
+      "card_id": "spel-cmd-waitsig",
+      "cmd_name": "WaitSig",
+      "example_len": 108
+    },
+    {
+      "card_id": "spel-cmd-erroron",
+      "cmd_name": "ErrorOn",
+      "example_len": 683
+    },
+    {
+      "card_id": "spel-cmd-error",
+      "cmd_name": "Error",
+      "example_len": 63
+    },
+    {
+      "card_id": "spel-cmd-eresume",
+      "cmd_name": "EResume",
+      "example_len": 235
+    },
+    {
+      "card_id": "spel-cmd-pauseon",
+      "cmd_name": "PauseOn",
+      "example_len": 642
+    },
+    {
+      "card_id": "spel-cmd-xqt",
+      "cmd_name": "Xqt",
+      "example_len": 414
+    },
+    {
+      "card_id": "spel-cmd-pause",
+      "cmd_name": "Pause",
+      "example_len": 384
+    },
+    {
+      "card_id": "spel-cmd-cont",
+      "cmd_name": "Cont",
+      "example_len": 182
+    },
+    {
+      "card_id": "spel-cmd-halt",
+      "cmd_name": "Halt",
+      "example_len": 387
+    },
+    {
+      "card_id": "spel-cmd-quit",
+      "cmd_name": "Quit",
+      "example_len": 358
+    },
+    {
+      "card_id": "spel-cmd-resume",
+      "cmd_name": "Resume",
+      "example_len": 329
+    },
+    {
+      "card_id": "spel-cmd-mytask",
+      "cmd_name": "MyTask",
+      "example_len": 503
+    },
+    {
+      "card_id": "spel-cmd-taskdone",
+      "cmd_name": "TaskDone",
+      "example_len": 52
+    },
+    {
+      "card_id": "spel-cmd-taskstate",
+      "cmd_name": "TaskState",
+      "example_len": 53
+    },
+    {
+      "card_id": "spel-cmd-taskwait",
+      "cmd_name": "TaskWait",
+      "example_len": 33
+    },
+    {
+      "card_id": "spel-cmd-restart",
+      "cmd_name": "Restart",
+      "example_len": 148
+    },
+    {
+      "card_id": "spel-cmd-recover",
+      "cmd_name": "Recover",
+      "example_len": 488
+    },
+    {
+      "card_id": "spel-cmd-recoverpos",
+      "cmd_name": "RecoverPos",
+      "example_len": 194
+    },
+    {
+      "card_id": "spel-cmd-startmain",
+      "cmd_name": "StartMain",
+      "example_len": 102
+    },
+    {
+      "card_id": "spel-cmd-define",
+      "cmd_name": "#define",
+      "example_len": 189
+    },
+    {
+      "card_id": "spel-cmd-ifdef",
+      "cmd_name": "#ifdef",
+      "example_len": 630
+    },
+    {
+      "card_id": "spel-cmd-ifndef",
+      "cmd_name": "#ifndef",
+      "example_len": 841
+    },
+    {
+      "card_id": "spel-cmd-include",
+      "cmd_name": "#include",
+      "example_len": 168
+    },
+    {
+      "card_id": "spel-cmd-chdir",
+      "cmd_name": "ChDir",
+      "example_len": 313
+    },
+    {
+      "card_id": "spel-cmd-chdisk",
+      "cmd_name": "ChDisk",
+      "example_len": 45
+    },
+    {
+      "card_id": "spel-cmd-mkdir",
+      "cmd_name": "MkDir",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-rmdir",
+      "cmd_name": "RmDir",
+      "example_len": 48
+    },
+    {
+      "card_id": "spel-cmd-rendir",
+      "cmd_name": "RenDir",
+      "example_len": 32
+    },
+    {
+      "card_id": "spel-cmd-filedatetime",
+      "cmd_name": "FileDateTime$",
+      "example_len": 170
+    },
+    {
+      "card_id": "spel-cmd-fileexists",
+      "cmd_name": "FileExists",
+      "example_len": 170
+    },
+    {
+      "card_id": "spel-cmd-filelen",
+      "cmd_name": "FileLen",
+      "example_len": 170
+    },
+    {
+      "card_id": "spel-cmd-folderexists",
+      "cmd_name": "FolderExists",
+      "example_len": 57
+    },
+    {
+      "card_id": "spel-cmd-freefile",
+      "cmd_name": "FreeFile",
+      "example_len": 250
+    },
+    {
+      "card_id": "spel-cmd-del",
+      "cmd_name": "Del",
+      "example_len": 204
+    },
+    {
+      "card_id": "spel-cmd-rename",
+      "cmd_name": "Rename",
+      "example_len": 54
+    },
+    {
+      "card_id": "spel-cmd-aopen",
+      "cmd_name": "AOpen",
+      "example_len": 251
+    },
+    {
+      "card_id": "spel-cmd-bopen",
+      "cmd_name": "BOpen",
+      "example_len": 198
+    },
+    {
+      "card_id": "spel-cmd-ropen",
+      "cmd_name": "ROpen",
+      "example_len": 250
+    },
+    {
+      "card_id": "spel-cmd-uopen",
+      "cmd_name": "Uopen",
+      "example_len": 244
+    },
+    {
+      "card_id": "spel-cmd-wopen",
+      "cmd_name": "WOpen",
+      "example_len": 254
+    },
+    {
+      "card_id": "spel-cmd-input-3",
+      "cmd_name": "Input",
+      "example_len": 477
+    },
+    {
+      "card_id": "spel-cmd-print-3",
+      "cmd_name": "Print",
+      "example_len": 315
+    },
+    {
+      "card_id": "spel-cmd-read-2",
+      "cmd_name": "Read",
+      "example_len": 110
+    },
+    {
+      "card_id": "spel-cmd-readbin-2",
+      "cmd_name": "ReadBin",
+      "example_len": 184
+    },
+    {
+      "card_id": "spel-cmd-write-2",
+      "cmd_name": "Write",
+      "example_len": 64
+    },
+    {
+      "card_id": "spel-cmd-writebin-2",
+      "cmd_name": "WriteBin",
+      "example_len": 119
+    },
+    {
+      "card_id": "spel-cmd-seek",
+      "cmd_name": "Seek",
+      "example_len": 136
+    },
+    {
+      "card_id": "spel-cmd-close",
+      "cmd_name": "Close",
+      "example_len": 370
+    },
+    {
+      "card_id": "spel-cmd-eof",
+      "cmd_name": "Eof",
+      "example_len": 172
+    },
+    {
+      "card_id": "spel-cmd-chdrive",
+      "cmd_name": "ChDrive",
+      "example_len": 68
+    },
+    {
+      "card_id": "spel-cmd-curdir",
+      "cmd_name": "CurDir$",
+      "example_len": 43
+    },
+    {
+      "card_id": "spel-cmd-curdrive",
+      "cmd_name": "CurDrive$",
+      "example_len": 41
+    },
+    {
+      "card_id": "spel-cmd-curdisk",
+      "cmd_name": "CurDisk$",
+      "example_len": 39
+    },
+    {
+      "card_id": "spel-cmd-flush",
+      "cmd_name": "Flush",
+      "example_len": 138
+    },
+    {
+      "card_id": "spel-cmd-fbusio-getbusstatus",
+      "cmd_name": "FbusIO_GetBusStatus",
+      "example_len": 38
+    },
+    {
+      "card_id": "spel-cmd-fbusio-getdevicestatus",
+      "cmd_name": "FbusIO_GetDeviceStatus",
+      "example_len": 45
+    },
+    {
+      "card_id": "spel-cmd-fbusio-sendmsg",
+      "cmd_name": "FbusIO_SendMsg",
+      "example_len": 561
+    },
+    {
+      "card_id": "spel-cmd-ctr",
+      "cmd_name": "Ctr",
+      "example_len": 275
+    },
+    {
+      "card_id": "spel-cmd-ctreset",
+      "cmd_name": "CTReset",
+      "example_len": 265
+    },
+    {
+      "card_id": "spel-cmd-elapsedtime",
+      "cmd_name": "ElapsedTime",
+      "example_len": 169
+    },
+    {
+      "card_id": "spel-cmd-resetelapsedtime",
+      "cmd_name": "ResetElapsedTime",
+      "example_len": 169
+    },
+    {
+      "card_id": "spel-cmd-tmr",
+      "cmd_name": "Tmr",
+      "example_len": 141
+    },
+    {
+      "card_id": "spel-cmd-tmreset",
+      "cmd_name": "TmReset",
+      "example_len": 137
+    },
+    {
+      "card_id": "spel-cmd-sin",
+      "cmd_name": "Sin",
+      "example_len": 173
+    },
+    {
+      "card_id": "spel-cmd-cos",
+      "cmd_name": "Cos",
+      "example_len": 368
+    },
+    {
+      "card_id": "spel-cmd-tan",
+      "cmd_name": "Tan",
+      "example_len": 300
+    },
+    {
+      "card_id": "spel-cmd-acos",
+      "cmd_name": "Acos",
+      "example_len": 90
+    },
+    {
+      "card_id": "spel-cmd-asin",
+      "cmd_name": "Asin",
+      "example_len": 90
+    },
+    {
+      "card_id": "spel-cmd-atan",
+      "cmd_name": "Atan",
+      "example_len": 118
+    },
+    {
+      "card_id": "spel-cmd-atan2",
+      "cmd_name": "Atan2",
+      "example_len": 202
+    },
+    {
+      "card_id": "spel-cmd-sqr",
+      "cmd_name": "Sqr",
+      "example_len": 281
+    },
+    {
+      "card_id": "spel-cmd-abs",
+      "cmd_name": "Abs",
+      "example_len": 141
+    },
+    {
+      "card_id": "spel-cmd-sgn",
+      "cmd_name": "Sgn",
+      "example_len": 111
+    },
+    {
+      "card_id": "spel-cmd-int",
+      "cmd_name": "Int",
+      "example_len": 117
+    },
+    {
+      "card_id": "spel-cmd-bclr",
+      "cmd_name": "BClr",
+      "example_len": 22
+    },
+    {
+      "card_id": "spel-cmd-bset",
+      "cmd_name": "BSet",
+      "example_len": 22
+    },
+    {
+      "card_id": "spel-cmd-btst",
+      "cmd_name": "BTst",
+      "example_len": 49
+    },
+    {
+      "card_id": "spel-cmd-bclr64",
+      "cmd_name": "BClr64",
+      "example_len": 24
+    },
+    {
+      "card_id": "spel-cmd-bset64",
+      "cmd_name": "BSet64",
+      "example_len": 24
+    },
+    {
+      "card_id": "spel-cmd-btst64",
+      "cmd_name": "BTst64",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-fix",
+      "cmd_name": "Fix",
+      "example_len": 19
+    },
+    {
+      "card_id": "spel-cmd-hex",
+      "cmd_name": "Hex",
+      "example_len": 49
+    },
+    {
+      "card_id": "spel-cmd-randomize",
+      "cmd_name": "Randomize",
+      "example_len": 114
+    },
+    {
+      "card_id": "spel-cmd-redim",
+      "cmd_name": "Redim",
+      "example_len": 281
+    },
+    {
+      "card_id": "spel-cmd-rnd",
+      "cmd_name": "Rnd",
+      "example_len": 183
+    },
+    {
+      "card_id": "spel-cmd-ubound",
+      "cmd_name": "UBound",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-asc",
+      "cmd_name": "Asc",
+      "example_len": 334
+    },
+    {
+      "card_id": "spel-cmd-chr",
+      "cmd_name": "Chr$",
+      "example_len": 403
+    },
+    {
+      "card_id": "spel-cmd-left",
+      "cmd_name": "Left$",
+      "example_len": 655
+    },
+    {
+      "card_id": "spel-cmd-mid",
+      "cmd_name": "Mid$",
+      "example_len": 389
+    },
+    {
+      "card_id": "spel-cmd-right",
+      "cmd_name": "Right$",
+      "example_len": 583
+    },
+    {
+      "card_id": "spel-cmd-len",
+      "cmd_name": "Len",
+      "example_len": 642
+    },
+    {
+      "card_id": "spel-cmd-lset",
+      "cmd_name": "LSet$",
+      "example_len": 57
+    },
+    {
+      "card_id": "spel-cmd-rset",
+      "cmd_name": "RSet$",
+      "example_len": 57
+    },
+    {
+      "card_id": "spel-cmd-space",
+      "cmd_name": "Space$",
+      "example_len": 73
+    },
+    {
+      "card_id": "spel-cmd-str",
+      "cmd_name": "Str$",
+      "example_len": 432
+    },
+    {
+      "card_id": "spel-cmd-val",
+      "cmd_name": "Val",
+      "example_len": 540
+    },
+    {
+      "card_id": "spel-cmd-lcase",
+      "cmd_name": "LCase$",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-ucase",
+      "cmd_name": "UCase$",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-ltrim",
+      "cmd_name": "LTrim$",
+      "example_len": 66
+    },
+    {
+      "card_id": "spel-cmd-rtrim",
+      "cmd_name": "RTrim$",
+      "example_len": 54
+    },
+    {
+      "card_id": "spel-cmd-trim",
+      "cmd_name": "Trim$",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-parsestr",
+      "cmd_name": "ParseStr",
+      "example_len": 127
+    },
+    {
+      "card_id": "spel-cmd-fmtstr",
+      "cmd_name": "FmtStr",
+      "example_len": 227
+    },
+    {
+      "card_id": "spel-cmd-fmtstr-2",
+      "cmd_name": "FmtStr$",
+      "example_len": 227
+    },
+    {
+      "card_id": "spel-cmd-instr",
+      "cmd_name": "InStr",
+      "example_len": 35
+    },
+    {
+      "card_id": "spel-cmd-and",
+      "cmd_name": "And",
+      "example_len": 245
+    },
+    {
+      "card_id": "spel-cmd-or",
+      "cmd_name": "Or",
+      "example_len": 122
+    },
+    {
+      "card_id": "spel-cmd-lshift",
+      "cmd_name": "LShift",
+      "example_len": 294
+    },
+    {
+      "card_id": "spel-cmd-lshift64",
+      "cmd_name": "LShift64",
+      "example_len": 300
+    },
+    {
+      "card_id": "spel-cmd-mod",
+      "cmd_name": "Mod",
+      "example_len": 605
+    },
+    {
+      "card_id": "spel-cmd-not",
+      "cmd_name": "Not",
+      "example_len": 107
+    },
+    {
+      "card_id": "spel-cmd-rshift",
+      "cmd_name": "RShift",
+      "example_len": 443
+    },
+    {
+      "card_id": "spel-cmd-rshift64",
+      "cmd_name": "RShift64",
+      "example_len": 488
+    },
+    {
+      "card_id": "spel-cmd-xor",
+      "cmd_name": "Xor",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-mask",
+      "cmd_name": "Mask",
+      "example_len": 76
+    },
+    {
+      "card_id": "spel-cmd-boolean",
+      "cmd_name": "Boolean",
+      "example_len": 240
+    },
+    {
+      "card_id": "spel-cmd-byte",
+      "cmd_name": "Byte",
+      "example_len": 668
+    },
+    {
+      "card_id": "spel-cmd-double",
+      "cmd_name": "Double",
+      "example_len": 500
+    },
+    {
+      "card_id": "spel-cmd-global",
+      "cmd_name": "Global",
+      "example_len": 409
+    },
+    {
+      "card_id": "spel-cmd-int32",
+      "cmd_name": "Int32",
+      "example_len": 497
+    },
+    {
+      "card_id": "spel-cmd-integer",
+      "cmd_name": "Integer",
+      "example_len": 511
+    },
+    {
+      "card_id": "spel-cmd-long",
+      "cmd_name": "Long",
+      "example_len": 488
+    },
+    {
+      "card_id": "spel-cmd-int64",
+      "cmd_name": "Int64",
+      "example_len": 512
+    },
+    {
+      "card_id": "spel-cmd-real",
+      "cmd_name": "Real",
+      "example_len": 484
+    },
+    {
+      "card_id": "spel-cmd-short",
+      "cmd_name": "Short",
+      "example_len": 497
+    },
+    {
+      "card_id": "spel-cmd-string",
+      "cmd_name": "String",
+      "example_len": 304
+    },
+    {
+      "card_id": "spel-cmd-ubyte",
+      "cmd_name": "UByte",
+      "example_len": 717
+    },
+    {
+      "card_id": "spel-cmd-uint32",
+      "cmd_name": "UInt32",
+      "example_len": 537
+    },
+    {
+      "card_id": "spel-cmd-ushort",
+      "cmd_name": "UShort",
+      "example_len": 549
+    },
+    {
+      "card_id": "spel-cmd-uint64",
+      "cmd_name": "UInt64",
+      "example_len": 537
+    },
+    {
+      "card_id": "spel-cmd-cnv-aborttrack",
+      "cmd_name": "Cnv_AbortTrack",
+      "example_len": 332
+    },
+    {
+      "card_id": "spel-cmd-cnv-accel",
+      "cmd_name": "Cnv_Accel",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cnv-accel-2",
+      "cmd_name": "Cnv_Accel",
+      "example_len": 16
+    },
+    {
+      "card_id": "spel-cmd-cnv-accellim",
+      "cmd_name": "Cnv_AccelLim",
+      "example_len": 21
+    },
+    {
+      "card_id": "spel-cmd-cnv-accellim-2",
+      "cmd_name": "Cnv_AccelLim",
+      "example_len": 21
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjust",
+      "cmd_name": "Cnv_Adjust",
+      "example_len": 57
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjustclear",
+      "cmd_name": "Cnv_AdjustClear",
+      "example_len": 17
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjustget",
+      "cmd_name": "Cnv_AdjustGet",
+      "example_len": 25
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjustset",
+      "cmd_name": "Cnv_AdjustSet",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-cnv-downstream",
+      "cmd_name": "Cnv_Downstream",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-cnv-downstream-2",
+      "cmd_name": "Cnv_Downstream",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-cnv-fine",
+      "cmd_name": "Cnv_Fine",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-fine-2",
+      "cmd_name": "Cnv_Fine",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-flag",
+      "cmd_name": "Cnv_Flag",
+      "example_len": 18
+    },
+    {
+      "card_id": "spel-cmd-cnv-mode",
+      "cmd_name": "Cnv_Mode",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-mode-2",
+      "cmd_name": "Cnv_Mode",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-name",
+      "cmd_name": "Cnv_Name$",
+      "example_len": 39
+    },
+    {
+      "card_id": "spel-cmd-cnv-number",
+      "cmd_name": "Cnv_Number",
+      "example_len": 51
+    },
+    {
+      "card_id": "spel-cmd-cnv-offsetangle",
+      "cmd_name": "Cnv_OffsetAngle",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-cnv-offsetangle-2",
+      "cmd_name": "Cnv_OffsetAngle",
+      "example_len": 20
+    },
+    {
+      "card_id": "spel-cmd-cnv-point",
+      "cmd_name": "Cnv_Point",
+      "example_len": 228
+    },
+    {
+      "card_id": "spel-cmd-cnv-poserr",
+      "cmd_name": "Cnv_PosErr",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-cnv-poserroffset",
+      "cmd_name": "Cnv_PosErrOffset",
+      "example_len": 90
+    },
+    {
+      "card_id": "spel-cmd-cnv-pulse",
+      "cmd_name": "Cnv_Pulse",
+      "example_len": 49
+    },
+    {
+      "card_id": "spel-cmd-cnv-queadd",
+      "cmd_name": "Cnv_QueAdd",
+      "example_len": 228
+    },
+    {
+      "card_id": "spel-cmd-cnv-queget",
+      "cmd_name": "Cnv_QueGet",
+      "example_len": 135
+    },
+    {
+      "card_id": "spel-cmd-cnv-quelen",
+      "cmd_name": "Cnv_QueLen",
+      "example_len": 236
+    },
+    {
+      "card_id": "spel-cmd-cnv-quelist",
+      "cmd_name": "Cnv_QueList",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-quemove",
+      "cmd_name": "Cnv_QueMove",
+      "example_len": 13
+    },
+    {
+      "card_id": "spel-cmd-cnv-quereject",
+      "cmd_name": "Cnv_QueReject",
+      "example_len": 19
+    },
+    {
+      "card_id": "spel-cmd-cnv-quereject-2",
+      "cmd_name": "Cnv_QueReject",
+      "example_len": 19
+    },
+    {
+      "card_id": "spel-cmd-cnv-queremove",
+      "cmd_name": "Cnv_QueRemove",
+      "example_len": 120
+    },
+    {
+      "card_id": "spel-cmd-cnv-queuserdata",
+      "cmd_name": "Cnv_QueUserData",
+      "example_len": 27
+    },
+    {
+      "card_id": "spel-cmd-cnv-queuserdata-2",
+      "cmd_name": "Cnv_QueUserData",
+      "example_len": 27
+    },
+    {
+      "card_id": "spel-cmd-cnv-robotconveyor",
+      "cmd_name": "Cnv_RobotConveyor",
+      "example_len": 44
+    },
+    {
+      "card_id": "spel-cmd-cnv-speed",
+      "cmd_name": "Cnv_Speed",
+      "example_len": 38
+    },
+    {
+      "card_id": "spel-cmd-cnv-trigger",
+      "cmd_name": "Cnv_Trigger",
+      "example_len": 228
+    },
+    {
+      "card_id": "spel-cmd-cnv-upstream",
+      "cmd_name": "Cnv_Upstream",
+      "example_len": 18
+    },
+    {
+      "card_id": "spel-cmd-cnv-upstream-2",
+      "cmd_name": "Cnv_Upstream",
+      "example_len": 18
+    },
+    {
+      "card_id": "spel-cmd-closedb",
+      "cmd_name": "CloseDB",
+      "example_len": 28
+    },
+    {
+      "card_id": "spel-cmd-opendb",
+      "cmd_name": "OpenDB",
+      "example_len": 1220
+    },
+    {
+      "card_id": "spel-cmd-selectdb",
+      "cmd_name": "SelectDB",
+      "example_len": 1485
+    },
+    {
+      "card_id": "spel-cmd-updatedb",
+      "cmd_name": "UpdateDB",
+      "example_len": 828
+    },
+    {
+      "card_id": "spel-cmd-pg-faststop",
+      "cmd_name": "PG_FastStop",
+      "example_len": 178
+    },
+    {
+      "card_id": "spel-cmd-pg-lspeed",
+      "cmd_name": "PG_LSpeed",
+      "example_len": 278
+    },
+    {
+      "card_id": "spel-cmd-pg-scan",
+      "cmd_name": "PG_Scan",
+      "example_len": 168
+    },
+    {
+      "card_id": "spel-cmd-collisiondetect",
+      "cmd_name": "CollisionDetect",
+      "example_len": 74
+    },
+    {
+      "card_id": "spel-cmd-collisiondetect-fn",
+      "cmd_name": "CollisionDetect",
+      "example_len": 74
+    },
+    {
+      "card_id": "spel-cmd-healthctrlalarmon",
+      "cmd_name": "HealthCtrlAlarmOn",
+      "example_len": 263
+    },
+    {
+      "card_id": "spel-cmd-healthctrlinfo",
+      "cmd_name": "HealthCtrlInfo",
+      "example_len": 183
+    },
+    {
+      "card_id": "spel-cmd-healthctrlinfo-2",
+      "cmd_name": "HealthCtrlInfo",
+      "example_len": 183
+    },
+    {
+      "card_id": "spel-cmd-healthctrlrateoffset",
+      "cmd_name": "HealthCtrlRateOffset",
+      "example_len": 157
+    },
+    {
+      "card_id": "spel-cmd-healthctrlreset",
+      "cmd_name": "HealthCtrlReset",
+      "example_len": 50
+    },
+    {
+      "card_id": "spel-cmd-healthctrlwarningenable",
+      "cmd_name": "HealthCtrlWarningEnable",
+      "example_len": 299
+    },
+    {
+      "card_id": "spel-cmd-healthctrlwarningenable-2",
+      "cmd_name": "HealthCtrlWarningEnable",
+      "example_len": 299
+    },
+    {
+      "card_id": "spel-cmd-healthratectrlinfo",
+      "cmd_name": "HealthRateCtrlInfo",
+      "example_len": 256
+    },
+    {
+      "card_id": "spel-cmd-healthraterbinfo",
+      "cmd_name": "HealthRateRBInfo",
+      "example_len": 276
+    },
+    {
+      "card_id": "spel-cmd-healthrbalarmon",
+      "cmd_name": "HealthRBAlarmOn",
+      "example_len": 283
+    },
+    {
+      "card_id": "spel-cmd-healthrbanalysis",
+      "cmd_name": "HealthRBAnalysis",
+      "example_len": 234
+    },
+    {
+      "card_id": "spel-cmd-healthrbanalysis-2",
+      "cmd_name": "HealthRBAnalysis",
+      "example_len": 234
+    },
+    {
+      "card_id": "spel-cmd-healthrbdistance",
+      "cmd_name": "HealthRBDistance",
+      "example_len": 109
+    },
+    {
+      "card_id": "spel-cmd-healthrbdistance-2",
+      "cmd_name": "HealthRBDistance",
+      "example_len": 109
+    },
+    {
+      "card_id": "spel-cmd-healthrbinfo",
+      "cmd_name": "HealthRBInfo",
+      "example_len": 692
+    },
+    {
+      "card_id": "spel-cmd-healthrbinfo-2",
+      "cmd_name": "HealthRBInfo",
+      "example_len": 692
+    },
+    {
+      "card_id": "spel-cmd-healthrbrateoffset",
+      "cmd_name": "HealthRBRateOffset",
+      "example_len": 155
+    },
+    {
+      "card_id": "spel-cmd-healthrbreset",
+      "cmd_name": "HealthRBReset",
+      "example_len": 44
+    },
+    {
+      "card_id": "spel-cmd-healthrbspeed",
+      "cmd_name": "HealthRBSpeed",
+      "example_len": 97
+    },
+    {
+      "card_id": "spel-cmd-healthrbspeed-2",
+      "cmd_name": "HealthRBSpeed",
+      "example_len": 97
+    },
+    {
+      "card_id": "spel-cmd-healthrbstart",
+      "cmd_name": "HealthRBStart",
+      "example_len": 230
+    },
+    {
+      "card_id": "spel-cmd-healthrbstop",
+      "cmd_name": "HealthRBStop",
+      "example_len": 230
+    },
+    {
+      "card_id": "spel-cmd-healthrbtrq",
+      "cmd_name": "HealthRBTRQ",
+      "example_len": 138
+    },
+    {
+      "card_id": "spel-cmd-healthrbtrq-2",
+      "cmd_name": "HealthRBTRQ",
+      "example_len": 138
+    },
+    {
+      "card_id": "spel-cmd-healthrbwarningenable",
+      "cmd_name": "HealthRBWarningEnable",
+      "example_len": 298
+    },
+    {
+      "card_id": "spel-cmd-healthrbwarningenable-2",
+      "cmd_name": "HealthRBWarningEnable",
+      "example_len": 298
+    },
+    {
+      "card_id": "spel-cmd-simset",
+      "cmd_name": "SimSet",
+      "example_len": 389
+    },
+    {
+      "card_id": "spel-cmd-simget",
+      "cmd_name": "SimGet",
+      "example_len": 283
+    },
+    {
+      "card_id": "spel-cmd-hand-2",
+      "cmd_name": "Hand",
+      "example_len": 161
+    },
+    {
+      "card_id": "spel-cmd-function-2",
+      "cmd_name": "Function",
+      "example_len": 941
+    },
+    {
+      "card_id": "spel-cmd-sf-getparam",
+      "cmd_name": "SF_GetParam",
+      "example_len": 93
+    },
+    {
+      "card_id": "spel-cmd-sf-getparam-2",
+      "cmd_name": "SF_GetParam$",
+      "example_len": 93
+    },
+    {
+      "card_id": "spel-cmd-sf-getstatus",
+      "cmd_name": "SF_GetStatus",
+      "example_len": 103
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeeds",
+      "cmd_name": "SF_LimitSpeedS",
+      "example_len": 365
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeeds-2",
+      "cmd_name": "SF_LimitSpeedS",
+      "example_len": 365
+    },
+    {
+      "card_id": "spel-cmd-speed-2",
+      "cmd_name": "speed",
+      "example_len": 416
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeedsenable",
+      "cmd_name": "SF_LimitSpeedSEnable",
+      "example_len": 1886
+    },
+    {
+      "card_id": "spel-cmd-speed-3",
+      "cmd_name": "speed",
+      "example_len": 416
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeedsenable-2",
+      "cmd_name": "SF_LimitSpeedSEnable",
+      "example_len": 1886
+    },
+    {
+      "card_id": "spel-cmd-sf-peakspeeds",
+      "cmd_name": "SF_PeakSpeedS",
+      "example_len": 264
+    },
+    {
+      "card_id": "spel-cmd-sf-peakspeeds-2",
+      "cmd_name": "SF_PeakSpeedS",
+      "example_len": 264
+    },
+    {
+      "card_id": "spel-cmd-sf-peakspeedsclear",
+      "cmd_name": "SF_PeakSpeedSClear",
+      "example_len": 156
+    },
+    {
+      "card_id": "spel-cmd-sf-realspeeds",
+      "cmd_name": "SF_RealSpeedS",
+      "example_len": 258
+    },
+    {
+      "card_id": "spel-cmd-sf-realspeeds-2",
+      "cmd_name": "SF_RealSpeedS",
+      "example_len": 258
+    }
+  ],
+  "not_found": [
+    {
+      "card_id": "spel-cmd-text",
+      "cmd_name": "text"
+    },
+    {
+      "card_id": "spel-cmd-clears",
+      "cmd_name": "Clears"
+    },
+    {
+      "card_id": "spel-cmd-shutdown",
+      "cmd_name": "ShutDown"
+    },
+    {
+      "card_id": "spel-cmd-clearhistory",
+      "cmd_name": "ClearHistory",
+      "reason": "no_body"
+    },
+    {
+      "card_id": "spel-cmd-athome",
+      "cmd_name": "AtHome"
+    },
+    {
+      "card_id": "spel-cmd-calibration",
+      "cmd_name": "calibration"
+    },
+    {
+      "card_id": "spel-cmd-jump3cp",
+      "cmd_name": "Jump3CP"
+    },
+    {
+      "card_id": "spel-cmd-at",
+      "cmd_name": "at"
+    },
+    {
+      "card_id": "spel-cmd-coordinate",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-but",
+      "cmd_name": "but"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-2",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-3",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-4",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-arc",
+      "cmd_name": "Arc"
+    },
+    {
+      "card_id": "spel-cmd-arc3",
+      "cmd_name": "Arc3"
+    },
+    {
+      "card_id": "spel-cmd-curve",
+      "cmd_name": "Curve"
+    },
+    {
+      "card_id": "spel-cmd-path",
+      "cmd_name": "path."
+    },
+    {
+      "card_id": "spel-cmd-precision",
+      "cmd_name": "precision"
+    },
+    {
+      "card_id": "spel-cmd-orientation",
+      "cmd_name": "orientation"
+    },
+    {
+      "card_id": "spel-cmd-motion",
+      "cmd_name": "motion"
+    },
+    {
+      "card_id": "spel-cmd-issuing",
+      "cmd_name": "issuing"
+    },
+    {
+      "card_id": "spel-cmd-point",
+      "cmd_name": "point"
+    },
+    {
+      "card_id": "spel-cmd-algorithmic",
+      "cmd_name": "algorithmic"
+    },
+    {
+      "card_id": "spel-cmd-current",
+      "cmd_name": "current"
+    },
+    {
+      "card_id": "spel-cmd-least",
+      "cmd_name": "least"
+    },
+    {
+      "card_id": "spel-cmd-reference",
+      "cmd_name": "reference"
+    },
+    {
+      "card_id": "spel-cmd-avoiding",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-2",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-3",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-avoiding-4",
+      "cmd_name": "avoiding"
+    },
+    {
+      "card_id": "spel-cmd-singularity",
+      "cmd_name": "singularity"
+    },
+    {
+      "card_id": "spel-cmd-singularity-2",
+      "cmd_name": "singularity"
+    },
+    {
+      "card_id": "spel-cmd-nearest",
+      "cmd_name": "nearest"
+    },
+    {
+      "card_id": "spel-cmd-coordinate-5",
+      "cmd_name": "coordinate"
+    },
+    {
+      "card_id": "spel-cmd-executing",
+      "cmd_name": "executing"
+    },
+    {
+      "card_id": "spel-cmd-tc",
+      "cmd_name": "TC"
+    },
+    {
+      "card_id": "spel-cmd-that",
+      "cmd_name": "that"
+    },
+    {
+      "card_id": "spel-cmd-reaches",
+      "cmd_name": "reaches"
+    },
+    {
+      "card_id": "spel-cmd-reaches-2",
+      "cmd_name": "reaches"
+    },
+    {
+      "card_id": "spel-cmd-each",
+      "cmd_name": "Each"
+    },
+    {
+      "card_id": "spel-cmd-inreal",
+      "cmd_name": "InReal"
+    },
+    {
+      "card_id": "spel-cmd-line",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-communications",
+      "cmd_name": "communications"
+    },
+    {
+      "card_id": "spel-cmd-line-2",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-lines",
+      "cmd_name": "lines"
+    },
+    {
+      "card_id": "spel-cmd-communication",
+      "cmd_name": "communication"
+    },
+    {
+      "card_id": "spel-cmd-line-3",
+      "cmd_name": "line"
+    },
+    {
+      "card_id": "spel-cmd-text-2",
+      "cmd_name": "text"
+    },
+    {
+      "card_id": "spel-cmd-choose",
+      "cmd_name": "choose"
+    },
+    {
+      "card_id": "spel-cmd-aio-inw",
+      "cmd_name": "AIO_InW"
+    },
+    {
+      "card_id": "spel-cmd-p",
+      "cmd_name": "P#"
+    },
+    {
+      "card_id": "spel-cmd-point-2",
+      "cmd_name": "point"
+    },
+    {
+      "card_id": "spel-cmd-of",
+      "cmd_name": "of"
+    },
+    {
+      "card_id": "spel-cmd-registration",
+      "cmd_name": "registration"
+    },
+    {
+      "card_id": "spel-cmd-work",
+      "cmd_name": "work"
+    },
+    {
+      "card_id": "spel-cmd-tlclr",
+      "cmd_name": "TLClr"
+    },
+    {
+      "card_id": "spel-cmd-returns",
+      "cmd_name": "returns"
+    },
+    {
+      "card_id": "spel-cmd-for-next",
+      "cmd_name": "For...Next"
+    },
+    {
+      "card_id": "spel-cmd-executed",
+      "cmd_name": "executed"
+    },
+    {
+      "card_id": "spel-cmd-false",
+      "cmd_name": "False."
+    },
+    {
+      "card_id": "spel-cmd-select",
+      "cmd_name": "Select"
+    },
+    {
+      "card_id": "spel-cmd-do-loop",
+      "cmd_name": "Do...Loop"
+    },
+    {
+      "card_id": "spel-cmd-synunlock",
+      "cmd_name": "SynUnlock"
+    },
+    {
+      "card_id": "spel-cmd-exit",
+      "cmd_name": "Exit",
+      "reason": "no_body"
+    },
+    {
+      "card_id": "spel-cmd-executed-2",
+      "cmd_name": "executed"
+    },
+    {
+      "card_id": "spel-cmd-was",
+      "cmd_name": "was"
+    },
+    {
+      "card_id": "spel-cmd-undef",
+      "cmd_name": "#undef"
+    },
+    {
+      "card_id": "spel-cmd-copy",
+      "cmd_name": "Copy"
+    },
+    {
+      "card_id": "spel-cmd-communications-2",
+      "cmd_name": "communications"
+    },
+    {
+      "card_id": "spel-cmd-more",
+      "cmd_name": "more"
+    },
+    {
+      "card_id": "spel-cmd-line-4",
+      "cmd_name": "Line"
+    },
+    {
+      "card_id": "spel-cmd-end",
+      "cmd_name": "end"
+    },
+    {
+      "card_id": "spel-cmd-hexadecimal",
+      "cmd_name": "hexadecimal"
+    },
+    {
+      "card_id": "spel-cmd-dimension",
+      "cmd_name": "dimension"
+    },
+    {
+      "card_id": "spel-cmd-tab",
+      "cmd_name": "Tab$",
+      "reason": "no_body"
+    },
+    {
+      "card_id": "spel-cmd-variable",
+      "cmd_name": "Variable"
+    },
+    {
+      "card_id": "spel-cmd-getcurrentuser",
+      "cmd_name": "GetCurrentUser$"
+    },
+    {
+      "card_id": "spel-cmd-login",
+      "cmd_name": "Login",
+      "reason": "no_body"
+    },
+    {
+      "card_id": "spel-cmd-conveyor",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-system",
+      "cmd_name": "system"
+    },
+    {
+      "card_id": "spel-cmd-tracking",
+      "cmd_name": "tracking"
+    },
+    {
+      "card_id": "spel-cmd-tracking-2",
+      "cmd_name": "tracking"
+    },
+    {
+      "card_id": "spel-cmd-conveyor-2",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-conveyor-3",
+      "cmd_name": "conveyor"
+    },
+    {
+      "card_id": "spel-cmd-command",
+      "cmd_name": "command"
+    },
+    {
+      "card_id": "spel-cmd-deletedb",
+      "cmd_name": "DeleteDB"
+    },
+    {
+      "card_id": "spel-cmd-accelerating",
+      "cmd_name": "accelerating"
+    },
+    {
+      "card_id": "spel-cmd-pg-slowstop",
+      "cmd_name": "PG_SlowStop",
+      "reason": "no_body"
+    },
+    {
+      "card_id": "spel-cmd-healthcalcperiod",
+      "cmd_name": "HealthCalcPeriod"
+    },
+    {
+      "card_id": "spel-cmd-healthcalcperiod-fn",
+      "cmd_name": "HealthCalcPeriod"
+    },
+    {
+      "card_id": "spel-cmd-notification",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-2",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-3",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-notification-4",
+      "cmd_name": "notification"
+    },
+    {
+      "card_id": "spel-cmd-hand-on",
+      "cmd_name": "Hand_On"
+    },
+    {
+      "card_id": "spel-cmd-electric",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-on-2",
+      "cmd_name": "Hand_On"
+    },
+    {
+      "card_id": "spel-cmd-electric-2",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-off",
+      "cmd_name": "Hand_Off"
+    },
+    {
+      "card_id": "spel-cmd-electric-3",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-off-2",
+      "cmd_name": "Hand_Off"
+    },
+    {
+      "card_id": "spel-cmd-electric-4",
+      "cmd_name": "Electric"
+    },
+    {
+      "card_id": "spel-cmd-hand-tw",
+      "cmd_name": "Hand_TW"
+    },
+    {
+      "card_id": "spel-cmd-hand-def",
+      "cmd_name": "Hand_Def"
+    },
+    {
+      "card_id": "spel-cmd-hand-type",
+      "cmd_name": "Hand_Type"
+    },
+    {
+      "card_id": "spel-cmd-hand-label",
+      "cmd_name": "Hand_Label$"
+    },
+    {
+      "card_id": "spel-cmd-hand-number",
+      "cmd_name": "Hand_Number"
+    },
+    {
+      "card_id": "spel-cmd-safety",
+      "cmd_name": "Safety"
+    },
+    {
+      "card_id": "spel-cmd-adjusts",
+      "cmd_name": "adjusts"
+    },
+    {
+      "card_id": "spel-cmd-is",
+      "cmd_name": "is"
+    },
+    {
+      "card_id": "spel-cmd-monitoring",
+      "cmd_name": "monitoring"
+    },
+    {
+      "card_id": "spel-cmd-vrt",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-technology",
+      "cmd_name": "Technology"
+    },
+    {
+      "card_id": "spel-cmd-vrt-2",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-3",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-clr",
+      "cmd_name": "VRT_Clr"
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion",
+      "cmd_name": "VRT_CPMotion"
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion-2",
+      "cmd_name": "VRT_CPMotion"
+    },
+    {
+      "card_id": "spel-cmd-vrt-def",
+      "cmd_name": "VRT_Def"
+    },
+    {
+      "card_id": "spel-cmd-vrt-description",
+      "cmd_name": "VRT_Description"
+    },
+    {
+      "card_id": "spel-cmd-vrt-description-2",
+      "cmd_name": "VRT_Description$"
+    },
+    {
+      "card_id": "spel-cmd-vrt-label",
+      "cmd_name": "VRT_Label"
+    },
+    {
+      "card_id": "spel-cmd-vrt-label-2",
+      "cmd_name": "VRT_Label$"
+    },
+    {
+      "card_id": "spel-cmd-vrt-number",
+      "cmd_name": "VRT_Number"
+    },
+    {
+      "card_id": "spel-cmd-vrt-set",
+      "cmd_name": "VRT_Set"
+    },
+    {
+      "card_id": "spel-cmd-vrt-4",
+      "cmd_name": "VRT"
+    },
+    {
+      "card_id": "spel-cmd-vrt-set-2",
+      "cmd_name": "VRT_Set"
+    },
+    {
+      "card_id": "spel-cmd-define-2",
+      "cmd_name": "define"
+    },
+    {
+      "card_id": "spel-cmd-vrt-trigger",
+      "cmd_name": "VRT_Trigger"
+    }
+  ]
+}
