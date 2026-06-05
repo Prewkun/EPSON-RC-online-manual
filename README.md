@@ -5,7 +5,7 @@ Interactive web reference for **Epson RC+ 8.0** — fully self-contained single-
 ## Contents
 
 ### SPEL+ Language Reference
-- 734 commands across 21 categories
+- 632 commands across 21 categories
 - Expandable command cards with syntax, description, and code examples
 - Live search + category filter chips
 - Clickable See Also cross-links → jump directly to referenced commands

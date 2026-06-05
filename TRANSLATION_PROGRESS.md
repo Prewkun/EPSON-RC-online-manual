@@ -32,6 +32,9 @@ where work left off.
 | **PR 8b** | Thai desc translations — newly injected SPEL+ ErrorOn–LocalDef (45 entries) | ✅ Merged |
 | **PR 8c** | Thai desc translations — newly injected SPEL+ Login–RSet (45 entries) | ✅ Merged |
 | **PR 8d** | Thai desc translations — newly injected SPEL+ RShift64–XYLimDef (45 entries) | ✅ Merged |
+| **PR 9a** | Inject 567 examples from SPEL+ PDF — `cmd-example` coverage 54% → 91% | ✅ Merged |
+| **PR 9b** | Remove 64 artifact stub cards — total cards 696 → 632 | ✅ Merged |
+| **PR 9c** | Verify HTML structure + update all documentation | ✅ Merged |
 
 ---
 
@@ -51,6 +54,27 @@ where work left off.
 
 All 200 newly injected SPEL+ cmd-cards now have Thai desc translations.
 `DESC_TRANSLATIONS` coverage: **705 entries** — all cards with descriptions are translated.
+
+---
+
+## PR 9 Scope — ✅ Complete
+
+### PR 9a — cmd-example injection
+- Source: `spel_ref_clean.txt` — pattern `"CommandName [Type] Example"` headers
+- 643 example headers found, 526 unique commands mapped
+- 567 cards injected/overwritten (all existing examples replaced with PDF source)
+- Coverage: 54.1% → **91.3%** (577/632 cards)
+- 55 cards without examples: commands not in this PDF edition (Hand_*, VRT_*, Arc, Arc3, Curve, etc.)
+
+### PR 9b — artifact stub removal
+- Removed 64 pipeline-fragment cards (all-lowercase names: `text`, `at`, `coordinate`, `motion`, etc.)
+- These had no Syntax, no Description — confirmed non-commands
+- Card count: 696 → **632**
+
+### PR 9c — verification
+- HTML structure: perfectly balanced (5,769 div opens = 5,769 closes)
+- No merge conflict markers remaining
+- File: 1.61 MB, 33,272 lines
 
 ---
 

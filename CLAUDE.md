@@ -46,7 +46,7 @@ A fully self-contained, interactive **single-file HTML reference manual** for Ep
 
 ## index.html Architecture
 
-The entire application lives in `index.html`. It has three sections:
+The entire application lives in `index.html` (~1.6 MB, ~33,300 lines). It has three sections:
 
 ### 1. CSS (`<style>` block, ~200 lines)
 
@@ -59,7 +59,7 @@ The entire application lives in `index.html`. It has three sections:
 
 | Tab | `id` | Content |
 |---|---|---|
-| SPEL+ Language Reference | `tab-spel` | 734 commands in 21 categories |
+| SPEL+ Language Reference | `tab-spel` | 632 commands in 21 categories |
 | GUI Builder Reference | `tab-gui` | 17 controls, 87 props, 9 events, 5 SPEL+ stmts |
 | RC+ Users Guide | `tab-rc` | 23 chapters (742 pages), 10 topic groups |
 | A–Z Index | `tab-idx` | Alphabetical index across SPEL+ and GUI |
