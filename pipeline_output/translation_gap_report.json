@@ -1,0 +1,2345 @@
+{
+  "generated": "2026-06-04",
+  "purpose": "PR prep: gap analysis for SPEL+ command descriptions and Thai translations",
+  "stats": {
+    "total_spel_cmd_cards": 696,
+    "cards_with_desc": 367,
+    "cards_without_desc": 329,
+    "real_commands_missing_desc": 247,
+    "artifact_cards_no_desc": 82,
+    "brief_th_pct": 100,
+    "brief_th_count": "696/696",
+    "desc_th_primary_pct": 100,
+    "desc_th_primary_note": "All 324 primary cards with desc have Thai translation",
+    "dup_cards_needing_th_clone": 57,
+    "dup_note": "All 57 duplicate (-2/-3) cards whose base is already translated"
+  },
+  "next_pr_recommendation": {
+    "pr_7a_title": "Add missing descriptions to 247 SPEL+ commands",
+    "pr_7a_scope": "Fill cmd-desc for all 247 real commands listed in empty_desc_commands. Source: e_SPEL_Ref80_r1.pdf. After adding EN desc, add TH desc entry to DESC_TRANSLATIONS keyed as \"card_id:0\" (e.g. 'spel-cmd-accel:0': 'Thai text...').",
+    "pr_7b_title": "Clone Thai desc for 57 duplicate-category cards",
+    "pr_7b_scope": "Copy the base card's TH translation to the -2/-3 card IDs in DESC_TRANSLATIONS. E.g. copy 'spel-cmd-aio-out:0' value to 'spel-cmd-aio-out-2:0'. Low priority — these cards only differ in which category they appear in."
+  },
+  "empty_desc_commands": [
+    {
+      "card_id": "spel-cmd-accel",
+      "command_name": "Accel",
+      "brief_en": "Sets / returns acceleration and deceleration for point to point motion.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-accelmax",
+      "command_name": "AccelMax",
+      "brief_en": "Returns maximum acceleration value limit available for Accel.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-acos",
+      "command_name": "Acos",
+      "brief_en": "Returns arccosine.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-agltopls",
+      "command_name": "AglToPls",
+      "brief_en": "Converts robot angles to pulses.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-aio-inw",
+      "command_name": "AIO_InW",
+      "brief_en": "Function Reads one word input data from analog I/O input channel.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingend",
+      "command_name": "AIO_TrackingEnd",
+      "brief_en": "Ends the distance tracking function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingon",
+      "command_name": "AIO_TrackingOn",
+      "brief_en": "Function Returns the status of the distance tracking function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-aio-trackingset",
+      "command_name": "AIO_TrackingSet",
+      "brief_en": "Sets the distance tracking function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-align",
+      "command_name": "Align",
+      "brief_en": "Function Returns point data converted to align robot orientation with the",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-arc",
+      "command_name": "Arc",
+      "brief_en": "Moves the arm using circular interpolation.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-arc3",
+      "command_name": "Arc3",
+      "brief_en": "Moves the arm in 3D using circular interpolation.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-arch",
+      "command_name": "Arch",
+      "brief_en": "Sets / returns arch parameters for Jump motion.",
+      "syntax": "(1) Arch archNumber, departDist, approDist \n(2) Arch archNumber\n(3) Arch",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-areacorrectiondef",
+      "command_name": "AreaCorrectionDef",
+      "brief_en": "Returns correction area settings",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-areacorrectionoffset",
+      "command_name": "AreaCorrectionOffset",
+      "brief_en": "Function Returns points relatively displaced from corrected points",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-armcalibdef",
+      "command_name": "ArmCalibDef",
+      "brief_en": "Returns status of arm length calibration.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-armdef",
+      "command_name": "ArmDef",
+      "brief_en": "Returns status of arm definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-asc",
+      "command_name": "Asc",
+      "brief_en": "Returns the ASCII value of a character.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-atan2",
+      "command_name": "Atan2",
+      "brief_en": "Returns arctangent based on X, Y position.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-athome",
+      "command_name": "AtHome",
+      "brief_en": "Retunes if the current robot orientation is Home position or not.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-bclr",
+      "command_name": "BClr",
+      "brief_en": "Clears one bit in a number and return the new value.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-boolean",
+      "command_name": "Boolean",
+      "brief_en": "Declares Boolean variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-box",
+      "command_name": "Box",
+      "brief_en": "Specifies and displays the approach check area.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-boxclr",
+      "command_name": "BoxClr",
+      "brief_en": "Clears the definition of approach check area.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-bset",
+      "command_name": "BSet",
+      "brief_en": "Sets a bit in a number and returns the new value.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-bset64",
+      "command_name": "BSet64",
+      "brief_en": "Sets a bit in a number and returns the new value.",
+      "syntax": "BSet64 (number, bitNum)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-btst",
+      "command_name": "BTst",
+      "brief_en": "Returns the status of 1 bit in a number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-byte",
+      "command_name": "Byte",
+      "brief_en": "Declares byte variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-chdrive",
+      "command_name": "ChDrive",
+      "brief_en": "Changes the current disk drive for file operations.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-chknet",
+      "command_name": "ChkNet",
+      "brief_en": "Returns number of characters in the reception buffer of a network port",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-close",
+      "command_name": "Close",
+      "brief_en": "Closes a file.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-closedb",
+      "command_name": "CloseDB",
+      "brief_en": "Close the database that has been opened with the OpenDB",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cls",
+      "command_name": "Cls",
+      "brief_en": "Clears the EPSON RC+ 6.0 Run, Operator, or Command window",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjust",
+      "command_name": "Cnv_Adjust",
+      "brief_en": "Sets whether operate to tracking delay of conveyor.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-adjustget",
+      "command_name": "Cnv_AdjustGet",
+      "brief_en": "Function Returns adjustment of tracking delay of conveyor.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-flag",
+      "command_name": "Cnv_Flag",
+      "brief_en": "Function Returns the tracking state of the tracking abort line.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-name",
+      "command_name": "Cnv_Name$",
+      "brief_en": "Function Returns the name of the specified conveyor.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-point",
+      "command_name": "Cnv_Point",
+      "brief_en": "Function Returns a robot point in the specified conveyor&#x27;s coordinate",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-poserroffset",
+      "command_name": "Cnv_PosErrOffset",
+      "brief_en": "Sets an offset value to correct the deviation in current",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-queadd",
+      "command_name": "Cnv_QueAdd",
+      "brief_en": "Adds a robot point to a conveyor queue.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-quelen",
+      "command_name": "Cnv_QueLen",
+      "brief_en": "Function Returns the number of items in the specified conveyor&#x27;s queue.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-quemove",
+      "command_name": "Cnv_QueMove",
+      "brief_en": "Moves data from upstream conveyor queue to downstream",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-robotconveyor",
+      "command_name": "Cnv_RobotConveyor",
+      "brief_en": "Function Returns the conveyor being tracked by a robot.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cnv-trigger",
+      "command_name": "Cnv_Trigger",
+      "brief_en": "Latches current conveyor position for the next Cnv_QueAdd statement.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cont",
+      "command_name": "Cont",
+      "brief_en": "Resumes the controller after a Pause statement has been",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cos",
+      "command_name": "Cos",
+      "brief_en": "Returns cosine of an angle.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cp-offset",
+      "command_name": "CP_Offset",
+      "brief_en": "Sets the offset time to start the subsequent motion command when",
+      "syntax": "(1) CP_Offset [ On [, OffsetTime ] ]\n(2) CP_Offset Off",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cp-offset-2",
+      "command_name": "CP_Offset",
+      "brief_en": "Function Returns the offset time to start the subsequent motion command",
+      "syntax": "(1) CP_Offset [ On [, OffsetTime ] ]\n(2) CP_Offset Off",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-cp-offset"
+    },
+    {
+      "card_id": "spel-cmd-cr",
+      "command_name": "CR",
+      "brief_en": "Sets / returns the R axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cs",
+      "command_name": "CS",
+      "brief_en": "Sets / returns the S axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ct",
+      "command_name": "CT",
+      "brief_en": "Sets / returns the T axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ctreset",
+      "command_name": "CTReset",
+      "brief_en": "Resets a counter.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cu",
+      "command_name": "CU",
+      "brief_en": "Sets / returns the U axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-curdir",
+      "command_name": "CurDir$",
+      "brief_en": "Returns a string representing the current directory.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-curdisk",
+      "command_name": "CurDisk$",
+      "brief_en": "Returns a string representing the current disk.",
+      "syntax": "CurDisk$",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-curdrive",
+      "command_name": "CurDrive$",
+      "brief_en": "Returns a string representing the current drive.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cv",
+      "command_name": "CV",
+      "brief_en": "Sets / returns the V axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cw",
+      "command_name": "CW",
+      "brief_en": "Sets / returns the W axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cx",
+      "command_name": "CX",
+      "brief_en": "Sets / returns the X axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cy",
+      "command_name": "CY",
+      "brief_en": "Sets / returns the Y axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-cz",
+      "command_name": "CZ",
+      "brief_en": "Sets / returns the Z axis coordinate of a point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-date",
+      "command_name": "Date",
+      "brief_en": "Sets the system date.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-declare",
+      "command_name": "Declare",
+      "brief_en": "Declares an external function in a dynamic link library (DLL).",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-del",
+      "command_name": "Del",
+      "brief_en": "Deletes one or more files.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-diffpoint",
+      "command_name": "DiffPoint",
+      "brief_en": "Function Returns the difference between two specified points.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-dist",
+      "command_name": "Dist",
+      "brief_en": "Returns the distance between two robot points.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ecpclr",
+      "command_name": "ECPClr",
+      "brief_en": "Clears an ECP definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-elapsedtime",
+      "command_name": "ElapsedTime",
+      "brief_en": "Measures a takt time.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-else",
+      "command_name": "Else",
+      "brief_en": "Used with the If instruction to allow statements to be",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-era",
+      "command_name": "Era",
+      "brief_en": "Returns the robot joint number for last error.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-err",
+      "command_name": "Err",
+      "brief_en": "Returns the error number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-errmsg",
+      "command_name": "ErrMsg$",
+      "brief_en": "Returns the error message.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-erroron",
+      "command_name": "ErrorOn",
+      "brief_en": "Returns the error status of the controller.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-estopon",
+      "command_name": "EStopOn",
+      "brief_en": "Return the Emergency Stop status.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-exit",
+      "command_name": "Exit",
+      "brief_en": "Exits a loop construct or function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-false",
+      "command_name": "False.",
+      "brief_en": "Else is an option for the If/Then instruction.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-fbusio-getbusstatus",
+      "command_name": "FbusIO_GetBusStatus",
+      "brief_en": "Returns the status of the specified Fieldbus.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-filedatetime",
+      "command_name": "FileDateTime$",
+      "brief_en": "Returns the date and time of a file.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-fileexists",
+      "command_name": "FileExists",
+      "brief_en": "Checks if a file exists.",
+      "syntax": "FileExists ( filename )",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-filelen",
+      "command_name": "FileLen",
+      "brief_en": "Returns the size of a file.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-fix",
+      "command_name": "Fix",
+      "brief_en": "Returns the integer portion of a real number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-fmtstr-2",
+      "command_name": "FmtStr$",
+      "brief_en": "Format a number or string.",
+      "syntax": "FmtStr$ (expFormat, strFormat)",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-fmtstr"
+    },
+    {
+      "card_id": "spel-cmd-folderexists",
+      "command_name": "FolderExists",
+      "brief_en": "Checks if a folder exists.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-function",
+      "command_name": "Function",
+      "brief_en": "Declare a function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-function-2",
+      "command_name": "Function",
+      "brief_en": "Manual.)",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-function"
+    },
+    {
+      "card_id": "spel-cmd-getcurrentuser",
+      "command_name": "GetCurrentUser$",
+      "brief_en": "Returns the current Epson RC+ user.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-getrobotinsidebox",
+      "command_name": "GetRobotInsideBox",
+      "brief_en": "Returns a robot which is in the approach check area.",
+      "syntax": "GetRobotInsideBox(AreaNum)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-getrobotinsideplane",
+      "command_name": "GetRobotInsidePlane",
+      "brief_en": "Returns a robot which is in the approach check plane.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-gosub",
+      "command_name": "GoSub",
+      "brief_en": "Execute a subroutine.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-goto",
+      "command_name": "GoTo",
+      "brief_en": "Branch unconditionally to a line number or label.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-def",
+      "command_name": "Hand_Def",
+      "brief_en": "Function Returns “True” when hand is defined.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-label",
+      "command_name": "Hand_Label$",
+      "brief_en": "Function Returns label of the hand.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-off",
+      "command_name": "Hand_Off",
+      "brief_en": "Gripper: Execute releasing hand.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-off-2",
+      "command_name": "Hand_Off",
+      "brief_en": "Function Gripper: Returns “True” when hand is releasing state.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-hand-off"
+    },
+    {
+      "card_id": "spel-cmd-hand-on",
+      "command_name": "Hand_On",
+      "brief_en": "Gripper: Execute a gripping of hand.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-on-2",
+      "command_name": "Hand_On",
+      "brief_en": "Function Gripper: Returns “True” when hand is gripping state.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-hand-on"
+    },
+    {
+      "card_id": "spel-cmd-hand-tw",
+      "command_name": "Hand_TW",
+      "brief_en": "Function Returns “True” when the most recent Hand_On command",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hand-type",
+      "command_name": "Hand_Type",
+      "brief_en": "Function Returns type number of the hand.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-healthctrlrateoffset",
+      "command_name": "HealthCtrlRateOffset",
+      "brief_en": "Sets the offset for the consumption rate of the specified parts.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-healthratectrlinfo",
+      "command_name": "HealthRateCtrlInfo",
+      "brief_en": "Function Returns the consumption rate of the specified Controller parts.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-healthrbrateoffset",
+      "command_name": "HealthRBRateOffset",
+      "brief_en": "Sets the offset for the consumption rate of the specified parts.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-healthrbstart",
+      "command_name": "HealthRBStart",
+      "brief_en": "Starts analysis of the parts consumption for the specified",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-hex",
+      "command_name": "Hex",
+      "brief_en": "Returns a string representing a specified number in",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-history",
+      "command_name": "History",
+      "brief_en": "Displays the history of the command execution.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-home",
+      "command_name": "Home",
+      "brief_en": "Moves robot to user defined home position.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-homedef",
+      "command_name": "HomeDef",
+      "brief_en": "Returns status of home position definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-importpoints",
+      "command_name": "ImportPoints",
+      "brief_en": "Imports a point file into the current project for the specified robot.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-inputbox",
+      "command_name": "InputBox",
+      "brief_en": "Displays a prompt in a dialog box, waits for the operator to input",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-insidebox",
+      "command_name": "InsideBox",
+      "brief_en": "Returns the check status of the approach check area.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-insideplane",
+      "command_name": "InsidePlane",
+      "brief_en": "Returns the check status of the approach check plane.",
+      "syntax": "InsidePlane(PlaneNum [, robotNumber | All])",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-instr",
+      "command_name": "InStr",
+      "brief_en": "Returns position of one string within another.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-int32",
+      "command_name": "Int32",
+      "brief_en": "Declares 4-byte integer variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-integer",
+      "command_name": "Integer",
+      "brief_en": "Declares 2-byte integer variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-iodef",
+      "command_name": "IODef",
+      "brief_en": "Returns whether the specified I/O label is defined.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-iolabel",
+      "command_name": "IOLabel$",
+      "brief_en": "Returns the I/O label for a specified input or output bit, byte, or word.",
+      "syntax": "IOLabel$(IOType, IOWidth, portNumber)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ionumber",
+      "command_name": "IONumber",
+      "brief_en": "Returns the I/O number of the specified I/O label.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-joint",
+      "command_name": "Joint",
+      "brief_en": "Displays the current position for the robot in joint coordinates.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-js",
+      "command_name": "JS",
+      "brief_en": "Returns status of Sense operation.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-jtran",
+      "command_name": "JTran",
+      "brief_en": "Perform a relative move of one joint.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-jump",
+      "command_name": "Jump",
+      "brief_en": "Jumps to a point using point to point motion.",
+      "syntax": "Jump destination [CarchNumber] [LimZ [zLimit] ] [CP] \n[searchExpr] [!...!] [SYNC]",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-jump3",
+      "command_name": "Jump3",
+      "brief_en": "Jumps to a point using 3D gate motion.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-jump3cp",
+      "command_name": "Jump3CP",
+      "brief_en": "Jumps to a point using 3D motion in continuous path.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-latchstate",
+      "command_name": "LatchState",
+      "brief_en": "Function Returns the latch state of robot position using the R-I/O.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-left",
+      "command_name": "Left$",
+      "brief_en": "Returns a substring from the left side of a string.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-line",
+      "command_name": "Line",
+      "brief_en": "Input Input a string from the current display window.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-line-2",
+      "command_name": "Line",
+      "brief_en": "Input # Reads data of one line from a file, communication port, database,",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-line"
+    },
+    {
+      "card_id": "spel-cmd-line-4",
+      "command_name": "Line",
+      "brief_en": "Input # Reads data of one line from a file, communication port, database, or the device.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-line"
+    },
+    {
+      "card_id": "spel-cmd-ljm",
+      "command_name": "LJM",
+      "brief_en": "Function Returns the point data with the orientation flags converted to enable",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-loadpoints",
+      "command_name": "LoadPoints",
+      "brief_en": "Loads point data from a file in memory.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-local",
+      "command_name": "Local",
+      "brief_en": "Define a local coordinate system.",
+      "syntax": "(1) Local localNumber, ( pLocal1 : pBase1 ), ( pLocal2 : pBase2 ) [, { L | R } ] [, BaseU ]\n(2) Local localNumber, pCoordinateData\n(3) Local localNumber, pOrigin, [pXaxis], [pYaxis], [ { X | Y } ]\n(4) Local localNumber",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-localdef",
+      "command_name": "LocalDef",
+      "brief_en": "Returns status of local definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-login",
+      "command_name": "Login",
+      "brief_en": "Log into Epson RC+ as another user.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-lset",
+      "command_name": "LSet$",
+      "brief_en": "Returns a string padded with trailing spaces.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-lshift64",
+      "command_name": "LShift64",
+      "brief_en": "Shifts bits to the left.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-mcalcomplete",
+      "command_name": "MCalComplete",
+      "brief_en": "Returns status of MCal.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-meminw",
+      "command_name": "MemInW",
+      "brief_en": "Returns the status of the specified memory I/O word port.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-memsw",
+      "command_name": "MemSw",
+      "brief_en": "Returns status of memory bit.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-mid",
+      "command_name": "Mid$",
+      "brief_en": "Returns a substring.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-mod",
+      "command_name": "Mod",
+      "brief_en": "Modulus operator.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-move",
+      "command_name": "Move",
+      "brief_en": "Moves the robot using linear interpolation.",
+      "syntax": "Move destination [ROT] [ECP] [CP] [searchExpr] [!...!] [SYNC]",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-mytask",
+      "command_name": "MyTask",
+      "brief_en": "Returns current task.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-not",
+      "command_name": "Not",
+      "brief_en": "Not operator.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-p",
+      "command_name": "P#",
+      "brief_en": "Defines a specified point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pallet",
+      "command_name": "Pallet",
+      "brief_en": "Defines a pallet or returns a pallet point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-palletclr",
+      "command_name": "PalletClr",
+      "brief_en": "Clears a pallet definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-parsestr",
+      "command_name": "ParseStr",
+      "brief_en": "Parse a string and return array of tokens.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pause",
+      "command_name": "Pause",
+      "brief_en": "Pause all tasks that have pause enabled.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pdef",
+      "command_name": "PDef",
+      "brief_en": "Returns the definition status of a specified point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pdescription",
+      "command_name": "PDescription",
+      "brief_en": "Define a description of specified point data.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-peakspeedclear",
+      "command_name": "PeakSpeedClear",
+      "brief_en": "Clears and initializes the peak speed for one or more joints.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pg-faststop",
+      "command_name": "PG_FastStop",
+      "brief_en": "Stops the PG axes immediately.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pg-slowstop",
+      "command_name": "PG_SlowStop",
+      "brief_en": "Stops slowly the PG axis spinning continuously.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-plabel",
+      "command_name": "PLabel",
+      "brief_en": "Defines a label for a specified point.",
+      "syntax": "PLabel pointNumber, newLabel",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-plabel-2",
+      "command_name": "PLabel$",
+      "brief_en": "Returns the point label associated with a point number.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-plabel"
+    },
+    {
+      "card_id": "spel-cmd-planeclr",
+      "command_name": "PlaneClr",
+      "brief_en": "Clears (undefines) a Plane definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pls",
+      "command_name": "Pls",
+      "brief_en": "Returns the pulse value of one joint.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-pnumber",
+      "command_name": "PNumber",
+      "brief_en": "Returns the point number associated with a point label.",
+      "syntax": "PNumber(pointLabel)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-posfound",
+      "command_name": "PosFound",
+      "brief_en": "Returns status of Find operation.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ppls",
+      "command_name": "PPls",
+      "brief_en": "Return the pulse position of a specified joint value from a specified point.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ptclr",
+      "command_name": "PTCLR",
+      "brief_en": "Clears and initializes the peak torque for one or more joints.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ptptime",
+      "command_name": "PTPTime",
+      "brief_en": "Returns the estimated time for a point to point motion command",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-qp",
+      "command_name": "QP",
+      "brief_en": "Sets / returns Quick Pause status.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-radtodeg",
+      "command_name": "RadToDeg",
+      "brief_en": "Converts radians to degrees.",
+      "syntax": "RadToDeg(radians)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-randomize",
+      "command_name": "Randomize",
+      "brief_en": "Initializes the random-number generator.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-read",
+      "command_name": "Read",
+      "brief_en": "Reads characters from a file or communications port.",
+      "syntax": "Read #portNumber, stringVar$, count",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-read-2",
+      "command_name": "Read",
+      "brief_en": "Reads characters from a file or communications port.",
+      "syntax": "Read #portNumber, stringVar$, count",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-read"
+    },
+    {
+      "card_id": "spel-cmd-readbin",
+      "command_name": "ReadBin",
+      "brief_en": "Reads binary data from a file or communications port.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-readbin-2",
+      "command_name": "ReadBin",
+      "brief_en": "Reads binary data from a file or communications port.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-readbin"
+    },
+    {
+      "card_id": "spel-cmd-realaccel",
+      "command_name": "RealAccel",
+      "brief_en": "Function Returns the Accel value automatically adjusted by OLAccel.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-realpos",
+      "command_name": "RealPos",
+      "brief_en": "Returns the current position of the specified robot.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-recoverpos",
+      "command_name": "RecoverPos",
+      "brief_en": "Returns the position where a robot was in when safeguard",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-rendir",
+      "command_name": "RenDir",
+      "brief_en": "Rename a directory.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-resetelapsedtime",
+      "command_name": "ResetElapsedTime",
+      "brief_en": "Resets and starts a takt time measurement timer.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-resume",
+      "command_name": "Resume",
+      "brief_en": "Resume a task in the halt state.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-right",
+      "command_name": "Right$",
+      "brief_en": "Returns a substring from the right side of a string.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-rnd",
+      "command_name": "Rnd",
+      "brief_en": "Return a random number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-robotmodel",
+      "command_name": "RobotModel$",
+      "brief_en": "Returns the robot model name.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-robotname",
+      "command_name": "RobotName$",
+      "brief_en": "Returns the robot name.",
+      "syntax": "RobotName$",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-robotserial",
+      "command_name": "RobotSerial$",
+      "brief_en": "Returns the robot serial number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ropen",
+      "command_name": "ROpen",
+      "brief_en": "Opens a file for reading.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-rset",
+      "command_name": "RSet$",
+      "brief_en": "Returns a string padded with leading spaces.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-rshift64",
+      "command_name": "RShift64",
+      "brief_en": "Shifts bits to the right.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-rundialog",
+      "command_name": "RunDialog",
+      "brief_en": "Runs an Epson RC+ dialog from a SPEL+ program.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-safety",
+      "command_name": "Safety",
+      "brief_en": "Function Commands (For details, see Robot Controller Safety",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-savepoints",
+      "command_name": "SavePoints",
+      "brief_en": "Saves point data to a file in memory.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-select",
+      "command_name": "Select",
+      "brief_en": "... Send Executes one of several groups of statements, depending on",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-setin",
+      "command_name": "SetIn",
+      "brief_en": "For Virtual IO, sets specified input port (8 bits) to the specified value.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-setnet",
+      "command_name": "SetNet",
+      "brief_en": "Sets parameters for a TCP/IP port.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-sf-getparam",
+      "command_name": "SF_GetParam",
+      "brief_en": "Function Returns information on the safety function parameters.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-sf-getparam-2",
+      "command_name": "SF_GetParam$",
+      "brief_en": "Function Returns text information on the safety function parameters.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-sf-getparam"
+    },
+    {
+      "card_id": "spel-cmd-sf-getstatus",
+      "command_name": "SF_GetStatus",
+      "brief_en": "Function Returns the status bit of the safety function.",
+      "syntax": "SF_GetStatus (index)",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-sf-peakspeedsclear",
+      "command_name": "SF_PeakSpeedSClear",
+      "brief_en": "Statement Clears and initializes the peak speed value for the speed",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-sgn",
+      "command_name": "Sgn",
+      "brief_en": "Returns the sign of a number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-signal",
+      "command_name": "Signal",
+      "brief_en": "Sends a signal to tasks executing WaitSig.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-simset",
+      "command_name": "SimSet",
+      "brief_en": "Sets the object settings, operations, and robot motions of simulator.",
+      "syntax": "(1) Property setting for object \nSimSet Object.Property, Value\nSimSet Robot.Hand.Property, Value\n(2) Motion settings for robot (Pick &amp; Place) \nSimSet Robot.Pick, Object [,Tool]\nSimSet Robot.Place, Object \n(3) Operation settings for objects (specify the parent object) \nSimSet Object.SetParent [, ",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-sin",
+      "command_name": "Sin",
+      "brief_en": "Returns the sine of an angle.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-space",
+      "command_name": "Space$",
+      "brief_en": "Returns a string containing space characters.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-str",
+      "command_name": "Str$",
+      "brief_en": "Converts a number to a string.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-synunlock",
+      "command_name": "SynUnlock",
+      "brief_en": "Unlocks a sync ID that was previously locked with SyncLock.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-tab",
+      "command_name": "Tab$",
+      "brief_en": "Returns a string containing the specified number of tabs characters.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-targetok",
+      "command_name": "TargetOK",
+      "brief_en": "Returns a status indicating whether or not the PTP (Point to Point)",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-taskinfo-2",
+      "command_name": "TaskInfo$",
+      "brief_en": "Returns task text information.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-taskinfo"
+    },
+    {
+      "card_id": "spel-cmd-taskwait",
+      "command_name": "TaskWait",
+      "brief_en": "Waits to for a task to terminate.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-teachon",
+      "command_name": "TeachOn",
+      "brief_en": "Returns the Teach mode status.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-technology",
+      "command_name": "Technology",
+      "brief_en": "Manual.)",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-time-2",
+      "command_name": "Time$",
+      "brief_en": "Returns system time as a string.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-time"
+    },
+    {
+      "card_id": "spel-cmd-tldef",
+      "command_name": "TLDef",
+      "brief_en": "Returns status of tool definition.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-tlset",
+      "command_name": "TLSet",
+      "brief_en": "Defines or displays a tool coordinate system.",
+      "syntax": "(1) TLSet toolNum, toolDefPoint\n(2) TLSet toolNum\n(3) TLSet",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-tmout",
+      "command_name": "TMOut",
+      "brief_en": "Sets default time out for Wait statement.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-tmreset",
+      "command_name": "TmReset",
+      "brief_en": "Resets a timer to 0.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ton",
+      "command_name": "Ton",
+      "brief_en": "Specifies a task which shows an execution line on the LCD.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-trap",
+      "command_name": "Trap",
+      "brief_en": "Specify a trap handler.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-tw",
+      "command_name": "Tw",
+      "brief_en": "Returns the status of the Wait condition and Wait timer interval.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ubyte",
+      "command_name": "UByte",
+      "brief_en": "Declares unsigned integer variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-uint32",
+      "command_name": "UInt32",
+      "brief_en": "Declares unsigned 4-byte integer variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-uopen",
+      "command_name": "Uopen",
+      "brief_en": "Opens a file for read / write access.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-ushort",
+      "command_name": "UShort",
+      "brief_en": "Declares unsigned 2-byte integer variables.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt",
+      "command_name": "VRT",
+      "brief_en": "Commands (For details, see Vibration Reduction",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-2",
+      "command_name": "VRT",
+      "brief_en": "Statement Select VRT number or display the selected VRT number.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt"
+    },
+    {
+      "card_id": "spel-cmd-vrt-3",
+      "command_name": "VRT",
+      "brief_en": "Function Returns the current VRT number.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt"
+    },
+    {
+      "card_id": "spel-cmd-vrt-clr",
+      "command_name": "VRT_Clr",
+      "brief_en": "Statement Clear the definition of VRT function.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion",
+      "command_name": "VRT_CPMotion",
+      "brief_en": "Statement Specifies whether enable or disable VRT function during CP motion.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-cpmotion-2",
+      "command_name": "VRT_CPMotion",
+      "brief_en": "Function Returns enable or disable VRT function during CP motion.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt-cpmotion"
+    },
+    {
+      "card_id": "spel-cmd-vrt-def",
+      "command_name": "VRT_Def",
+      "brief_en": "Function Returns definition status of selected VRT number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-description",
+      "command_name": "VRT_Description",
+      "brief_en": "Statement Define a description for selected VRT number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-description-2",
+      "command_name": "VRT_Description$",
+      "brief_en": "Function Returns description of selected VRT number.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt-description"
+    },
+    {
+      "card_id": "spel-cmd-vrt-label",
+      "command_name": "VRT_Label",
+      "brief_en": "Statement Define a label to selected VRT number.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-label-2",
+      "command_name": "VRT_Label$",
+      "brief_en": "Function Returns label of selected VRT number.",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt-label"
+    },
+    {
+      "card_id": "spel-cmd-vrt-number",
+      "command_name": "VRT_Number",
+      "brief_en": "Function Returns VRT number that corresponding VRT label.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-set",
+      "command_name": "VRT_Set",
+      "brief_en": "Statement Define VRTParam1 and VRTParam2 of VRT function for each",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vrt-set-2",
+      "command_name": "VRT_Set",
+      "brief_en": "Function Returns definition value of VRTParam1 and VRTParam2 that is",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-vrt-set"
+    },
+    {
+      "card_id": "spel-cmd-vrt-trigger",
+      "command_name": "VRT_Trigger",
+      "brief_en": "Statement Output measurement trigger to VR software.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vxcaldelete",
+      "command_name": "VxCalDelete",
+      "brief_en": "Deletes the calibration data.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vxcalib",
+      "command_name": "VxCalib",
+      "brief_en": "Creates the calibration data.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vxcalinfo",
+      "command_name": "VxCalInfo",
+      "brief_en": "Returns the calibration completion status / calibration data.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-vxtrans",
+      "command_name": "VxTrans",
+      "brief_en": "Converts the pixel coordinates to the robot coordinates and",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-waitnet",
+      "command_name": "WaitNet",
+      "brief_en": "Wait for TCP/IP port connection to be established.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-waitsig",
+      "command_name": "WaitSig",
+      "brief_en": "Waits for a signal from another task.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-where",
+      "command_name": "Where",
+      "brief_en": "Displays current robot position data.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-wopen",
+      "command_name": "WOpen",
+      "brief_en": "Opens a file for writing.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-workque-get",
+      "command_name": "WorkQue_Get",
+      "brief_en": "Function Returns the point data from the specified work queue.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-workque-list",
+      "command_name": "WorkQue_List",
+      "brief_en": "Displays the work queue data list (point data and user data)",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-write",
+      "command_name": "Write",
+      "brief_en": "Writes characters to a file or communication port without end of",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-write-2",
+      "command_name": "Write",
+      "brief_en": "Writes characters to a file or communication port without",
+      "syntax": "",
+      "is_dup_card": true,
+      "dup_of": "spel-cmd-write"
+    },
+    {
+      "card_id": "spel-cmd-xor",
+      "command_name": "Xor",
+      "brief_en": "Exclusive Or operator.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-xqt",
+      "command_name": "Xqt",
+      "brief_en": "Execute a task.",
+      "syntax": "Xqt [taskNumber,] funcName [(argList)] [, Normal | NoPause | NoEmgAbort ]",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-xylimclr",
+      "command_name": "XYLimClr",
+      "brief_en": "Clears the XYLim definition.",
+      "syntax": "XYLimClr",
+      "is_dup_card": false,
+      "dup_of": null
+    },
+    {
+      "card_id": "spel-cmd-xylimdef",
+      "command_name": "XYLimDef",
+      "brief_en": "Returns whether XYLim has been defined or not.",
+      "syntax": "",
+      "is_dup_card": false,
+      "dup_of": null
+    }
+  ],
+  "dup_cards_needing_th_clone": [
+    {
+      "card_id": "spel-cmd-aio-out-2",
+      "command_name": "AIO_Out",
+      "base_card_id": "spel-cmd-aio-out",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-aio-outw-2",
+      "command_name": "AIO_OutW",
+      "base_card_id": "spel-cmd-aio-outw",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-aio-set-2",
+      "command_name": "AIO_Set",
+      "base_card_id": "spel-cmd-aio-set",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-autoljm-2",
+      "command_name": "AutoLJM",
+      "base_card_id": "spel-cmd-autoljm",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-autoorientationflag-2",
+      "command_name": "AutoOrientationFlag",
+      "base_card_id": "spel-cmd-autoorientationflag",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-avgspeed-2",
+      "command_name": "AvgSpeed",
+      "base_card_id": "spel-cmd-avgspeed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-avoidsingularity-2",
+      "command_name": "AvoidSingularity",
+      "base_card_id": "spel-cmd-avoidsingularity",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-accel-2",
+      "command_name": "Cnv_Accel",
+      "base_card_id": "spel-cmd-cnv-accel",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-accellim-2",
+      "command_name": "Cnv_AccelLim",
+      "base_card_id": "spel-cmd-cnv-accellim",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-downstream-2",
+      "command_name": "Cnv_Downstream",
+      "base_card_id": "spel-cmd-cnv-downstream",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-fine-2",
+      "command_name": "Cnv_Fine",
+      "base_card_id": "spel-cmd-cnv-fine",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-mode-2",
+      "command_name": "Cnv_Mode",
+      "base_card_id": "spel-cmd-cnv-mode",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-offsetangle-2",
+      "command_name": "Cnv_OffsetAngle",
+      "base_card_id": "spel-cmd-cnv-offsetangle",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-quereject-2",
+      "command_name": "Cnv_QueReject",
+      "base_card_id": "spel-cmd-cnv-quereject",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-queuserdata-2",
+      "command_name": "Cnv_QueUserData",
+      "base_card_id": "spel-cmd-cnv-queuserdata",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-cnv-upstream-2",
+      "command_name": "Cnv_Upstream",
+      "base_card_id": "spel-cmd-cnv-upstream",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-date-2",
+      "command_name": "Date$",
+      "base_card_id": "spel-cmd-date",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-hand-2",
+      "command_name": "Hand",
+      "base_card_id": "spel-cmd-hand",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthctrlinfo-2",
+      "command_name": "HealthCtrlInfo",
+      "base_card_id": "spel-cmd-healthctrlinfo",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthctrlwarningenable-2",
+      "command_name": "HealthCtrlWarningEnable",
+      "base_card_id": "spel-cmd-healthctrlwarningenable",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbanalysis-2",
+      "command_name": "HealthRBAnalysis",
+      "base_card_id": "spel-cmd-healthrbanalysis",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbdistance-2",
+      "command_name": "HealthRBDistance",
+      "base_card_id": "spel-cmd-healthrbdistance",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbinfo-2",
+      "command_name": "HealthRBInfo",
+      "base_card_id": "spel-cmd-healthrbinfo",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbspeed-2",
+      "command_name": "HealthRBSpeed",
+      "base_card_id": "spel-cmd-healthrbspeed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbtrq-2",
+      "command_name": "HealthRBTRQ",
+      "base_card_id": "spel-cmd-healthrbtrq",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-healthrbwarningenable-2",
+      "command_name": "HealthRBWarningEnable",
+      "base_card_id": "spel-cmd-healthrbwarningenable",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-input-2",
+      "command_name": "Input",
+      "base_card_id": "spel-cmd-input",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-input-3",
+      "command_name": "Input",
+      "base_card_id": "spel-cmd-input",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-limittorque-2",
+      "command_name": "LimitTorque",
+      "base_card_id": "spel-cmd-limittorque",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-limittorquelp-2",
+      "command_name": "LimitTorqueLP",
+      "base_card_id": "spel-cmd-limittorquelp",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-limittorquestop-2",
+      "command_name": "LimitTorqueStop",
+      "base_card_id": "spel-cmd-limittorquestop",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-limittorquestoplp-2",
+      "command_name": "LimitTorqueStopLP",
+      "base_card_id": "spel-cmd-limittorquestoplp",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-on-2",
+      "command_name": "on",
+      "base_card_id": "spel-cmd-on",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-opencom-2",
+      "command_name": "OpenCom",
+      "base_card_id": "spel-cmd-opencom",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-opennet-2",
+      "command_name": "OpenNet",
+      "base_card_id": "spel-cmd-opennet",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-pdescription-2",
+      "command_name": "PDescription$",
+      "base_card_id": "spel-cmd-pdescription",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-peakspeed-2",
+      "command_name": "PeakSpeed",
+      "base_card_id": "spel-cmd-peakspeed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-performmode-2",
+      "command_name": "PerformMode",
+      "base_card_id": "spel-cmd-performmode",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-print-2",
+      "command_name": "Print",
+      "base_card_id": "spel-cmd-print",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-print-3",
+      "command_name": "Print",
+      "base_card_id": "spel-cmd-print",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-robotinfo-2",
+      "command_name": "RobotInfo$",
+      "base_card_id": "spel-cmd-robotinfo",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeeds-2",
+      "command_name": "SF_LimitSpeedS",
+      "base_card_id": "spel-cmd-sf-limitspeeds",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-sf-limitspeedsenable-2",
+      "command_name": "SF_LimitSpeedSEnable",
+      "base_card_id": "spel-cmd-sf-limitspeedsenable",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-sf-peakspeeds-2",
+      "command_name": "SF_PeakSpeedS",
+      "base_card_id": "spel-cmd-sf-peakspeeds",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-sf-realspeeds-2",
+      "command_name": "SF_RealSpeedS",
+      "base_card_id": "spel-cmd-sf-realspeeds",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-singularityangle-2",
+      "command_name": "SingularityAngle",
+      "base_card_id": "spel-cmd-singularityangle",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-singularitydist-2",
+      "command_name": "SingularityDist",
+      "base_card_id": "spel-cmd-singularitydist",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-singularityspeed-2",
+      "command_name": "SingularitySpeed",
+      "base_card_id": "spel-cmd-singularityspeed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-softcp-2",
+      "command_name": "SoftCP",
+      "base_card_id": "spel-cmd-softcp",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-speed-2",
+      "command_name": "speed",
+      "base_card_id": "spel-cmd-speed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-speed-3",
+      "command_name": "speed",
+      "base_card_id": "spel-cmd-speed",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-vsd-2",
+      "command_name": "VSD",
+      "base_card_id": "spel-cmd-vsd",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-workque-autoremove-2",
+      "command_name": "WorkQue_AutoRemove",
+      "base_card_id": "spel-cmd-workque-autoremove",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-workque-reject-2",
+      "command_name": "WorkQue_Reject",
+      "base_card_id": "spel-cmd-workque-reject",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-workque-sort-2",
+      "command_name": "WorkQue_Sort",
+      "base_card_id": "spel-cmd-workque-sort",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-workque-userdata-2",
+      "command_name": "WorkQue_UserData",
+      "base_card_id": "spel-cmd-workque-userdata",
+      "base_is_translated": true
+    },
+    {
+      "card_id": "spel-cmd-writebin-2",
+      "command_name": "WriteBin",
+      "base_card_id": "spel-cmd-writebin",
+      "base_is_translated": true
+    }
+  ]
+}
