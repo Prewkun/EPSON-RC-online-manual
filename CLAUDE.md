@@ -161,13 +161,12 @@ See `TRANSLATION_PROGRESS.md` for the full PR-by-PR breakdown. Current state:
 
 ### Git workflow
 
-All development happens on feature branches. PRs follow a structured naming convention:
+All development happens directly on `main`. Commit and push to `main` for every change.
 
-- **PR 1–PR 6e**: Numbered phases of the Thai translation project
+- **PR 1–PR 7a**: Numbered phases of the Thai translation project (now merged to main)
 - Each PR has a descriptive title and updates `TRANSLATION_PROGRESS.md`
-- Branch naming: `claude/claude-md-docs-*` for AI-assisted sessions
 
-Current working branch: `claude/claude-md-docs-cu4C0`
+Current working branch: `main`
 
 ### Making changes to index.html
 
