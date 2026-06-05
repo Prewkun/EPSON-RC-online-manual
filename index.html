@@ -25,7 +25,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 .tab-count{background:var(--surface2);color:var(--text3);font-size:10px;padding:1px 6px;border-radius:10px}
 #tab-gui .tab-count{background:rgba(92,191,124,.15);color:var(--gui-accent)}
 #sidebar{width:var(--sidebar-w);background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:44px;left:0;bottom:0;overflow:hidden;z-index:100;}
-#main{margin-left:var(--sidebar-w);padding-top:44px;min-width:0;overflow-x:hidden;width:calc(100% - var(--sidebar-w))}
+#main{margin-left:var(--sidebar-w);padding-top:44px;min-width:0;overflow-x:clip;width:calc(100% - var(--sidebar-w))}
 .sidebar-header{padding:14px 16px 10px;border-bottom:1px solid var(--border)}
 .sidebar-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
 .sidebar-title.spel-color{color:var(--accent)}
@@ -173,7 +173,7 @@ button,a,.chip,.nav-link,.cmd-header,.page-tab{touch-action:manipulation}
 .rc-subsec-pg{color:var(--text3);white-space:nowrap}
 
 /* Overflow guard for page containers */
-#page-spel,#page-gui,#page-rc{width:100%;overflow-x:hidden;box-sizing:border-box}
+#page-spel,#page-gui,#page-rc{width:100%;overflow-x:clip;box-sizing:border-box}
 .page-hero{box-sizing:border-box}
 #topbar-rc{width:100%}
 
@@ -333,7 +333,7 @@ button,a,.chip,.nav-link,.cmd-header,.page-tab{touch-action:manipulation}
 <div id="main" role="main">
 
   <!-- SPEL+ PAGE -->
-  <div id="page-spel" style="width:100%;overflow-x:hidden">
+  <div id="page-spel" style="width:100%;overflow-x:clip">
     <header id="topbar">
       <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap" data-i18n="topbar-spel">SPEL+ Language Reference</span>
       <div class="topbar-search">
@@ -16383,7 +16383,7 @@ Returns
 
 
   <!-- RC+ USERS GUIDE PAGE -->
-  <div id="page-rc" style="display:none;width:100%;overflow-x:hidden">
+  <div id="page-rc" style="display:none;width:100%;overflow-x:clip">
     <header id="topbar-rc" style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50;width:100%;box-sizing:border-box;">
       <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap" data-i18n="topbar-rc">RC+ Users Guide</span>
       <div class="topbar-search">
@@ -16449,7 +16449,7 @@ Returns
   </div>
 
   <!-- A–Z INDEX PAGE -->
-  <div id="page-idx" style="display:none;width:100%;overflow-x:hidden">
+  <div id="page-idx" style="display:none;width:100%;overflow-x:clip">
     <header id="topbar-idx" style="position:sticky;top:44px;background:rgba(15,17,23,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px;z-index:50;width:100%;box-sizing:border-box;">
       <span style="font-size:13px;font-weight:600;color:var(--text2);white-space:nowrap">A–Z Command Index</span>
       <div class="topbar-search"><input type="text" id="idx-search" placeholder="Filter index…" aria-label="Filter command index" oninput="filterIndex(this.value)"></div>
