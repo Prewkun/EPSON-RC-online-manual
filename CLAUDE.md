@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A fully self-contained, interactive **single-file HTML reference manual** for Epson RC+ 8.0. The output (`index.html`, ~1.4 MB) is opened directly in a browser — no server, no npm, no build step required. It was generated from three official Epson PDFs via a multi-phase Python pipeline and is actively maintained with new features and translations.
+A fully self-contained, interactive **single-file HTML reference manual** for Epson RC+ 8.0. The output (`index.html`, ~1.6 MB) is opened directly in a browser — no server, no npm, no build step required. It was generated from three official Epson PDFs via a multi-phase Python pipeline and is actively maintained with new features and translations.
 
 ---
 
@@ -10,7 +10,7 @@ A fully self-contained, interactive **single-file HTML reference manual** for Ep
 
 ```
 /
-├── index.html               # The entire application (HTML + CSS + JS, ~18,800 lines)
+├── index.html               # The entire application (HTML + CSS + JS, ~18,900 lines, ~1.6 MB)
 ├── README.md                # User-facing project overview
 ├── TRANSLATION_PROGRESS.md  # Tracks Thai (TH) translation PR state
 ├── Manual/
@@ -23,13 +23,20 @@ A fully self-contained, interactive **single-file HTML reference manual** for Ep
     ├── phase5_run.py        # Phase 5: HTML generation from component map
     ├── phase6_run.py        # Phase 6: RC+ Users Guide tab injection
     ├── inject_tab3.py       # Utility: inject tab3 section into index.html
-    ├── content_map.json     # Phase 1 output (raw extracted content, 6.7 MB)
-    ├── content_tree.json    # Phase 2 output (structured hierarchy, 3.9 MB)
-    ├── enriched_tree.json   # Phase 3 output (AI-enriched, 5.0 MB)
-    ├── component_map.json   # Phase 4 output (interactive components, 3.0 MB)
+    ├── pr7a_inject_descs.py # PR 7a: inject English descriptions from SPEL+ PDF
+    ├── content_map.json     # Phase 1 output (raw extracted content, 6.4 MB)
+    ├── content_tree.json    # Phase 2 output (structured hierarchy, 3.8 MB)
+    ├── enriched_tree.json   # Phase 3 output (AI-enriched, 4.8 MB)
+    ├── component_map.json   # Phase 4 output (interactive components, 2.9 MB)
     ├── chapters.json        # RC+ Users Guide chapter metadata
     ├── tab3_content.html    # Injected RC+ Users Guide content fragment
     ├── tab3_sidebar.html    # Injected RC+ Users Guide sidebar fragment
+    ├── spel_ref.txt         # Raw pdftotext of SPEL+ reference PDF (1.2 MB)
+    ├── spel_ref_clean.txt   # spel_ref.txt with "Syntax Error" lines removed (1.2 MB)
+    ├── pr7a_injection_report.json   # PR 7a result: 198 injected, 116 missed
+    ├── pr8_batches.json     # PR 8 work batches: 200 cards needing Thai desc translation
+    ├── translation_gap_report.json  # Coverage audit: empty descs + dup-card clone candidates
+    ├── manual.html          # Intermediate HTML fragment (pipeline artifact)
     ├── .phase2_cache.json   # Incremental build cache for phase 2
     ├── .phase3_cache.json   # Incremental build cache for phase 3
     └── phase*_report.txt    # Human-readable phase diagnostics
@@ -41,7 +48,7 @@ A fully self-contained, interactive **single-file HTML reference manual** for Ep
 
 The entire application lives in `index.html`. It has three sections:
 
-### 1. CSS (`<style>` block, ~177 lines)
+### 1. CSS (`<style>` block, ~200 lines)
 
 - CSS custom properties (design tokens) at `:root` level
 - Accent colours: `--accent` (SPEL+, blue), `--gui-accent` (GUI, green), `--rc-accent` (RC+ Guide, purple)
@@ -83,14 +90,14 @@ Each tab has a matching sidebar with `id` `spel-nav`, `gui-nav`, `rc-nav`, `idx-
 </div>
 ```
 
-### 3. JavaScript (`<script>` block, ~6,000+ lines)
+### 3. JavaScript (`<script>` block, ~6,500+ lines)
 
 Key data structures:
 
 | Variable | Purpose |
 |---|---|
-| `CONTENT_TRANSLATIONS` | `{englishBrief: thaiTranslation}` — 812 entries for `.cmd-brief` text |
-| `DESC_TRANSLATIONS` | `{englishDesc: thaiTranslation}` — `.cmd-desc` full-paragraph translations |
+| `CONTENT_TRANSLATIONS` | `{englishBrief: thaiTranslation}` — 812 entries for `.cmd-brief` text (100% coverage) |
+| `DESC_TRANSLATIONS` | `{'card-id:0': thaiTranslation}` — 705 entries for `.cmd-desc` paragraphs (100% coverage) |
 | `SEE_ALSO_LINKS` | `{sectionId: [{text, target}]}` — resolved hyperlink targets for See Also |
 | `UI_TRANSLATIONS` | `{key: {en, th}}` — all UI labels keyed by `data-i18n` attribute value |
 
@@ -129,7 +136,8 @@ The app supports English (`en`) and Thai (`th`). Language preference is persiste
 - Code blocks inside `.cmd-syntax` and `.cmd-example` are **never** translated.
 
 **How to add a command description translation:**
-- Add to `DESC_TRANSLATIONS`: `'Exact English description text': 'Thai translation'`
+- Add to `DESC_TRANSLATIONS`: `'spel-cmd-CARDID:0': 'Thai translation'`
+- Keys use the card's HTML `id` attribute plus `:0` (e.g. `'spel-cmd-reset:0'`).
 - These are longer paragraph strings from `.cmd-desc` elements.
 
 **How to add a See Also hyperlink:**
@@ -140,16 +148,17 @@ The app supports English (`en`) and Thai (`th`). Language preference is persiste
 
 ## Translation Progress (Thai)
 
-See `TRANSLATION_PROGRESS.md` for the full PR-by-PR breakdown. Current state:
+See `TRANSLATION_PROGRESS.md` for the full PR-by-PR breakdown. **All translation work is complete.**
 
-- `CONTENT_TRANSLATIONS`: **100%** (812/812 entries) — command briefs fully translated
-- `DESC_TRANSLATIONS`: **~98%** — most command descriptions translated (PR 6a–6e still open)
-- `SEE_ALSO_LINKS` SPEL+: **81.6%** (PR 5a open), GUI Builder: **100%** (PR 5b merged)
+| Dictionary | Coverage | Entries |
+|---|---|---|
+| `CONTENT_TRANSLATIONS` | **100%** (812/812) | All `.cmd-brief` one-liners |
+| `DESC_TRANSLATIONS` | **100%** (705/705) | All `.cmd-desc` paragraphs with content |
+| `SEE_ALSO_LINKS` SPEL+ | **81.6%** (433/474 sections) | Cross-ref hyperlinks |
+| `SEE_ALSO_LINKS` GUI | **100%** (62/100 entries linked) | GUI Builder cross-refs |
+| UI labels | **100%** | Buttons, chips, nav, status bar |
 
-**To resume translation work in a new session:**
-1. Read `TRANSLATION_PROGRESS.md` to see which PRs are open.
-2. Use the grep/diff commands in that file to find the next untranslated batch.
-3. Commit translations, update `TRANSLATION_PROGRESS.md`, push, and open a PR.
+No further translation PRs are planned. If new commands or descriptions are added, follow the conventions in this file to add entries to the appropriate dictionary.
 
 ---
 
@@ -163,8 +172,9 @@ See `TRANSLATION_PROGRESS.md` for the full PR-by-PR breakdown. Current state:
 
 All development happens directly on `main`. Commit and push to `main` for every change.
 
-- **PR 1–PR 7a**: Numbered phases of the Thai translation project (now merged to main)
+- **PR 1–PR 8d**: 20+ numbered phases of the Thai translation + content pipeline (all merged to main)
 - Each PR has a descriptive title and updates `TRANSLATION_PROGRESS.md`
+- Other merged work: mobile view improvements (responsive hamburger nav), 111 broken cross-ref fixes, 102 duplicate ID deduplication, 29 phantom card removals
 
 Current working branch: `main`
 
