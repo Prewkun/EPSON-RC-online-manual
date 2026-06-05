@@ -28,10 +28,10 @@ where work left off.
 | **PR 6e** | cmd-desc translations — GUI Builder (124 entries) | ✅ Merged |
 | **PR 7a** | PDF pipeline — inject 198 English descriptions into empty SPEL+ cmd-cards (83.3% coverage) | ✅ Merged |
 | **PR 7b** | Clone 57 Thai desc translations from base cards to `-2`/`-3` duplicate cards | ✅ Merged |
-| **PR 8a** | Thai desc translations — newly injected SPEL+ A–F (batch 1 of ~4, ~65 entries) | 🔜 Next |
-| **PR 8b** | Thai desc translations — newly injected SPEL+ G–M (~65 entries) | ⬜ Queued |
-| **PR 8c** | Thai desc translations — newly injected SPEL+ N–S (~65 entries) | ⬜ Queued |
-| **PR 8d** | Thai desc translations — newly injected SPEL+ T–Z (~62 entries) | ⬜ Queued |
+| **PR 8a** | Thai desc translations — newly injected SPEL+ Accel–ErrMsg (65 entries) | ✅ Merged |
+| **PR 8b** | Thai desc translations — newly injected SPEL+ ErrorOn–LocalDef (45 entries) | ✅ Merged |
+| **PR 8c** | Thai desc translations — newly injected SPEL+ Login–RSet (45 entries) | ✅ Merged |
+| **PR 8d** | Thai desc translations — newly injected SPEL+ RShift64–XYLimDef (45 entries) | ✅ Merged |
 
 ---
 
@@ -41,42 +41,16 @@ where work left off.
 |---|---|---|
 | After PR 6a–6e | 448 | SPEL+ A–Z + GUI Builder, original descriptions only |
 | After PR 7b | 505 | +57 cloned from base cards to `-2`/`-3` duplicates |
-| After PR 8a–8d (target) | ~762 | +257 translations for PR 7a newly injected descriptions |
+| After PR 8a (65 entries) | 570 | Accel–ErrMsg |
+| After PR 8b (45 entries) | 615 | ErrorOn–LocalDef |
+| After PR 8c+8d (90 entries) | 705 | Login–XYLimDef — full coverage ✅ |
 
 ---
 
-## PR 8 Scope — Cards Needing Thai Desc Translation
+## PR 8 Scope — ✅ Complete
 
-257 SPEL+ cmd-cards now have English descriptions (injected in PR 7a) but no Thai translation yet.
-These are split into ~4 alphabetical batches of ~65 entries each.
-
-**To generate the batch list for the next session:**
-```python
-import re, json
-html = open('index.html', encoding='utf-8').read()
-m = re.search(r'const DESC_TRANSLATIONS\s*=\s*\{(.*?)\n\};', html, re.DOTALL)
-block = m.group(1)
-card_pat = re.compile(r'<div class="cmd-card" id="(spel-cmd-[^"]+)">')
-positions = [(mt.start(), mt.group(1)) for mt in card_pat.finditer(html)]
-needs_th = []
-for i, (start, cid) in enumerate(positions):
-    end = positions[i+1][0] if i+1 < len(positions) else len(html)
-    seg = html[start:end]
-    dm = re.search(r'<div class="cmd-desc">(.*?)</div>', seg, re.DOTALL)
-    if dm:
-        en = re.sub(r'<[^>]+>', '', dm.group(1)).strip()
-        if en and (cid + ':0') not in block:
-            needs_th.append((cid, en))
-needs_th.sort(key=lambda x: x[0])
-print(f"Cards needing TH desc: {len(needs_th)}")
-for cid, en in needs_th[:20]:
-    print(f"  {cid}: {en[:80]}")
-```
-
-**Translation entry format** (add to `DESC_TRANSLATIONS` in `index.html`):
-```javascript
-'spel-cmd-CARDID:0': 'Thai translation text here',
-```
+All 200 newly injected SPEL+ cmd-cards now have Thai desc translations.
+`DESC_TRANSLATIONS` coverage: **705 entries** — all cards with descriptions are translated.
 
 ---
 
@@ -96,7 +70,7 @@ for cid, en in needs_th[:20]:
 ## How to Resume in a New Session
 
 1. Read this file to find the last merged PR and what's next.
-2. For **PR 8a–8d** (Thai desc translations): run the Python snippet above to get the list of 257 cards needing translation, take the first alphabetical batch (~65), translate each English desc into Thai, add entries to `DESC_TRANSLATIONS` in `index.html`, commit to `main`, update this file.
+2. All Thai translation work (CONTENT_TRANSLATIONS, DESC_TRANSLATIONS, SEE_ALSO_LINKS, UI labels) is **complete**.
 3. All commits go directly to `main` (no feature branches).
 
 ---
