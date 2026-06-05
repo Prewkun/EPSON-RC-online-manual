@@ -501,7 +501,7 @@ Print &quot;Today&#x27;s date: &quot;, Date$</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the controller accumulated operating time.</div></div>
         </div><div class="cmd-card" id="spel-cmd-hour">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Hour</code>
@@ -680,7 +680,7 @@ Print &quot;Task 1 started: &quot;TaskInfo$(1, 1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Index Task number 0 – Background task 1 – Normal task, NoPause task, or NoEmgAbort task Task type 0 - Normal task. Nothing specified in Xqt or start the task by Normal 1 - NoPause task. Specified NoPause in Xqt and start the task 2 - NoEmgAbort task. Specified NoEmgAbort in Xqt and start the task 3 - Trap task 4 – Background task -1 - Specified task is not executing. 1 - Specified task is executing. 2 - Specified task is waiting for an event. 3 - Specified task is paused or halted 4 - Specified task is in quick pause state 5 - Specified task is in error state Timeout has occurred during wait for event (same as TW) Event wait time (milliseconds). Current robot number selected by the task Current robot number being used by the task</div></div>
         </div><div class="cmd-card" id="spel-cmd-dispdev">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">DispDev</code>
@@ -713,7 +713,7 @@ Print &quot;The current display device is &quot;, DispDev</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">EStopOn function is used only for NoEmgAbort task (special task using NoEmgAbort at Xqt).</div></div>
         </div><div class="cmd-card" id="spel-cmd-ctrldev">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CtrlDev</code>
@@ -762,7 +762,7 @@ Print &quot;The current control device is: &quot;, CtrlDev</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Cls clears the current Epson RC+ Run or Operator window text area, depending on where the program was started from. If Cls is executed from a program that was started from the Command window, the command window text area is cleared. When deviceID is omitted, the display of the current display device is cleared. Cls Statement Example If this example is run from the Run window or Operator window, the text area of the window will be cleared when Cls executes. Function main Integer i Do For i = 1 To 10 Print i Next i Wait 3 Cls Loop Fend</div></div>
         </div><div class="cmd-card" id="spel-cmd-text">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">text</code>
@@ -816,7 +816,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Execution line of task 1 is displayed in initial status. Ton statement displays the specified task execution line on the LCD. When taskIdentifier is omitted, the task execution line with Ton statement execution is displayed on the LCD.</div></div>
         </div><div class="cmd-card" id="spel-cmd-safetyon">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SafetyOn</code>
@@ -913,7 +913,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">TeachOn function is only used in the background task.</div></div>
         </div><div class="cmd-card" id="spel-cmd-windowsstatus">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">WindowsStatus</code>
@@ -953,7 +953,7 @@ Close #fi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Displays the history of commands (up to 100) recently executed in the command window.</div></div>
         </div><div class="cmd-card" id="spel-cmd-clearhistory">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ClearHistory</code>
@@ -961,7 +961,7 @@ Close #fi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Deletes all command execution history.</div></div>
         </div></div>
     </section>
 <section class="cat-section" id="spel-robot-control-commands">
@@ -1011,7 +1011,7 @@ Please inc</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">End the distance tracking function started by AIO_TrackingStart.</div></div>
         </div><div class="cmd-card" id="spel-cmd-aio-trackingon">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">AIO_TrackingOn</code>
@@ -1019,7 +1019,7 @@ Please inc</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns whether the specified robot is executing the distance tracking function or not.</div></div>
         </div><div class="cmd-card" id="spel-cmd-athome">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">AtHome</code>
@@ -1441,7 +1441,7 @@ the Z direction (whi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Moves the arm from the current position to the destination point with 3D gate motion. 3D gate motion consists of depart motion, span motion, and approach motion. The depart motion form the current position to the depart point is always CP motion. The span motion from the depart point to the start approach point is PTP motion in Jump3, and the CP motion in Jump3CP. The approach motion from the starting approach point to the target point is always CP motion. Symbol a Current position b Depart motion CP c depart d Span motion PTP/CP e approach f Approach motion CP g Destination point Arch motion is achieved by specifying the arch number. The arch motion for Jump3, Jump3CP is as shown in the figure below. For arch motion to occur, the Depart distance must be greater than the arch upward distance and the Approach distance must be greater than the arch downward distance. Symbol a Depart Distance b ARCH Upward c depart d approach e Approach Distance f ARCH downward Jump3CP uses the SpeedS speed value and AccelS acceleration and deceleration values. Refer to Using Jump3CP with CP below on the relation between the speed/acceleration and the acceleration/deceleration. If, however, the ROT modifier parameter is used, Jump3CP uses the SpeedR speed value and AccelR acceleration and deceleration values. In this case SpeedS speed value and AccelS acceleration and deceleration value have no effect. If the robot attempts to change only the tool orientation rotation while keeping the tool tip position fixed at a specific coordinate, or if the tool orientation rotation is large relative to the distance traveled by the tool tip, the tool orientation rotation speed may become significantly faster. To prevent this, the operation speed is automatically limited when the speed of tool orientation rotation is too high. If you wish to manually set the upper limit of the tool orientation rotation speed during CP motion, turn on SpeedRLimitation. When SpeedRLimitation is turned on, if the tool orientation rotation speed exceeds the set SpeedR during CP motion, the motion speed is limited so that the tool orientation rotation speed equals to SpeedR. If the tool orientation rotation speed does not exceed the set SpeedR, it moves at the set speed (SpeedS). Set the upper limit of the tool orientation rotation speed in advance using SpeedR. Notes LimZ does not affect Jump3 and Jump3CP LimZ has no effect on Jump3 or Jump3CP since the span motion is not necessarily perpendicular to the Z axis of the coordinate system. Jump3 span motion is PTP (point to point) It is difficult to predict Jump3 span motion trajectory. Therefore, be careful that the robot doesn&#x27;t collide with peripheral equipment and that robot arms don’t collide with the robot. Using Jump3, Jump3CP with CP The CP parameter causes the arm to move to destination without decelerating or stopping at the point defined by destination. This is done to allow the user to string a series of motion instructions together to cause the arm to move along a continuous path while maintaining a specified speed throughout all the motion. The Jump3 and Jump3CP instructions without CP always cause the arm to decelerate to a stop prior to reaching the point destination. Pass function of Jump3 When the CP parameter is specified for Jump3 with 0 approach motion, the Jump3 span motion does not decelerate to a stop but goes on smoothly to the next PTP motion. When the CP parameter is specified for a PTP motion command right before Jump3 with 0 depart motion, the PTP motion does not decelerate to a stop but connects smoothly with the Jump3 span motion. This is useful when you want to replace the span motion of Jump3 (a PTP motion) with several PTP motions. Pass function of Jump3CP When the CP parameter is specified for Jump3CP with 0 approach motion, the Jump3CP span motion does not decelerate to a stop but goes on smoothly to the next CP motion. When the CP parameter is specified for a CP motion command right before Jump3CP with 0 depart motion, the CP motion does not decelerate to a stop but connects smoothly with the Jump3CP span motion. This is useful when you want to replace the span motion of Jump3CP (a CP motion) with several CP motions. (Example 1) Jump3 P1,P2,P2 CP Go P3,P4 CP Jump3 P4,P5,P5+tlz(50) (Example 2) Jump3CP P1,P2,P2 CP Move P3,P4 CP Jump3CP P4,P5,P5+tlz(50) Using Jump3, Jump3CP with LJM With LJM parameter, the program using LJM function can be more simple. For example, the following four-line program P11 = LJM(P1, Here, 2) P12 = LJM(P2, P11, 2) P13 = LJM(P3, P12, 2) Jump3 P11, P12, P13 can be… the one-line program. Jump3 P1, P2, P3 LJM 2 LJM parameter is available for 6-axis (including N series) and RS series robots. Jump3CP span motion is straight line (CP) motion and it cannot switch the wrist orientation along the way. Therefore, do not use the orientationFlag (LJM 1) of LJM function which is able to switch the wrist orientation. Caution for Arch motion Jump3 Motion trajectory changes depending on motion and speed. It is not a continuous path trajectory. The actual JumpTLZ trajectory of arch motion is not determined by Arch parameters alone. It also depends on motion and speed. Always use care when optimizing JumpTLZ trajectory in your applications. Execute Jump3 with the desired motion and speed to verify the actual trajectory. When speed is lower, the trajectory will be lower. If Jump3 is executed with high speed to verify an arch motion trajectory, the end effector may crash into an obstacle with lower speed. In a Jump3 trajectory, the depart distance increases and the approach distance decreases when the motion speed is set high. When the approach distance of the trajectory is shorter than the expected, lower the speed and/or the deceleration, or change the approach distance to be larger. Even if Jump commands with the same distance and speed are executed, the trajectory is affected by motion of the robot arms. Potential acceleration errors When the majority of depart (approach) motion uses the same joint as the span motion An acceleration error may occur during an arch motion execution by the Jump3 and Jump3CP commands. This error is issued frequently when the majority of the motion during depart or approach uses the same joint as the span motion. To avoid this error, reduce the acceleration/deceleration speed of the span motion using Accel command for Jump3 or using AccelS command for Jump3CP. Depending on the motion and orientation of the robot, it may also help to reduce the acceleration and deceleration of the depart motion (approach motion) using the AccelS command.</div></div>
         </div><div class="cmd-card" id="spel-cmd-jump3cp">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Jump3CP</code>
@@ -1449,7 +1449,7 @@ the Z direction (whi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Moves the arm from the current position to the destination point with 3D gate motion. 3D gate motion consists of depart motion, span motion, and approach motion. The depart motion form the current position to the depart point is always CP motion. The span motion from the depart point to the start approach point is PTP motion in Jump3, and the CP motion in Jump3CP. The approach motion from the starting approach point to the target point is always CP motion. Symbol a Current position b Depart motion CP c depart d Span motion PTP/CP e approach f Approach motion CP g Destination point Arch motion is achieved by specifying the arch number. The arch motion for Jump3, Jump3CP is as shown in the figure below. For arch motion to occur, the Depart distance must be greater than the arch upward distance and the Approach distance must be greater than the arch downward distance. Symbol a Depart Distance b ARCH Upward c depart d approach e Approach Distance f ARCH downward Jump3CP uses the SpeedS speed value and AccelS acceleration and deceleration values. Refer to Using Jump3CP with CP below on the relation between the speed/acceleration and the acceleration/deceleration. If, however, the ROT modifier parameter is used, Jump3CP uses the SpeedR speed value and AccelR acceleration and deceleration values. In this case SpeedS speed value and AccelS acceleration and deceleration value have no effect. If the robot attempts to change only the tool orientation rotation while keeping the tool tip position fixed at a specific coordinate, or if the tool orientation rotation is large relative to the distance traveled by the tool tip, the tool orientation rotation speed may become significantly faster. To prevent this, the operation speed is automatically limited when the speed of tool orientation rotation is too high. If you wish to manually set the upper limit of the tool orientation rotation speed during CP motion, turn on SpeedRLimitation. When SpeedRLimitation is turned on, if the tool orientation rotation speed exceeds the set SpeedR during CP motion, the motion speed is limited so that the tool orientation rotation speed equals to SpeedR. If the tool orientation rotation speed does not exceed the set SpeedR, it moves at the set speed (SpeedS). Set the upper limit of the tool orientation rotation speed in advance using SpeedR. Notes LimZ does not affect Jump3 and Jump3CP LimZ has no effect on Jump3 or Jump3CP since the span motion is not necessarily perpendicular to the Z axis of the coordinate system. Jump3 span motion is PTP (point to point) It is difficult to predict Jump3 span motion trajectory. Therefore, be careful that the robot doesn&#x27;t collide with peripheral equipment and that robot arms don’t collide with the robot. Using Jump3, Jump3CP with CP The CP parameter causes the arm to move to destination without decelerating or stopping at the point defined by destination. This is done to allow the user to string a series of motion instructions together to cause the arm to move along a continuous path while maintaining a specified speed throughout all the motion. The Jump3 and Jump3CP instructions without CP always cause the arm to decelerate to a stop prior to reaching the point destination. Pass function of Jump3 When the CP parameter is specified for Jump3 with 0 approach motion, the Jump3 span motion does not decelerate to a stop but goes on smoothly to the next PTP motion. When the CP parameter is specified for a PTP motion command right before Jump3 with 0 depart motion, the PTP motion does not decelerate to a stop but connects smoothly with the Jump3 span motion. This is useful when you want to replace the span motion of Jump3 (a PTP motion) with several PTP motions. Pass function of Jump3CP When the CP parameter is specified for Jump3CP with 0 approach motion, the Jump3CP span motion does not decelerate to a stop but goes on smoothly to the next CP motion. When the CP parameter is specified for a CP motion command right before Jump3CP with 0 depart motion, the CP motion does not decelerate to a stop but connects smoothly with the Jump3CP span motion. This is useful when you want to replace the span motion of Jump3CP (a CP motion) with several CP motions. (Example 1) Jump3 P1,P2,P2 CP Go P3,P4 CP Jump3 P4,P5,P5+tlz(50) (Example 2) Jump3CP P1,P2,P2 CP Move P3,P4 CP Jump3CP P4,P5,P5+tlz(50) Using Jump3, Jump3CP with LJM With LJM parameter, the program using LJM function can be more simple. For example, the following four-line program P11 = LJM(P1, Here, 2) P12 = LJM(P2, P11, 2) P13 = LJM(P3, P12, 2) Jump3 P11, P12, P13 can be… the one-line program. Jump3 P1, P2, P3 LJM 2 LJM parameter is available for 6-axis (including N series) and RS series robots. Jump3CP span motion is straight line (CP) motion and it cannot switch the wrist orientation along the way. Therefore, do not use the orientationFlag (LJM 1) of LJM function which is able to switch the wrist orientation. Caution for Arch motion Jump3 Motion trajectory changes depending on motion and speed. It is not a continuous path trajectory. The actual JumpTLZ trajectory of arch motion is not determined by Arch parameters alone. It also depends on motion and speed. Always use care when optimizing JumpTLZ trajectory in your applications. Execute Jump3 with the desired motion and speed to verify the actual trajectory. When speed is lower, the trajectory will be lower. If Jump3 is executed with high speed to verify an arch motion trajectory, the end effector may crash into an obstacle with lower speed. In a Jump3 trajectory, the depart distance increases and the approach distance decreases when the motion speed is set high. When the approach distance of the trajectory is shorter than the expected, lower the speed and/or the deceleration, or change the approach distance to be larger. Even if Jump commands with the same distance and speed are executed, the trajectory is affected by motion of the robot arms. Potential acceleration errors When the majority of depart (approach) motion uses the same joint as the span motion An acceleration error may occur during an arch motion execution by the Jump3 and Jump3CP commands. This error is issued frequently when the majority of the motion during depart or approach uses the same joint as the span motion. To avoid this error, reduce the acceleration/deceleration speed of the span motion using Accel command for Jump3 or using AccelS command for Jump3CP. Depending on the motion and orientation of the robot, it may also help to reduce the acceleration and deceleration of the depart motion (approach motion) using the AccelS command.</div></div>
         </div><div class="cmd-card" id="spel-cmd-jumptlz">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">JumpTLZ</code>
@@ -1610,7 +1610,7 @@ TrySense:
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">JS is used in conjunction with the Jump and Sense instructions. The purpose of the JS instruction is to provide a status result as to whether an input condition (as defined by the Sense instruction) is met during motion caused by the Jump instruction or not. When the input condition is met, JS returns a True. When the input condition is not met and the arm reaches the target position, JS returns a False. JS is simply a status check instruction and does not cause motion or specify which Input to check during motion. The Jump instruction is used to initiate motion and the Sense instruction is used to specify which Input (if any) to check during Jump initiated motion.</div></div>
         </div><div class="cmd-card" id="spel-cmd-jt">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">JT</code>
@@ -1983,7 +1983,7 @@ Function speedtst
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following example shows a simple motion program where the acceleration (Accel) and speed (Speed) is 
+          <div class="cmd-body"><div class="cmd-desc">Accel specifies the acceleration and deceleration for all Point to Point type motions. This includes motion caused by the Go, Jump and Pulse robot motion instructions. Each acceleration and deceleration parameter defined by the Accel instruction may be an integer value 1 or more. This number represents a percentage of the maximum acceleration (or deceleration) allowed. Usually, the maximum value is 100. However, some robots allow setting larger than 100. Use AccelMax function to get the maximum value available for Accel. The Accel instruction can be used to set new acceleration and deceleration values or simply to print the current values. When the Accel instruction is used to set new accel and decel values, the first 2 parameters (accel and decel ) in the Accel instruction are required. The optional departAccel, departDecel, approAccel, and approDecel parameters are effective for the Jump instruction only and specify acceleration and deceleration values for the depart motion at the beginning of Jump and the approach motion at the end of Jump. The Accel value initializes to the default values (low acceleration) when any one of the following conditions occurs: Controller Startup Motor On SFree, SLock, Brake Reset or Reset Error is executed Task end by STOP switch or Quit All</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following example shows a simple motion program where the acceleration (Accel) and speed (Speed) is 
 set using predefined variables. 
 [Example 1]
 Function acctest
@@ -2103,7 +2103,7 @@ This Weight instruction on the Command window displays the current setting.
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Arc and Arc3 are used to move the arm in a circular type motion from the current position to endPoint by way of midPoint. The system automatically calculates the arc interpolation trajectory based on given 3 points (current position, mid-point coordinates, and target coordinates) or given 2 points (current position and target coordinates) and parameters such as radius, rotation angle, and center coordinates, and then moves the arm along that trajectory towards the target coordinates. Also, for SCARA robots, U coordinate moves to move from current point to end point. However, for 6-Axis robot, U, V and W coordinates moves with the shortest posture for rotation to move from current point to end point. The posture (U, V, W) specified by the mid-point coordinates is not passed through. If using this, check the actual movement in advance. Arc and Arc3 use the SpeedS speed value and AccelS acceleration and deceleration values. Refer to Using Arc3 with CP below on the relation between the speed/acceleration and the acceleration/deceleration. If, however, the ROT modifier parameter is used, Arc and Arc3 use the SpeedR speed value and AccelR acceleration and deceleration values. In this case SpeedS speed value and AccelS acceleration and deceleration value have no effect. If the robot attempts to change only the tool orientation rotation while keeping the tool tip position fixed at a specific coordinate, or if the tool orientation rotation is large relative to the distance traveled by the tool tip, the tool orientation rotation speed may become significantly faster. To prevent this, the operation speed is automatically limited when the speed of tool orientation rotation is too high. If you wish to manually set the upper limit of the tool orientation rotation speed during CP motion, turn on SpeedRLimitation. When SpeedRLimitation is turned on, if the tool orientation rotation speed exceeds the set SpeedR during CP motion, the motion speed is limited so that the tool orientation rotation speed equals to SpeedR. If the tool orientation rotation speed does not exceed the set SpeedR, it moves at the set speed (SpeedS). Set the upper limit of the tool orientation rotation speed in advance using SpeedR. When ECP is used (Arc3 only), the trajectory of the external control point coresponding to the ECP number specified by ECP instruction moves circular with respect to the tool coordinate system. In this case, the trajectory of tool center point does not follow a circular line. TCP Work ECP Setting Speed and Acceleration for Arc Motion SpeedS and AccelS are used to set speed and acceleration for the Arc and Arc3 instructions. SpeedS and AccelS allow the user to specify a velocity in mm/sec and acceleration in mm/sec2. Notes Arc Instruction works in Horizontal Plane Only The Arc path is a true arc in the Horizontal plane. The Z coordinate and attitude (U, V, W) specified by the mid-point coordinate are not passed through, but the current point and target coordinate values are interpolated. Arc3 allows for specifying a circular arc trajectory in 3D space. The Z coordinate specified by the mid-point coordinate is passed through, but the attitude (U, V, W) is not, and the current point and target coordinate values are interpolated. Range Verification for Arc Instruction The Arc and Arc3 statements cannot compute a range verification of the trajectory prior to the arc motion. Therefore, even for target positions that are within an allowable range, en route the robot may attempt to traverse a path which has an invalid range, stopping with a severe shock which may damage the arm. To prevent this from occurring, be sure to perform range verifications by running the program at low speeds prior to running at faster speeds. Suggested Motion to Setup for the Arc Move Because the arc motion begins from the current position, it may be necessary to use the Go, Jump or other related motion command to bring the robot to the desired position prior to executing Arc or Arc3. Using Arc, Arc3 with CP The CP parameter causes the arm to move to the end point without decelerating or stopping at the point defined by endPoint. This is done to allow the user to string a series of motion instructions together to cause the arm to move along a continuous path while maintaining a specified speed throughout all the motion. The Arc and Arc3 instructions without CP always cause the arm to decelerate to a stop prior to reaching the end point. When using Arc and Arc3 commands for conveyor tracking The Arc or Arc3 command syntax that do not specify mid point coordinates cannot be used with point data obtained from Cnv_QueGet. Use the Arc or Arc3 command syntax that specifies the mid point. When the arc angle is around ±180° or ±360° For the Arc or Arc3 command syntax that do not specify mid point coordinates, an arc angle around ±180 degrees or ±360 degrees may not result in the expected trajectory. If the center and target coordinates are specified so that the arc angle is ±180 degrees in Arc3, an error will occur because the arc cannot be determined. For arc angle around ±180 degrees or ±360 degrees, use the Arc or Arc3 command syntax that specifies the mid point. Restrictions on Arc commands that specify the radius The radius must be at least 1/2 of the distance from the current location to the target coordinates. If the specified radius is too short, an error occurs because the arc cannot be drawn. Restrictions on Arc commands that specify the rotation angle Specify a value less than 360 degrees and greater than -360 degrees. If 0 degrees is specified, an error occurs because an arc cannot be drawn. Potential Errors Changing Hand (arm) Attributes Pay close attention to the HAND attributes of the points used with the Arc instruction. If the hand orientation changes (from Right Handed to Left Handed or vice-versa) during the circular interpolation move, an error will occur. This means the arm attribute (/L Lefty, or /R Righty) values must be the same for the current position, midPoint and endPoint points. Attempt to Move Arm Outside Work Envelope If the specified circular motion attempts to move the arm outside the work envelope of the arm, an error will occur. When trying to move the arm almost linearly If the specified arc motion is almost linear, an error occurs. Use the Move command instead.</div></div>
         </div><div class="cmd-card" id="spel-cmd-arc3">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Arc3</code>
@@ -2111,7 +2111,7 @@ This Weight instruction on the Command window displays the current setting.
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Arc and Arc3 are used to move the arm in a circular type motion from the current position to endPoint by way of midPoint. The system automatically calculates the arc interpolation trajectory based on given 3 points (current position, mid-point coordinates, and target coordinates) or given 2 points (current position and target coordinates) and parameters such as radius, rotation angle, and center coordinates, and then moves the arm along that trajectory towards the target coordinates. Also, for SCARA robots, U coordinate moves to move from current point to end point. However, for 6-Axis robot, U, V and W coordinates moves with the shortest posture for rotation to move from current point to end point. The posture (U, V, W) specified by the mid-point coordinates is not passed through. If using this, check the actual movement in advance. Arc and Arc3 use the SpeedS speed value and AccelS acceleration and deceleration values. Refer to Using Arc3 with CP below on the relation between the speed/acceleration and the acceleration/deceleration. If, however, the ROT modifier parameter is used, Arc and Arc3 use the SpeedR speed value and AccelR acceleration and deceleration values. In this case SpeedS speed value and AccelS acceleration and deceleration value have no effect. If the robot attempts to change only the tool orientation rotation while keeping the tool tip position fixed at a specific coordinate, or if the tool orientation rotation is large relative to the distance traveled by the tool tip, the tool orientation rotation speed may become significantly faster. To prevent this, the operation speed is automatically limited when the speed of tool orientation rotation is too high. If you wish to manually set the upper limit of the tool orientation rotation speed during CP motion, turn on SpeedRLimitation. When SpeedRLimitation is turned on, if the tool orientation rotation speed exceeds the set SpeedR during CP motion, the motion speed is limited so that the tool orientation rotation speed equals to SpeedR. If the tool orientation rotation speed does not exceed the set SpeedR, it moves at the set speed (SpeedS). Set the upper limit of the tool orientation rotation speed in advance using SpeedR. When ECP is used (Arc3 only), the trajectory of the external control point coresponding to the ECP number specified by ECP instruction moves circular with respect to the tool coordinate system. In this case, the trajectory of tool center point does not follow a circular line. TCP Work ECP Setting Speed and Acceleration for Arc Motion SpeedS and AccelS are used to set speed and acceleration for the Arc and Arc3 instructions. SpeedS and AccelS allow the user to specify a velocity in mm/sec and acceleration in mm/sec2. Notes Arc Instruction works in Horizontal Plane Only The Arc path is a true arc in the Horizontal plane. The Z coordinate and attitude (U, V, W) specified by the mid-point coordinate are not passed through, but the current point and target coordinate values are interpolated. Arc3 allows for specifying a circular arc trajectory in 3D space. The Z coordinate specified by the mid-point coordinate is passed through, but the attitude (U, V, W) is not, and the current point and target coordinate values are interpolated. Range Verification for Arc Instruction The Arc and Arc3 statements cannot compute a range verification of the trajectory prior to the arc motion. Therefore, even for target positions that are within an allowable range, en route the robot may attempt to traverse a path which has an invalid range, stopping with a severe shock which may damage the arm. To prevent this from occurring, be sure to perform range verifications by running the program at low speeds prior to running at faster speeds. Suggested Motion to Setup for the Arc Move Because the arc motion begins from the current position, it may be necessary to use the Go, Jump or other related motion command to bring the robot to the desired position prior to executing Arc or Arc3. Using Arc, Arc3 with CP The CP parameter causes the arm to move to the end point without decelerating or stopping at the point defined by endPoint. This is done to allow the user to string a series of motion instructions together to cause the arm to move along a continuous path while maintaining a specified speed throughout all the motion. The Arc and Arc3 instructions without CP always cause the arm to decelerate to a stop prior to reaching the end point. When using Arc and Arc3 commands for conveyor tracking The Arc or Arc3 command syntax that do not specify mid point coordinates cannot be used with point data obtained from Cnv_QueGet. Use the Arc or Arc3 command syntax that specifies the mid point. When the arc angle is around ±180° or ±360° For the Arc or Arc3 command syntax that do not specify mid point coordinates, an arc angle around ±180 degrees or ±360 degrees may not result in the expected trajectory. If the center and target coordinates are specified so that the arc angle is ±180 degrees in Arc3, an error will occur because the arc cannot be determined. For arc angle around ±180 degrees or ±360 degrees, use the Arc or Arc3 command syntax that specifies the mid point. Restrictions on Arc commands that specify the radius The radius must be at least 1/2 of the distance from the current location to the target coordinates. If the specified radius is too short, an error occurs because the arc cannot be drawn. Restrictions on Arc commands that specify the rotation angle Specify a value less than 360 degrees and greater than -360 degrees. If 0 degrees is specified, an error occurs because an arc cannot be drawn. Potential Errors Changing Hand (arm) Attributes Pay close attention to the HAND attributes of the points used with the Arc instruction. If the hand orientation changes (from Right Handed to Left Handed or vice-versa) during the circular interpolation move, an error will occur. This means the arm attribute (/L Lefty, or /R Righty) values must be the same for the current position, midPoint and endPoint points. Attempt to Move Arm Outside Work Envelope If the specified circular motion attempts to move the arm outside the work envelope of the arm, an error will occur. When trying to move the arm almost linearly If the specified arc motion is almost linear, an error occurs. Use the Move command instead.</div></div>
         </div><div class="cmd-card" id="spel-cmd-move">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Move</code>
@@ -2326,7 +2326,7 @@ AccelR 360, 200</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns maximum acceleration value limit available for Accel.</div></div>
         </div><div class="cmd-card" id="spel-cmd-brake">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Brake</code>
@@ -2358,7 +2358,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Executes low speed Point to Point motion to the Home (standby) position specified by HomeSet, in the homing order defined by Hordr. Normally, for SCARA robots (including RS series), the Z joint (J3) returns first to the HomeSet position, then the J1, J2 and J4 joints simultaneously return to their respective HomeSet coordinate positions. The Hordr instruction can change this order of the axes returning to their home positions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-homeclr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HomeClr</code>
@@ -2397,7 +2397,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns whether home position has been defined or not.</div></div>
         </div><div class="cmd-card" id="spel-cmd-homeset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HomeSet</code>
@@ -2596,7 +2596,7 @@ Function ShowTCPSpeed
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following instruction from the command window sets the pallet defined by P1, P2 and P3 points, and 
+          <div class="cmd-body"><div class="cmd-desc">Defines a pallet by teaching the robot, as a minimum, points P1 (coordinateData 1), P2 (coordinateData 2) and P3 (coordinateData 3) and by specifying the number of points from P1 (coordinateData 1)to P2 (coordinateData 2) and from P1 (coordinateData 1) to P3 (coordinateData 3). If the pallet is a well ordered rectangular shape, only 3 of the 4 corner points need to be specified. However, in most situations it is better to use 4 corner points for defining a pallet. To define a pallet, first teach the robot either 3 or 4 corner points, then define the pallet as follows: A pallet defined with 4 points: P1, P2, P3 and P4 is shown below. There are 3 positions from P1-P2 and 4 positions from P1P3. This makes a pallet which has 12 positions total. To define this pallet the syntax is as follows: Points that represent divisions of a pallet are automatically assigned division numbers, which, in this example, begin at P1. These division numbers are also required by the Pallet Function. When Outside is specified, row and column indexes outside of the range of rows and columns can be specified. For example: Pallet Outside 1, P1, P2, P3, 4, 5 Jump Pallet(1, -2, 10) Notes The Maximum Pallet Size The total number of points defined by a specific pallet must be less than 32,767. Incorrect Pallet Shape Definitions Be aware that incorrect order of points or incorrect number of divisions between points will result in an incorrect pallet shape definition. Pallet Plane Definition The pallet plane is defined by the Z axis coordinate values of the 3 corner points of the pallet. Therefore, a vertical pallet could also be defined. Pallet Definition for a Single Row Pallet A single row pallet can be defined with a 3 point Pallet statement or command. Simply teach a point at each end and define as follows: Specify 1 as the number of divisions between the same point. &gt; Pallet 2, P20, P21, P20, 5, 1 &#x27;Defines a 5D1 pallet UVW Coordinate Values When the UVW coordinate values of the 3 (or 4) points specified with the Pallet statement vary, the UVW coordinate values of the point 1 and the coordinate system data 1 are used. The UVW coordinate values of the point numbers from 2 to 4 and the coordinate system numbers from 2 to 4 are ignored. Additional Axes Coordinate Values When the coordinate values of the 3 (or 4) points specified with the Pallet statement include the additional ST axis coordinate values, Pallet includes these additional coordinates in the position calculations. In the case where the additional axis is used as the running axis, the motion of the running axis is considered and calculated with the Pallet definition. You need to define a pallet larger than the robot motion range considering the position of the running axis. Even if you define additional axes that are not affected by the pallet definition, be careful of the positions of additional axes when defining the pallet.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following instruction from the command window sets the pallet defined by P1, P2 and P3 points, and 
 divides the pallet plane into 15 equally distributed pallet point positions, with the pallet point number 1, the 
 pallet point number 2 and the pallet point number 3 sitting along the P1-to-P2 side. 
 &gt; pallet 1, P1, P2, P3, 3, 5
@@ -2694,7 +2694,7 @@ Print FineStatus</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">If during motion command execution either the Pause switch is pressed, or a pause signal is input to the controller, quick pause mode determines whether the robot will stop immediately, or will Pause after having executed the motion command. Immediately decelerating and stopping is referred to as a “Quick Pause”. With the On parameter specified, QP turns the Quick Pause mode On. With the Off parameter specified, QP turns the Quick Pause mode Off. QP displays the current setting of whether the robot arm is to respond to the Pause input by stopping immediately or after the current arm operation is completed. QP is simply a status instruction used to display whether Quick Pause mode is on or off. Notes Quick pause mode defaults to on after power is turned on: The Quick Pause mode set by the QP instruction remains in effect after the Reset instruction. However, when the PC power or Drive Unit power is turned off and then back on, Quick Pause mode defaults to On. QP and the Safe Guard Input: Even if QP mode is set to Off, if the Safe Guard Input becomes open the robot will pause immediately.</div></div>
         </div><div class="cmd-card" id="spel-cmd-qpdecelr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">QPDecelR</code>
@@ -2825,7 +2825,7 @@ CP Off</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-example"><div class="example-label">Example</div><pre><code>[Example 1] 
+          <div class="cmd-body"><div class="cmd-desc">Box is used to set the approach check area. The approach check area is for checking approaches of the robot end effector in the approach check area. The position of the end effector is calculated by the current tool. The approach check area is set on the base coordinate system of the robot or the local coordinate system specified by localNumber, and is between the specified maximum and minimum X, Y, and Z of the specified coordinate system. When the approach check area is used, the system detects approaches in any motor power status during the controller is ON. You can also use GetRobotInsideBox function or InsideBox function to get the result of the approach check. GetRobotInsideBox function can be used for wait condition of Wait command. You can provide the check result to the I/O by setting the remote output setting. When several robots use one area, you should define the area from each robot coordinate system. Symbol a Lower limit of axes X, Y, Z b Upper limit of axes X, Y, Z Configure the Box 1 from Robot 1 position Box 1, 1, 100, 200, 0, 100, 0, 100 Lower limit of axes X, Y, Z is (100, 0, 0) and upper limit is (200, 100, 100) Configure the Box 2 from Robot 1 position Box 1, 2, -200, -100, 0, 100, 0, 100 Lower limit of axes X, Y, Z is (-200, 0, 0) and upper limit is (-100, 100, 100) Notes Turning Off Approach Check Area by coordinate axis You can turn off the approach check area of each coordinate axis. To turn off only the Z axis, define minZ and maxZ to be 0. For example Box 1, 200, 300, 0, 500, 0, 0. In this case, it checks if the robot end effector is in the XY dimensional area. Default values of Approach Check Area The default values for the Box statement are “0, 0, 0, 0, 0, 0”. (Approach Check Area Checking is turned off.) Tool Selection The approach check is executed for the current tool. When you change the tool, the approach check may display the tool approach from inside to outside of the area or the other way although the robot is not operating. Additional axis For the robot which has the additional ST axis (including the running axis), the approach check plane to set doesn’t depend on the position of additional axis, but is based on the robot base coordinate system. Tip Set Box statement from Robot Manager The simplest method to set the Box values is by using the Box page on the Robot Manager .</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>[Example 1] 
 These are examples to set the approach check area using Box statement.
 &gt; Box 1, -200, 300, 0, 500, -100, 0
 &gt; Box
@@ -2845,7 +2845,7 @@ Function SetBox
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Clears the definition of approach check area.</div></div>
         </div><div class="cmd-card" id="spel-cmd-boxdef">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">BoxDef</code>
@@ -2917,7 +2917,7 @@ Epson RC+ has a point and click dialog box for defining the approach check plane
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Clears (undefines) a Plane definition.</div></div>
         </div><div class="cmd-card" id="spel-cmd-planedef">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PlaneDef</code>
@@ -2964,7 +2964,7 @@ Function DisplayPlaneDef(planeNum As Integer)
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the check status of the approach check area.</div></div>
         </div><div class="cmd-card" id="spel-cmd-insideplane">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">InsidePlane</code>
@@ -2972,7 +2972,7 @@ Function DisplayPlaneDef(planeNum As Integer)
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>InsidePlane(PlaneNum [, robotNumber | All])</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>This is an example to check Robot 1 is in the check plane (Plane 3). 
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>InsidePlane(PlaneNum [, robotNumber | All])</code></pre></div><div class="cmd-desc">Returns the check status of the approach check plane.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>This is an example to check Robot 1 is in the check plane (Plane 3). 
 Function PrintInsidePlane
 If InsidePlane(3,1) = True Then
 Print &quot;Inside Plane3&quot; 
@@ -2999,7 +2999,7 @@ RC+ 5.0. However, you cannot</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>GetRobotInsideBox(AreaNum)</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following program uses the GetRobotInsideBox function. 
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>GetRobotInsideBox(AreaNum)</code></pre></div><div class="cmd-desc">Returns a robot which is in the approach check area.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>The following program uses the GetRobotInsideBox function. 
 Wait for the status that no robots are in the approach check area.
 Function WaitNoBox
 Wait GetRobotInsideBox(1) = 0
@@ -3019,7 +3019,7 @@ Wait</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns a robot which is in the approach check plane.</div></div>
         </div><div class="cmd-card" id="spel-cmd-find">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Find</code>
@@ -3091,7 +3091,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns status of Find operation.</div></div>
         </div><div class="cmd-card" id="spel-cmd-waitpos">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">WaitPos</code>
@@ -3232,7 +3232,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use TargetOK to verify that a target position and orientation can be reached before actually moving to it. The motion trajectory to the target point is not considered.</div></div>
         </div><div class="cmd-card" id="spel-cmd-motion">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">motion</code>
@@ -3387,7 +3387,7 @@ This simple example from the command window sets and then displays the current X
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>XYLimClr</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>This example uses the XYLimClr function in a program: 
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>XYLimClr</code></pre></div><div class="cmd-desc">Clears the XYLim definition.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>This example uses the XYLimClr function in a program: 
 Function ClearXYLim
  If XYLimDef = True Then
  XYLimClr
@@ -3416,7 +3416,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns whether XYLim has been defined or not.</div></div>
         </div><div class="cmd-card" id="spel-cmd-xylimmode">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">XYLimMode</code>
@@ -3498,7 +3498,7 @@ P10 = XY(60, 30, -50, 45) + P20</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Even if you are using the additional axis, only the robot travel distance is returned. It doesn’t include the travel distance of additional axis while you use the additional axis as running axis. For the Joint type robot, the return value of this function means nothing.</div></div>
         </div><div class="cmd-card" id="spel-cmd-difftoolorientation">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">DiffToolOrientation</code>
@@ -3536,7 +3536,7 @@ DispDev DEVID_TP</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the position and orientation of pointData2 in a coordinate system with pointData1 as the origin. This function uses default values as returned the local number of the point data, and flag information such as Hand. If point data is left undefined for either point data, the undefined values will be calculated as “0”. For example, if pointData1 is specified as “XY (10,0,0,0,0,0): ST (10, 10)”, and pointData2 is specified as “XY (10,0,0,0,0,0)”, the S and T values are undefined for pointData2 while the values are defined for pointData1, and thus the values calculated with the S and T values for pointData2 as “0” will be returned. Notes About the Controllers to use It cannot be used with T/VT series. DiffPoint Function Example &#x27;Display the position and orientation of P2 as seen from P1. Print DiffPoint(P1, P2) &#x27;Display the position and orientation of P1 as seen from the current position (Here). Print DiffPoint(Here, P1)</div></div>
         </div><div class="cmd-card" id="spel-cmd-ptpboost">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PTPBoost</code>
@@ -3618,7 +3618,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use PTPTime to calculate the time it would take for a point to point motion command (Go). Use syntax 1 to calculate time from the current position to the destination. Use syntax 2 to calculate time from a start point to a destination point. The actual motion operation is not performed when this function is executed. The current position, arm, and tool settings do not change. If the position is one that cannot be arrived at or if the arm or tool settings are incorrect, 0 is returned. If a robot includes an additional axis and it is the servo axis, the function will consider the motion time of the additional axis. If the additional axis is a PG axis, the motion time of the robot will be returned.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cx">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CX</code>
@@ -3626,7 +3626,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cy">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CY</code>
@@ -3634,7 +3634,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cz">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CZ</code>
@@ -3642,7 +3642,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cu">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CU</code>
@@ -3650,7 +3650,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cv">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CV</code>
@@ -3658,7 +3658,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cw">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CW</code>
@@ -3666,7 +3666,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CR</code>
@@ -3674,7 +3674,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-cs">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CS</code>
@@ -3682,7 +3682,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-ct">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CT</code>
@@ -3690,7 +3690,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the coordinate value of a point data. CV, CW are for only 6-axis robots (including N series).</div></div>
         </div><div class="cmd-card" id="spel-cmd-pls">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Pls</code>
@@ -3698,7 +3698,7 @@ Go P1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Pls is used to read the current encoder position (or Pulse Count) of each joint. These values can be saved and then used later with the Pulse command.</div></div>
         </div><div class="cmd-card" id="spel-cmd-agl">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Agl</code>
@@ -3798,7 +3798,7 @@ P3 = JA(0, 0, 0, 0, 0, 0)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use AglToPls to create a point from joint angles.</div></div>
         </div><div class="cmd-card" id="spel-cmd-degtorad">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">DegToRad</code>
@@ -3831,7 +3831,7 @@ s = Cos(DegToRad(x))</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>RadToDeg(radians)</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>s = Cos(RadToDeg(x))
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>RadToDeg(radians)</code></pre></div><div class="cmd-desc">Converts radians to degrees.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>s = Cos(RadToDeg(x))
 
 Randomize Statement
 606 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1
@@ -3851,7 +3851,7 @@ s = Cos(RadToDeg(x))</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Displays the current position for the robot in joint coordinates.</div></div>
         </div><div class="cmd-card" id="spel-cmd-jtran">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">JTran</code>
@@ -3859,7 +3859,7 @@ s = Cos(RadToDeg(x))</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use JTran to move one joint a specified distance from the current position.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ptran">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PTran</code>
@@ -3921,7 +3921,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">RealPos is used to read the current position of the robot.</div></div>
         </div><div class="cmd-card" id="spel-cmd-realaccel">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">RealAccel</code>
@@ -3929,7 +3929,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the Accel value adjusted by OLAccel.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ppls">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PPls</code>
@@ -3937,7 +3937,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Return the pulse position of a specified joint value from a specified point.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ljm">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">LJM</code>
@@ -4428,7 +4428,7 @@ OnErr G</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">While operating the 6-axis robot (including N series), the robot orientation may have to be aligned with an axis of the specified local coordinate system without changing the tool coordinate system position (origin) defined with the point data. Align Function converts the orientation data (U, V, W) of the specified point data and aligns with the nearest or specified axis of the specified local coordinate system. For robots except for the 6-axis robots (including N series), it returns a specified point.</div></div>
         </div><div class="cmd-card" id="spel-cmd-nearest">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">nearest</code>
@@ -4560,7 +4560,7 @@ Here pick</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Displays current robot position data.</div></div>
         </div><div class="cmd-card" id="spel-cmd-performmode">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PerformMode</code>
@@ -4828,7 +4828,7 @@ Function CheckAvgSpeed
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">PeakSpeedClear clears the peak speed values for the specified joints. You must execute PeakSpeedClear before executing PeakSpeed. This command does not support the PG additional axes.</div></div>
         </div><div class="cmd-card" id="spel-cmd-peakspeed">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PeakSpeed</code>
@@ -5111,7 +5111,7 @@ Function CheckAvgTorque
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">PTCLR clears the peak torque values for the specified joints. You must execute PTCLR before executing PTRQ.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ptrq">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PTRQ</code>
@@ -5849,7 +5849,7 @@ The example shown below shows 2 tasks each with the ability to initiate motion i
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">MemSw returns the status of one memory I/O bit. Valid entries for MemSw range from bit 0 to bit 511. MemOn turns the specified bit on and MemOff turns the specified bit Off.</div></div>
         </div><div class="cmd-card" id="spel-cmd-memin">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">MemIn</code>
@@ -5915,7 +5915,7 @@ The example below shows main task starting a background task called “iotask”
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the status of the specified memory I/O word port. Each word port contains 16 memory I/O bits.</div></div>
         </div><div class="cmd-card" id="spel-cmd-each">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Each</code>
@@ -5977,7 +5977,7 @@ PauseOn, SaftyOn, Sw, </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">TMOut sets the amount of time to wait (when using the Wait instruction) until a timeout error is issued. If a timeout of 0 seconds is specified, then the timeout is effectively turned off. In this case the Wait instruction waits indefinitely for the specified condition to be satisfied. The default initial value for TMOut is 0.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tw">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Tw</code>
@@ -5985,7 +5985,7 @@ PauseOn, SaftyOn, Sw, </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Timer Wait function TW returns the status of the preceding Wait condition with time interval with a False (Wait condition was satisfied) or a True (time interval has elapsed).</div></div>
         </div><div class="cmd-card" id="spel-cmd-input">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Input</code>
@@ -6190,7 +6190,7 @@ port number 1.
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">SetIn provides the ability to set up to 8 bits of virtual inputs at once.</div></div>
         </div><div class="cmd-card" id="spel-cmd-setinw">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SetInW</code>
@@ -6240,7 +6240,7 @@ SetSw Statement Example
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>IOLabel$(IOType, IOWidth, portNumber)</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer i
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>IOLabel$(IOType, IOWidth, portNumber)</code></pre></div><div class="cmd-desc">Returns the I/O label for a specified input or output bit, byte, or word.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer i
 For i = 0 To 15
  Print &quot;Input &quot;, i, &quot;: &quot;, IOLabel$(0, 1, i)
 Next i
@@ -6267,7 +6267,7 @@ Next i</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the I/O number of the specified I/O label.</div></div>
         </div><div class="cmd-card" id="spel-cmd-iodef">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">IODef</code>
@@ -6275,7 +6275,7 @@ Next i</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns whether the specified input or output bit, byte, word, or I/O label are defined.</div></div>
         </div><div class="cmd-card" id="spel-cmd-opencom">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">OpenCom</code>
@@ -6525,7 +6525,7 @@ CloseNet #201</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">An error occurs if the IP address/port number overlaps with another IP address/port number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-chknet">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ChkNet</code>
@@ -6533,7 +6533,7 @@ CloseNet #201</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns number of characters in the reception buffer of a network port.</div></div>
         </div><div class="cmd-card" id="spel-cmd-waitnet">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">WaitNet</code>
@@ -6541,7 +6541,7 @@ CloseNet #201</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Wait for TCP/IP port connection to be established.</div></div>
         </div><div class="cmd-card" id="spel-cmd-read">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Read</code>
@@ -6549,7 +6549,7 @@ CloseNet #201</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>Read #portNumber, stringVar$, count</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer numOfChars
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>Read #portNumber, stringVar$, count</code></pre></div><div class="cmd-desc">Reads characters from a file or communications port.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer numOfChars
 String data$
 numOfChars = ChkCom(1)
 If numOfChars &gt; 0 Then
@@ -6579,7 +6579,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Reads binary data from a file or communications port.</div></div>
         </div><div class="cmd-card" id="spel-cmd-write">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Write</code>
@@ -6587,7 +6587,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Write is different from Print in that it does not add an end of line terminator.</div></div>
         </div><div class="cmd-card" id="spel-cmd-line-3">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">line</code>
@@ -6644,7 +6644,7 @@ CloseCom #1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">InputBox displays the dialog and waits for the operator to click OK or Cancel. data is a string that contains what the operator typed in.</div></div>
         </div><div class="cmd-card" id="spel-cmd-text-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">text</code>
@@ -6690,7 +6690,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use RunDialog to run Epson RC+ dialogs from a SPEL+ task. The task will be suspended until the operator closes the dialog. When running dialogs that execute robot commands, you should ensure that no other tasks will be controlling the robot while the dialog is displayed, otherwise errors could occur.</div></div>
         </div><div class="cmd-card" id="spel-cmd-latchenable">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">LatchEnable</code>
@@ -6727,7 +6727,7 @@ Wait LatchS</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the latch state of robot position using the R-I/O.</div></div>
         </div><div class="cmd-card" id="spel-cmd-latchpos">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">LatchPos</code>
@@ -6805,7 +6805,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Reads analog value from optional analog I/O input channel.</div></div>
         </div><div class="cmd-card" id="spel-cmd-aio-out">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">AIO_Out</code>
@@ -7067,7 +7067,7 @@ Notice that no teach points are shown w</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">LoadPoints loads point files from disk into the main memory area of the controller for the current robot. Use Merge to combine point files. For example, you could have one main point file that includes common points for locals, parking, etc. in the range from 0 to 100. Then use Merge to load other point files for each part being run without clearing the common points. The range could be from 101 to 999. Potential Errors A Path Cannot be Specified If fileName contains a path, an error occurs. Only a file name in the current project can be specified. File Does Not Exist If fileName does not exist, an error will occur. Point file not for the current robot If fileName is not a point file for the current robot, the following error will be issued: Point file not found for current robot. To correct this, add the Point file to the robot in the Project editor, or execute SavePoints or ImportPoints.</div></div>
         </div><div class="cmd-card" id="spel-cmd-savepoints">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SavePoints</code>
@@ -7075,7 +7075,7 @@ Notice that no teach points are shown w</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">SavePoints saves points for the current robot to the specified file in the current project directory. The extension must be “.pts”. The extension must be .PTS. The SavePoints command will also add the point file to the project for the current robot if it did not already exist. Potential Errors Out of Disk Space If there is no space remaining an error will occur. Point file for another robot. If fileName is a point file for another robot, an error will occur. A Path Cannot be Specified If fileName contains a path, an error will occur. Only a file name in the current project can be specified. Bad File name If a file name is entered which has spaces in the name, or other bad file name characteristics an error will occur.</div></div>
         </div><div class="cmd-card" id="spel-cmd-importpoints">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ImportPoints</code>
@@ -7083,7 +7083,7 @@ Notice that no teach points are shown w</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">ImportPoints copies a point file into the current project and adds it to the project files for the specified robot. The point file is then compiled and is ready for loading using the LoadPoints command. If the file already exists for the current robot, it will be overwritten and recompiled. Potential Errors File Does Not Exist If sourcePath does not exist, an error will occur. A Path Cannot be Specified If fileName contains a path, an error will occur. Point file for another robot. If fileName is a point file for another robot, an error will occur.</div></div>
         </div><div class="cmd-card" id="spel-cmd-exportpoints">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ExportPoints</code>
@@ -7128,7 +7128,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Point expressions are used in point assignment statements and motion commands. Go P1 + P2 P1 = P2 + XY(100, 100, 0, 0) Using relative offsets You can offset one or more coordinates relative to the base point. For example, the following statement moves the robot 20 mm in the positive X axis from the current position: Go Here +X(20) If you execute the same statement again, the robot will move an additional 20 mm along the X axis, because this is a relative move. To make a relative rotation around the coordinate axis of the 6-axis robots (including N series), execute the statement as follows. The following statement rotates the tool 20° in the X-axis positive direction based on the current tool orientation. Go Here +RX(20) You can also use relative tool offsets: Go Here +TLX(20) -TLY(5.5) When the 6-axis robot (including N series) moves to a point calculated by such as pallet or relative offsets, the wrist part may rotate to an unintended direction. The point calculation above does not depend on robot models and results in motion without converting the required point flag. LJM function prevents the unintended wrist rotation. Go LJM(Here +X(20)) Using absolute coordinates You can change one or more coordinates of the base point by using absolute coordinates. For example, the following statement moves the robot to the 20 mm position on the X axis: Go Here :X(20) If you execute the same statement again, the robot will not move because it is already in the absolute position for X from the previous move. Relative offsets and absolute coordinates make is easy to temporarily modify a point. For example, this code moves quickly above the pick point by 10 mm using a relative offset for Z or 10 mm, then moves slowly to the pick point. Speed fast Jump pick +Z(10) Speed slow Go pick This code moves straight up from the current position by specifying an absolute value of 0 for the Z joint: LimZ 0 Jump Here :Z(0) Using Locals You can specify a local number using a forward slash “/” or “@” mark. Each has a separate function. Use the forward slash to mark the coordinates in a local. For example, adding a /1 in the following statement says that P1 will be at location 0,0,0,0 in local 1. P1 = XY(0, 0, 0, 0) /1 Use the at sign to translate the coordinates into local coordinates. For example, here is how to set the current position to P1: P1 = Here @1</div></div>
         </div><div class="cmd-card" id="spel-cmd-pdef">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PDef</code>
@@ -7136,7 +7136,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the definition status of a specified point.</div></div>
         </div><div class="cmd-card" id="spel-cmd-pdel">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PDel</code>
@@ -7185,7 +7185,7 @@ PDescription 1, &quot;Comment&quot;</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>PLabel pointNumber, newLabel</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>PLabel 1, &quot;pick&quot;
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>PLabel pointNumber, newLabel</code></pre></div><div class="cmd-desc">Defines a label for a specified point.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>PLabel 1, &quot;pick&quot;
 
 PLabel$ Function
 568 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1
@@ -7207,7 +7207,7 @@ PLabel 1, &quot;pick&quot;</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Defines a label for a specified point.</div></div>
         </div><div class="cmd-card" id="spel-cmd-pnumber">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PNumber</code>
@@ -7215,7 +7215,7 @@ PLabel 1, &quot;pick&quot;</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>PNumber(pointLabel)</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer pNum
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>PNumber(pointLabel)</code></pre></div><div class="cmd-desc">Returns the point number associated with a point label.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer pNum
 String pointName$
 pNum = PNumber(pick)
 pNum = PNumber(&quot;pick&quot;)
@@ -7295,7 +7295,7 @@ localNum = PLocal(pick)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">PDescription save a description in specified point data of controller memory. Description saved in memory of the controller is delated from memory when creating or executing a program. Execute the “SavePoints” to save in point file if necessary.</div></div>
         </div><div class="cmd-card" id="spel-cmd-pdescription-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PDescription$</code>
@@ -7423,7 +7423,7 @@ autoremove = WorkQue_AutoRemove(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use WorkQue_Get to acquire the point data from the work queue. If the index is omitted, the first data of the queue data is returned. If the index is specified, the point data of the specified index is returned. When the auto delete function is enabled by WorkQue_AutoRemove, the point data and the user data are deleted by WorkQue_Get. When the auto delete is disabled, the point data and the user data are not deleted. To delete them, use WorkQue_Remove.</div></div>
         </div><div class="cmd-card" id="spel-cmd-workque-len">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">WorkQue_Len</code>
@@ -7467,7 +7467,7 @@ Do
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Displays the work queue data list (point data and user data) of the specified work queue.</div></div>
         </div><div class="cmd-card" id="spel-cmd-of">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">of</code>
@@ -7747,7 +7747,7 @@ AreaCorrectionClr 1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns status as to whether the specified correction area has been set.</div></div>
         </div><div class="cmd-card" id="spel-cmd-areacorrectioninv">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">AreaCorrectionInv</code>
@@ -7784,7 +7784,7 @@ P1 = XY(-100, 20</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns a point that has moved relative to a point corrected by the AreaCorrection function. The coordinates are defined in the same local coordinate system as the specified point. This function can be used in conjunction with a motion command (such as Go or Jump command) to move the robot to a specified position. When used in conjunction with the Here function, it can perform the same operation as BGo and TGo. The amount of relative movement is more accurate if it is within the correction area. Specifying a correction area that has not been set will result in an error. Notes When a relative movement in orientation is made If a relative movement in orientation is performed, the orientation after the relative movement will not be subject to correction and an error may occur.</div></div>
         </div><div class="cmd-card" id="spel-cmd-areacorrectionset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">AreaCorrectionSet</code>
@@ -7855,7 +7855,7 @@ for their robots when the actual robot configuration is a little different than 
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns arm definition status.</div></div>
         </div><div class="cmd-card" id="spel-cmd-armclr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ArmClr</code>
@@ -7940,7 +7940,7 @@ ArmCalibClr</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the arm length calibration configuration status.</div></div>
         </div><div class="cmd-card" id="spel-cmd-armcalibset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ArmCalibSet</code>
@@ -8017,7 +8017,7 @@ Tool coord</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns tool definition status.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tlclr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">TLClr</code>
@@ -8138,7 +8138,7 @@ Function DisplayECPDef(ecpNum As Integer)
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Clears (undefines) an external control point.</div></div>
         </div><div class="cmd-card" id="spel-cmd-base">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Base</code>
@@ -8188,7 +8188,7 @@ coincide with two points, pBase1 and pBase2, contained in the base coordinate sy
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns local definition status.</div></div>
         </div><div class="cmd-card" id="spel-cmd-localclr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">LocalClr</code>
@@ -8478,7 +8478,7 @@ J4Angle P(my</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-seealso"><span class="seealso-label">See Also:</span> VxTrans Function, VxCalInfo Function, VxCalDelete, VxCalSave, VxCalLoad</div></div>
+          <div class="cmd-body"><div class="cmd-desc">The VxCalib command calculates the vision calibration data for the specified calibration number using the specified camera orientation, pixel coordinates, robot coordinates, and reference points (Mobile camera only) given by the parameter. When you specify only CalNo, the point data and other settings you defined are displayed (only from the Command Window). The following figure shows the coordinates system of the pixel coordinates. (Units: pixel) For the pixel coordinates and robot coordinates, set the top left position of the window as Point 1 and set the bottom right position as Point 9 according to the order in the table below. It is classified into the four categories by the parameter CamOrient and TwoRefPoints. 1) CamOrient = 1 to 3 (Standalone, Fixed Downward, Fixed Upward), TwoRefPoints = False Data order Position Pixel coordinates Robot coordinates Top left Detection coordinates 1 Measuring point coordinates 1 Top center Detection coordinates 2 Measuring point coordinates 2 Top right Detection coordinates 3 Measuring point coordinates 3 Center right Detection coordinates 4 Measuring point coordinates 4 Center Detection coordinates 5 Measuring point coordinates 5 Center left Detection coordinates 6 Measuring point coordinates 6 Bottom left Detection coordinates 7 Measuring point coordinates 7 Bottom center Detection coordinates 8 Measuring point coordinates 8 Bottom right Detection coordinates 9 Measuring point coordinates 9 2) CamOrient = 2 (Fixed Downward), TwoRefPoints = True Note: When the tool is exactly defined, TwoRefPoints is not necessary and should be set to False. By setting TwoRefPoints to True, two measuring points are used for each calibration position, which makes the calibration more accurate. 18 robot points are required. After setting 1 to 9 measuring points coordinates, turn the U axis by 180 degrees and set the measuring point coordinates 10 to 18 where the hand (such as the rod) is positioned at the calibration target position. Data order Position Pixel coordinates Robot coordinates Top left Detection coordinates 1 Measuring point coordinates 1 Top center Detection coordinates 2 Measuring point coordinates 2 Top right Detection coordinates 3 Measuring point coordinates 3 Center right Detection coordinates 4 Measuring point coordinates 4 Center Detection coordinates 5 Measuring point coordinates 5 Center left Detection coordinates 6 Measuring point coordinates 6 Data order Position Pixel coordinates Robot coordinates Bottom left Detection coordinates 7 Measuring point coordinates 7 Bottom center Detection coordinates 8 Measuring point coordinates 8 Bottom right Detection coordinates 9 Measuring point coordinates 9 Top left --- Measuring point coordinates 10 Top center --- Measuring point coordinates 11 Top right --- Measuring point coordinates 12 Center right --- Measuring point coordinates 13 Center --- Measuring point coordinates 14 Center left --- Measuring point coordinates 15 Bottom left --- Measuring point coordinates 16 Bottom center --- Measuring point coordinates 17 Bottom right --- Measuring point coordinates 18 3) CamOrient = 3 (Fixed Upward), TwoRefPoints = True Note: When the tool is exactly defined, TwoRefPoints is not necessary and should be set to False. By setting TwoRefPoints to True, two detection points are used, which makes the calibration more accurate. For only the pixel coordinates, 18 points are required. After setting 1 to 9 detection coordinates at the each measuring point coordinates at 0 degrees, set the detection coordinates for points 10 to 18 at 180 degrees. Data order Position Pixel coordinates Robot coordinates Top left Detection coordinates 1 Measuring point coordinates 1 Top center Detection coordinates 2 Measuring point coordinates 2 Top right Detection coordinates 3 Measuring point coordinates 3 Center right Detection coordinates 4 Measuring point coordinates 4 Center Detection coordinates 5 Measuring point coordinates 5 Center left Detection coordinates 6 Measuring point coordinates 6 Bottom left Detection coordinates 7 Measuring point coordinates 7 Bottom center Detection coordinates 8 Measuring point coordinates 8 Bottom right Detection coordinates 9 Measuring point coordinates 9 Top left Detection coordinates 10 --- Top center Detection coordinates 11 --- Top right Detection coordinates 12 --- Center right Detection coordinates 13 --- Data order Position Pixel coordinates Robot coordinates Center Detection coordinates 14 --- Center left Detection coordinates 15 --- Bottom left Detection coordinates 16 --- Bottom center Detection coordinates 17 --- Bottom right Detection coordinates 18 --- 4) CamOrient = 4 to 7 Data order Position Pixel coordinates Robot coordinates Top left Detection coordinates 1 Measuring point coordinates 1 Top center Detection coordinates 2 Measuring point coordinates 2 Top right Detection coordinates 3 Measuring point coordinates 3 Center right Detection coordinates 4 Measuring point coordinates 4 Center Detection coordinates 5 Measuring point coordinates 5 Center left Detection coordinates 6 Measuring point coordinates 6 Bottom left Detection coordinates 7 Measuring point coordinates 7 Bottom center Detection coordinates 8 Measuring point coordinates 8 Bottom right Detection coordinates 9 Measuring point coordinates 9</div><div class="cmd-seealso"><span class="seealso-label">See Also:</span> VxTrans Function, VxCalInfo Function, VxCalDelete, VxCalSave, VxCalLoad</div></div>
         </div><div class="cmd-card" id="spel-cmd-vxtrans">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">VxTrans</code>
@@ -8486,7 +8486,7 @@ J4Angle P(my</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">This command converts pixel coordinates to robot coordinates using the calibration data of the specified calibration number. When using a mobile camera, specify P(camRobot) if the robot has been moved from the position where the image was acquired. Ensure that P(camRobot) is in TOOL: 0 and ARM: 0. The Joint #4 and Joint #6 angles of the set robot coordinates are used for the calculation.</div></div>
         </div><div class="cmd-card" id="spel-cmd-returns">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">returns</code>
@@ -8502,7 +8502,7 @@ J4Angle P(my</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">You can check which calibration has defined calibration data. Also, you can retrieve the calibration data values.</div></div>
         </div><div class="cmd-card" id="spel-cmd-vxcaldelete">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">VxCalDelete</code>
@@ -8510,7 +8510,7 @@ J4Angle P(my</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Deletes the calibration data defined by the specified calibration number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-vxcalsave">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">VxCalSave</code>
@@ -8563,7 +8563,7 @@ VxCalLoad &quot;MobileJ2.caa&quot;</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Function statement indicates the beginning of a group of SPEL+ statements. To indicate where a function ends we use the Fend statement. All statements located between the Function and Fend statements are considered part of the function. The Function...Fend combination of statements could be thought of as a container where all the statements located between the Function and Fend statements belong to that function. Multiple functions may exist in one program file. If you want to use the return value, assign the value to the variable name which has the same name as the function and then terminate the function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-for-next">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">For...Next</code>
@@ -8607,7 +8607,7 @@ Fend</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The GoSub instruction causes program control to branch to the user specified statement label. The program then executes the statement on that line and continues execution through subsequent line numbers until a Return instruction is encountered. The Return instruction then causes program control to transfer back to the line which immediately follows the line which initiated the GoSub in the first place. (i.e. the GoSub instruction causes the execution of a subroutine and then execution returns to the statement following the GoSub instruction.) Be sure to always end each subroutine with Return. Doing so directs program execution to return to the line following the GoSub instruction. Potential Errors Branching to Non-Existent Statement If the GoSub instruction attempts to branch control to a non-existent label then an Error 3108 will be issued. Return Found Without GoSub A Return instruction is used to &quot;return&quot; from a subroutine back to the original program which issued the GoSub instruction. If a Return instruction is encountered without a GoSub having first been issued then an Error 2383 will occur. A standalone Return instruction has no meaning because the system doesn&#x27;t know where to Return to.</div></div>
         </div><div class="cmd-card" id="spel-cmd-return">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Return</code>
@@ -8644,7 +8644,7 @@ checkio and check the first 16 user inputs. Then t</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The GoTo instruction causes program control to branch to the user specified label. The program then executes the statement on that line and continues execution from that line on. GoTo is most commonly used for jumping to an exit label because of an error.</div></div>
         </div><div class="cmd-card" id="spel-cmd-call">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Call</code>
@@ -8723,7 +8723,7 @@ Function InitRobot
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">If any one caseExpr is equivalent to selectExpr, then the statements after the Case statement are executed. After execution, program control transfers to the statement following the Send statement. If no caseExpr is equivalent to selectExpr, the Default statements are executed and program control transfers to the statement following the Send statement. If no caseExpr is equivalent to selectExpr and Default is omitted, nothing is executed and program control transfers to the statement immediately following the Send statement. selectExpr may include constants, variables, and logical operators that use And, Or and Xor. caseExpr also may include constants, variables, and logical operators that use And, Or and Xor. In this case, the calculation result of caseExpr is compared to that of selectExpr and do not specify the variable in caseExpr because the motion becomes complicated.</div></div>
         </div><div class="cmd-card" id="spel-cmd-do-loop">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Do...Loop</code>
@@ -8769,7 +8769,7 @@ Loop</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-example"><div class="example-label">Example</div><pre><code>&#x27; Declare a DLL function. Since there is no path specified, the file can be in the current project 
+          <div class="cmd-body"><div class="cmd-desc">Use Declare to call DLL functions from the current program. Declare must be used outside of functions. The Declare statement checks that the DLL file and function exist at compile time. If the error 2473 “Cooperation function with Epson RC+ failed (busy or uninitialized)” occurs, follow the steps below. Make sure the Epson RC+ is connected to the controller. DLL functions are executed on the PC. Use the WindowsStatus function to verify that the DLL call is available. Passing Numeric Variables ByVal SPEL: Declare MyDLLFunc, &quot;mystuff.dll&quot;, &quot;MyDLLFunc&quot;, (a As Long) As Long VC++ long _stdcall MyDllFunc(long a); Passing String Variables ByVal SPEL: Declare MyDLLFunc, &quot;mystuff.dll&quot;, &quot;MyDLLFunc&quot;, (a$ As String) As Long VC++ long _stdcall MyDllFunc(char *a); Passing Numeric Variables ByRef SPEL: Declare MyDLLFunc, &quot;mystuff.dll&quot;, &quot;MyDLLFunc&quot;, (ByRef a As Long) As Long VC++ long _stdcall MyDllFunc(long *a); Passing String Variables ByRef SPEL: Declare MyDLLFunc, &quot;mystuff.dll&quot;, &quot;MyDLLFunc&quot;, (ByRef a$ As String) As Long VC++ long _stdcall MyDllFunc(char *a); When you pass a string using ByRef, you can change the string in the DLL. Maximum string length is 255 characters. You must ensure that you do not exceed the maximum length. Passing Numeric Arrays ByRef SPEL: Declare MyDLLFunc, &quot;mystuff.dll&quot;, &quot;MyDLLFunc&quot;, (ByRef a() As Long) As Long VC++ long _stdcall MyDllFunc(long *a); Returning Values from DLL Function The DLL function can return a returning value for any data type, except String. When it is needed to return string, refer to “Passing String Variables ByRef” described above and specify string variables as an argument. If string variables are specified to a returning value, error 3614 “You cannot specify a String for Declare return data type.” will occur. VarType Following shows table of data type of Epson RC+ 8.0 and variable type of C/C++. Since there is no data for Epson RC+ 8.0, byte type of C/C++ and structure cannot be used. Table of data type for Epson RC+ 8.0 and C/C++ Epson RC+ 8.0 C/C++ Boolean short Byte short Short short Integer short Long int Real float Double double String char [256] * includes Null For example: Declare ReturnLong, &quot;mystuff.dll&quot;, &quot;ReturnLong&quot;, As Long Function main Print &quot;ReturnLong = &quot;, ReturnLong Fend</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>&#x27; Declare a DLL function. Since there is no path specified, the file can be in the current project 
 &#x27; directory or in the Windows system32 directory
 Declare MyDLLTest, &quot;mystuff.dll&quot;, &quot;MyDLLTest&quot; As Long
 Function main
@@ -8785,7 +8785,7 @@ Declare MyDLLCall, MYSTUFF, &quot;MyTe</code></pre></div><div class="cmd-seealso
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">A Trap executes interrupt processing which is specified by GoTo, Call, or Xqt when the specified condition is satisfied. The Trap condition must include at least one of the functions above. When variables are included in the Trap condition, their values are computed when setting the Trap condition. No use of variable is recommended. Otherwise, the condition may be an unintended condition. Once the interrupt process is executed, the Trap setting is cleared. If the same interrupt process is necessary, the Trap instruction must execute it again. To cancel a Trap setting simply execute the Trap instruction with only the trapNumber parameter. e.g. “Trap 3” cancels Trap #33. When the Function that executed Trap GoTo ends (or exit), the Trap Goto will be canceled automatically. When the declared task ends, Trap Call will be canceled. Trap Xqt will be canceled when all tasks have stopped. If GoTo is specified In the task set to Trap, the command being executed will be processed as described below. Then, control branches to the specified label. Any arm motion will pause immediately Waiting status by the Wait or Input commands will discontinue All other commands will complete execution before control branches If Call is specified After executing the same process as GoTo described above, then control branches to the specified line number or label. Once the function ends, program execution returns to the next statement after the statement where program interruption occurred. Call statements cannot be used in the Trap processing function. When an error occurs in the trap process function, error handling with OnErr will be invalid and an error will occur. If Xqt is specified Program control executes the specified function as an interrupt processing task. In this case, the task which executes the Trap command will not wait for the Trap function to finish and will continue to execute. You cannot execute a task with an Xqt statement from an interrupt processing task. Notes For EPSON RC+4.x user The Trap Call function of EPSON RC+ 4.x or before is replaced with Trap Xqt in Epson RC+ 8.0. The Trap GoSub function of EPSON RC+ 4.x or before is removed in Epson RC+ 8.0. Instead, use Trap Call. To use a variables in the event condition expression Available variables are Integer type (Byte, Int32, Integer, Long, Short, UByte, UInt32, UShort) Array variables are not available Local variables are not available If variables value cannot satisfy the event condition for more than 0.01 seconds, the change in variables may not be retrieved. Up to 64 can wait for variables in one system (including the ones used in the event condition expressions such as Wait). If it is over 64, an error occurs during the project build. If you try to transfer a variable waiting for variables as a reference with Byref, an error occurs. When a variable is included in the right side member of the event condition expression, the value is calculated when setting the Trap condition. We recommend not using variables in an integer expression to avoid making unintended conditions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-onerr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">OnErr</code>
@@ -8812,7 +8812,7 @@ point does not exist, then a message is printed on the scre</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Era is used when an error occurs to determine if the error was caused by one of the robot joints and to return the number of the joint which caused the error. If the current error was not caused by any joint, Era returns “0”. When the event “Error during Auto Mode” occurs, normal task and NoPause task in AUTO mode stop execution and end the task. If the target task has already ended when using this function for NoEmgAbort task or background task, “Error 2261” is occurred. Use OnErr to acquire information before the task ends.</div></div>
         </div><div class="cmd-card" id="spel-cmd-erf">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Erf$</code>
@@ -8820,7 +8820,7 @@ point does not exist, then a message is printed on the scre</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Erf$ is used with OnErr. Erf$ returns the function name in which the error occurred. Using Erf$ combined with Err, Ert, Erl and Era the user can determine much more about the error which occurred. When the event “Error during Auto Mode” occurs, normal task and NoPause task in AUTO mode stop execution and end the task. If the target task has already ended when using this function for NoEmgAbort task or background task, “Error 2261” is occurred. Use OnErr to acquire information before the task ends.</div></div>
         </div><div class="cmd-card" id="spel-cmd-erl">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Erl</code>
@@ -8858,7 +8858,7 @@ Where the error occurred (Erl f</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Err allows the user to read the current error code. This along with the SPEL+ Error Handling capabilities allows the user to determine which error occurred and react accordingly. Err is used with OnErr. To get the controller error, use SysErr function. When the event “Error during Auto Mode” occurs, normal task and NoPause task in AUTO mode stop execution and end the task. If the target task has already ended when using this function for NoEmgAbort task or background task, “Error 2261” is occurred. Use OnErr to acquire information before the task ends.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ert">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Ert</code>
@@ -8920,7 +8920,7 @@ Where the error occurred (Erl</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the error message which corresponds to the specified error number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-signal">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Signal</code>
@@ -8928,7 +8928,7 @@ Where the error occurred (Erl</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Signal can be used to synchronize multi-task execution. Previous signals issued before WaitSig is executed are ignored.</div></div>
         </div><div class="cmd-card" id="spel-cmd-synclock">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SyncLock</code>
@@ -8989,7 +8989,7 @@ Function task
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use WaitSig to wait for a signal from another task. The signal will only be received after WaitSig has started. Previous signals are ignored.</div></div>
         </div><div class="cmd-card" id="spel-cmd-erroron">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ErrorOn</code>
@@ -8997,7 +8997,7 @@ Function task
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">ErrorOn function is used only for NoEmgAbort task (special task using NoEmgAbort at Xqt) and background task.</div></div>
         </div><div class="cmd-card" id="spel-cmd-error">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Error</code>
@@ -9111,7 +9111,7 @@ when pause occurs. However, when the</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Exit statement syntax has these forms: Exit Do Provides a way to exit a Do...Loop statement. It can be used only inside a Do...Loop statement. Exit Do transfers control to the statement following the Loop statement. When used within nested Do...Loop statements, Exit Do transfers control to the loop that is one nested level above the loop where Exit Do occurs. Exit For Provides a way to exit a For loop. It can be used only in a For...Next loop. Exit For transfers control to the statement following the Next statement. When used within nested For loops, Exit For transfers control to the loop that is one nested level above the loop where Exit For occurs. Exit Function Immediately exits the Function procedure in which it appears. Execution continues with the statement following the statement that called the Function.</div></div>
         </div></div>
     </section>
 <section class="cat-section" id="spel-program-execution-commands">
@@ -9133,7 +9133,7 @@ assigns a task number to the function, so you don&#x27;t have to keep track of w
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">When the Pause is executed, program execution for all tasks with pause enabled (tasks that do not use NoPause or NoEmgAbort in Xqt command) is suspended. Also, if any task is executing a motion statement, it will be paused even if pause is not enabled for that task. However, Pause cannot stop the background tasks.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cont">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cont</code>
@@ -9141,7 +9141,7 @@ assigns a task number to the function, so you don&#x27;t have to keep track of w
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">To execute this command programmatically, you must turn on the [Enable advanced task commands] checkbox in the [Setup] menu-[System Configuration]-[Controller]-[Preferences] page of the Epson RC+. However, even if this preference is enabled, you cannot execute the Cont statement from a task executed by Trap SGClose. The Cont command resumes the controller tasks paused by the Pause statement or safeguard open and continues all tasks execution. It has the same function as the [Continue] button on the Run Window, Operator Window, and the Continue Remote input. If you execute the Cont command during WaitRecover status (waiting for the recover after safeguard open), it will turn on all the robot motors and execute the recover motion. Then, the program will be resumed. If you just want to turn on motors and execute recover motion, use the Recover command. CAUTION When executing Cont command from a program, you must understand the command specification and confirm that the system has the proper conditions for the Cont command. Improper use such as continuous execution of a command within a loop may deteriorate the system safety.</div></div>
         </div><div class="cmd-card" id="spel-cmd-executed-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">executed</code>
@@ -9231,7 +9231,7 @@ Fend</code></pre></div><div class="cmd-seealso"><span class="seealso-label">See 
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Resume continues the execution of the tasks suspended by the Halt instruction.</div></div>
         </div><div class="cmd-card" id="spel-cmd-mytask">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">MyTask</code>
@@ -9239,7 +9239,7 @@ Fend</code></pre></div><div class="cmd-seealso"><span class="seealso-label">See 
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">MyTask returns the task number of the current program with a numeral. The MyTask instruction is inserted inside a specific program and when that program runs the MyTask function will return the task number that the program is running in.</div></div>
         </div><div class="cmd-card" id="spel-cmd-taskdone">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">TaskDone</code>
@@ -9300,7 +9300,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Waits to for a task to terminate.</div></div>
         </div><div class="cmd-card" id="spel-cmd-restart">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Restart</code>
@@ -9388,7 +9388,7 @@ Function monitor
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">This function returns the robot recovery position when using the Cont or Recover commands.</div></div>
         </div><div class="cmd-card" id="spel-cmd-was">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">was</code>
@@ -9479,7 +9479,7 @@ SHOWVAL(a)</code></pre></div><div class="cmd-seealso"><span class="seealso-label
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">​#ifdef...#else...#endif allows for the conditional compiling of selected source code. The condition as to whether or not the compile will occur is determined based on the identifier. #ifdef first checks if the specified identifier is currently defined by #define. #The #else statement is optional. If defined, and the #else statement is not used, the statements between #ifdef and #endif are compiled. #Otherwise, if #else is used, then the statements between #ifdef and #else are compiled. If not defined, and the #else statement is not used, the statements between #ifdef and #endif are skipped without being compiled. #Otherwise, if #else is used, then the statements between #else and #endif are compiled.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ifndef">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">#ifndef</code>
@@ -9487,7 +9487,7 @@ SHOWVAL(a)</code></pre></div><div class="cmd-seealso"><span class="seealso-label
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">This instruction is called the &quot;if not defined&quot; instruction. #ifndef...#else...#endif allow for the conditional compiling of selected source code. #The #else statement is optional. If defined, and the #else statement is not used, the statements between #ifndef and #endif are not compiled. #Otherwise, if #else is used, then the statements between #else and #endif are compiled. If not defined, and the #else statement is not used, the statements between #ifndef and #endif are compiled. #Otherwise, if #else is used, then the statements between #else and #endif are not compiled.</div></div>
         </div><div class="cmd-card" id="spel-cmd-include">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">#include</code>
@@ -9663,7 +9663,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The same path used for oldDirName must be included for newDirName. If both paths of the parameters above are omitted and directory name is only specified, the current directory is specified. Wildcard characters are not allowed in either oldDirName or newDirName.</div></div>
         </div><div class="cmd-card" id="spel-cmd-filedatetime">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FileDateTime$</code>
@@ -9671,7 +9671,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the date and time of a file.</div></div>
         </div><div class="cmd-card" id="spel-cmd-fileexists">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FileExists</code>
@@ -9679,7 +9679,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>FileExists ( filename )</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>String myPath$
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>FileExists ( filename )</code></pre></div><div class="cmd-desc">Checks if a file exists.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>String myPath$
 myPath$ = &quot;ｃ:\TEST\TEST.DAT&quot; 
 If FileExists(myPath$) Then
  Print &quot;Last access date and time: &quot;, FileDateTime$(myPath$) 
@@ -9707,7 +9707,7 @@ If FileExists(myPath$) Then
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the size of a file.</div></div>
         </div><div class="cmd-card" id="spel-cmd-folderexists">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FolderExists</code>
@@ -9715,7 +9715,7 @@ If FileExists(myPath$) Then
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Checks if a folder exists.</div></div>
         </div><div class="cmd-card" id="spel-cmd-freefile">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FreeFile</code>
@@ -9765,7 +9765,7 @@ fil</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Deletes the specified file(s). Del Statement Example Example from the command window. &gt; Del TEST.PTS &#x27; Deletes the point file from the current directory. &gt; Del c:\TEST.PTS &#x27;NG !! Error: 7213 The file specified by path does not exist. &gt; Del c:\TEST.PTS &#x27;OK</div></div>
         </div><div class="cmd-card" id="spel-cmd-copy">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Copy</code>
@@ -9913,7 +9913,7 @@ Next i
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Opens the specified fileName for reading and identifies it by the specified fileNumber. This statement is used to open and read data from the specified file. Notes PC disk only A network path is available. The fileNumber identifies the file as long as the file is open and until it is closed the same file number cannot be used to the other files. The fileNumber is used for the file operation commands (Input#, Read, Seek, Eof, Close) Close statement closes the file and releases the file number. It is recommended that you use the FreeFile function to obtain the file number so that more than one task are not using the same number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-uopen">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Uopen</code>
@@ -9921,7 +9921,7 @@ Next i
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Opens the specified file by the specified file number. This statement is used for writing and loading data in the specified file.</div></div>
         </div><div class="cmd-card" id="spel-cmd-wopen">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">WOpen</code>
@@ -9929,7 +9929,7 @@ Next i
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Opens the specified file using the specified fileNumber. This statement is used to open and write data to the specified file. (To append data, refer to the AOpen explanation.) If the specified filename does not exist on the disks current directory, WOpen creates the file and writes to it. If the specified filename exists, WOpen erases all of the data in the file and writes to it. fileNumber identifies the file while it is open and cannot be used to refer to a different file until the current file is closed. fileNumber is used by other file operations such as Print#, Write, Seek, and Close. Close closes the file and releases the file number. It is recommended that you use the FreeFile function to obtain the file number so that more than one task are not using the same number. Notes A network path is available. File writing is buffered. The buffered data can be written with Flush statement. Also, when closing a file with Close statement, the buffered data can be written.</div></div>
         </div><div class="cmd-card" id="spel-cmd-input-3">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Input</code>
@@ -10016,7 +10016,7 @@ in the variable uvar. The value is then printed to the curre</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>Read #portNumber, stringVar$, count</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer numOfChars
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>Read #portNumber, stringVar$, count</code></pre></div><div class="cmd-desc">Reads characters from a file or communications port.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>Integer numOfChars
 String data$
 numOfChars = ChkCom(1)
 If numOfChars &gt; 0 Then
@@ -10046,7 +10046,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Reads binary data from a file or communications port.</div></div>
         </div><div class="cmd-card" id="spel-cmd-write-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Write</code>
@@ -10054,7 +10054,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Write is different from Print in that it does not add an end of line terminator.</div></div>
         </div><div class="cmd-card" id="spel-cmd-end">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">end</code>
@@ -10150,7 +10150,7 @@ Close #fileNum</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Closes the file referenced by file handle fileNumber and releases it.</div></div>
         </div><div class="cmd-card" id="spel-cmd-eof">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Eof</code>
@@ -10194,7 +10194,7 @@ Close #fileN</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">ChDrive is available only with the PC disk. When the power is turned on, the “C” drive will be the current drive if a project is closed. If a project is open, the drive of the opened project will be the current drive. See ChDisk for the details.</div></div>
         </div><div class="cmd-card" id="spel-cmd-curdir">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">CurDir$</code>
@@ -10286,7 +10286,7 @@ expression Numeric expression or date/time expressi</code></pre></div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">FbusIO_GetBusStatus can be used to verify the general status of the Fieldbus.</div></div>
         </div><div class="cmd-card" id="spel-cmd-fbusio-getdevicestatus">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FbusIO_GetDeviceStatus</code>
@@ -10389,7 +10389,7 @@ On 0 &#x27;Turn an output swi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">CTReset works with the CTR function to allow inputs to be used as counters. CTReset sets the specified input bit as a counter and then starts the counter. If the specified input is already used as a counter, it is reset and started again. Notes Turning Off Power and Its Effect on Counters Turning off main power releases all counters. Using the Ctr Function Use the Ctr Function to retrieve current Hardware Input counter values.</div></div>
         </div><div class="cmd-card" id="spel-cmd-elapsedtime">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ElapsedTime</code>
@@ -10397,7 +10397,7 @@ On 0 &#x27;Turn an output swi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns an elapsed time since the takt time measurement timer starts. Unlike the Tmr function, the ElapsedTime function does not count the time while the program is in pause state. The takt time measurement timer can be reset by using ResetElapsedTime statement. Real overhead ResetElapsedTime overHead = ElapsedTime</div></div>
         </div><div class="cmd-card" id="spel-cmd-resetelapsedtime">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">ResetElapsedTime</code>
@@ -10405,7 +10405,7 @@ On 0 &#x27;Turn an output swi</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Resets and starts the takt time measurement timer.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tmr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Tmr</code>
@@ -10445,7 +10445,7 @@ Print Tmr(0) / 10 &#x27;Calculates and display cycle time</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Resets and starts the timer specified by timerNumber. Use the Tmr function to retrieve the elapsed time for a specific timer.</div></div>
         </div><div class="cmd-card" id="spel-cmd-sin">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Sin</code>
@@ -10453,7 +10453,7 @@ Print Tmr(0) / 10 &#x27;Calculates and display cycle time</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sin returns the sine of the numeric expression. The numeric expression (radians) must be in radian units. The value returned by the Sin function will range from -1 to 1. To convert from radians to degrees, use the RadToDeg function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cos">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cos</code>
@@ -10461,7 +10461,7 @@ Print Tmr(0) / 10 &#x27;Calculates and display cycle time</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Cos returns the cosine of the numeric expression. The numeric expression (number) must be in radian units. The value returned by the Cos function will range from -1 to 1 To convert from degrees to radians, use the DegToRad function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tan">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Tan</code>
@@ -10500,7 +10500,7 @@ Function tantest
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Acos returns the arccosine of the numeric expression. Values range is from -1 to -1. The value returned by Acos will range from 0 to PI radians. If number is -1 or 1, an error occurs. To convert from radians to degrees, use the RadToDeg function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-asin">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Asin</code>
@@ -10572,7 +10572,7 @@ Print &quot;Atan of &quot;, y, &quot; is &quot;, Atan</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Atan2(X, Y) returns the angle of the line which connects points (0, 0) and (X, Y). This trigonometric function returns an arctangent angle in all four quadrants.</div></div>
         </div><div class="cmd-card" id="spel-cmd-sqr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Sqr</code>
@@ -10640,7 +10640,7 @@ The following examples are done from the command window using the Print instruct
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Sgn function determines the sign of the numeric value of the operand.</div></div>
         </div><div class="cmd-card" id="spel-cmd-int">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Int</code>
@@ -10679,7 +10679,7 @@ Some simple examples from the Command window are as follows:
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Clears one bit in a number and returns the new value</div></div>
         </div><div class="cmd-card" id="spel-cmd-bset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">BSet</code>
@@ -10687,7 +10687,7 @@ Some simple examples from the Command window are as follows:
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets a bit in a number and returns the new value.</div></div>
         </div><div class="cmd-card" id="spel-cmd-btst">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">BTst</code>
@@ -10695,7 +10695,7 @@ Some simple examples from the Command window are as follows:
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the status of 1 bit in a number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-bclr64">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">BClr64</code>
@@ -10730,7 +10730,7 @@ flags = BClr64(flags, 1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-syntax"><pre><code>BSet64 (number, bitNum)</code></pre></div><div class="cmd-example"><div class="example-label">Example</div><pre><code>flags = BSet64(flags, 1)
+          <div class="cmd-body"><div class="cmd-syntax"><pre><code>BSet64 (number, bitNum)</code></pre></div><div class="cmd-desc">Sets a bit in a number and returns the new value.</div><div class="cmd-example"><div class="example-label">Example</div><pre><code>flags = BSet64(flags, 1)
 
 BTst Function
 140 Epson RC+ 8.0 (Ver.8.0) SPEL+ Language Reference Rev.1
@@ -10778,7 +10778,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the integer portion of a real number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-hex">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Hex</code>
@@ -10786,7 +10786,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Hex$ returns a string representing the specified number in hexadecimal format. Each character is from 0 to 9 or A to F. Hex$ is especially useful for examining the results of the Stat function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-hexadecimal">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">hexadecimal</code>
@@ -10802,7 +10802,7 @@ EndIf</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Initializes the random-number generator.</div></div>
         </div><div class="cmd-card" id="spel-cmd-redim">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Redim</code>
@@ -10833,7 +10833,7 @@ Next</code></pre></div><div class="cmd-seealso"><span class="seealso-label">See 
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Use Rnd to generate random number values.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ubound">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">UBound</code>
@@ -10881,7 +10881,7 @@ Next</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Asc function is used to convert a character to its ASCII numeric representation. The character string send to the ASC function may be a constant or a variable.</div></div>
         </div><div class="cmd-card" id="spel-cmd-chr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Chr$</code>
@@ -10907,7 +10907,7 @@ Chr$ instruction is</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Left$ returns the leftmost number characters of a string specified by the user. Left$ can return up to as many characters as are in the character string.</div></div>
         </div><div class="cmd-card" id="spel-cmd-mid">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Mid$</code>
@@ -10915,7 +10915,7 @@ Chr$ instruction is</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Mid$ returns a substring of as many as count characters starting with the position character in string.</div></div>
         </div><div class="cmd-card" id="spel-cmd-right">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Right$</code>
@@ -10923,7 +10923,7 @@ Chr$ instruction is</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Right$ returns the rightmost count characters of a string specified by the user. Right$ can return up to as many characters as are in the character string.</div></div>
         </div><div class="cmd-card" id="spel-cmd-len">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Len</code>
@@ -10952,7 +10952,7 @@ number, part </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns a string of the specified length by adding single-byte spaces to the end of the specified string until its length reaches</div></div>
         </div><div class="cmd-card" id="spel-cmd-rset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">RSet$</code>
@@ -10960,7 +10960,7 @@ number, part </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns a string of the specified length by adding single-byte spaces at the beginning of the string.</div></div>
         </div><div class="cmd-card" id="spel-cmd-space">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Space$</code>
@@ -10968,7 +10968,7 @@ number, part </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Space$ returns a string of the specified number of single-byte spaces. Space$ returns up to 255 single-byte spaces (within the allowable range defined for the string variable). The Space$ instruction is normally used to insert spaces before, after, or between characters of another string.</div></div>
         </div><div class="cmd-card" id="spel-cmd-str">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Str$</code>
@@ -10976,7 +10976,7 @@ number, part </div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Str$ converts a number to a string. Any positive or negative number is valid.</div></div>
         </div><div class="cmd-card" id="spel-cmd-val">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Val</code>
@@ -11132,7 +11132,7 @@ str$ = Trim$(str$) &#x27; str$ = &quot;data&quot;</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Parses a string and return array of tokens.</div></div>
         </div><div class="cmd-card" id="spel-cmd-fmtstr">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">FmtStr</code>
@@ -11194,7 +11194,7 @@ decimal separator than there are “0” to the right of the decima</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns position of one string within another.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tab">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Tab$</code>
@@ -11202,7 +11202,7 @@ decimal separator than there are “0” to the right of the decima</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns a string of the specified number of single-byte tab characters.</div></div>
         </div></div>
     </section>
 <section class="cat-section" id="spel-logical-operators">
@@ -11214,7 +11214,7 @@ decimal separator than there are “0” to the right of the decima</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">A logical And is used to combine the results of 2 or more expressions into 1 single Boolean result. The following table indicates the possible combinations. expr1 expr2 result True True True True False False False True False False False False A bitwise And performs a bitwise comparison of identically positioned bits in two numeric expressions and sets the corresponding bit in result according to the following table: If bit in expr1 is And bit in expr2 is The result is</div></div>
         </div><div class="cmd-card" id="spel-cmd-or">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Or</code>
@@ -11222,7 +11222,7 @@ decimal separator than there are “0” to the right of the decima</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">For integer expressions, the Or operator performs the bitwise OR operation on the values of the operands. Each bit of the result is 1 if one or both of the corresponding bits of the two operands is 1. For Boolean expressions, the result is True if either of the expressions evaluates to True.</div></div>
         </div><div class="cmd-card" id="spel-cmd-lshift">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">LShift</code>
@@ -11270,7 +11270,7 @@ Function lshiftst
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">LShift64 shifts the specified numeric data (number) to the left (toward a higher order digit) by the specified number of bits (shiftBits). The low order bits shifted are replaced by 0. The simplest explanation for LShift64 is that it simply returns the result of number * 2 shiftBits.</div></div>
         </div><div class="cmd-card" id="spel-cmd-mod">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Mod</code>
@@ -11278,7 +11278,7 @@ Function lshiftst
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Mod is used to get the remainder after dividing 2 numbers. The remainder is a whole number. One clever use of the Mod instruction is to determine if a number is odd or even. The method in which the Mod instruction works is as follows: The number is divided by divisor. The remainder left over after this division is then the return value for the Mod instruction.</div></div>
         </div><div class="cmd-card" id="spel-cmd-not">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Not</code>
@@ -11286,7 +11286,7 @@ Function lshiftst
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Not function performs the bitwise complement on the value of the operand. Each bit of the result is the complement of the corresponding bit in the operand, effectively changing 0 bits to 1, and 1 bits to 0.</div></div>
         </div><div class="cmd-card" id="spel-cmd-rshift">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">RShift</code>
@@ -11320,7 +11320,7 @@ type starting with the int</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">RShift64 shifts the specified numeric data (number) to the right (toward a lower order digit) by the specified number of bits (shiftBits). The high order bits shifted are replaced by 0. The simplest explanation for RShift64 is that it simply returns the result of number / 2shiftBits. (Number is divided by 2 shiftBit times.)</div></div>
         </div><div class="cmd-card" id="spel-cmd-xor">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Xor</code>
@@ -11328,7 +11328,7 @@ type starting with the int</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Xor operator performs the bitwise Xor operation on the values of the operands. Each bit of the result is the Xored value of the corresponding bits of the two operands. If bit in expr1 is And bit in expr2 is The result is</div></div>
         </div><div class="cmd-card" id="spel-cmd-mask">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Mask</code>
@@ -11336,7 +11336,7 @@ type starting with the int</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Mask operator is a bitwise And for Wait statement input condition expressions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-variable">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Variable</code>
@@ -11352,7 +11352,7 @@ type starting with the int</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Boolean is used to declare variables as type Boolean. Variables of type Boolean can contain one of two values, False and True. Local variables should be declared at the top of a function. Global and module variables must be declared outside functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-byte">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Byte</code>
@@ -11360,7 +11360,7 @@ type starting with the int</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Byte is used to declare variables as type Byte. Variables of type Byte can contain whole numbers ranging in value from -128 to +127. Local variables should be declared at the top of a function. Global and module variables must be declared outside functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-double">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Double</code>
@@ -11423,7 +11423,7 @@ UShort</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Int32 is used to declare variables as type integer. Integer variables can contain values from -2147483648 to 2147483647. Local variables should be declared at the top of a function. Global and module variables must be declared outside of functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-integer">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Integer</code>
@@ -11431,7 +11431,7 @@ UShort</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Integer is used to declare variables as type integer. Integer variables can contain values from -32768 to 32767. Local variables should be declared at the top of a function. Global and module variables must be declared outside of functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-long">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Long</code>
@@ -11564,7 +11564,7 @@ UShort</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">UByte is used to declare variables as UByte type. Variables of UByte type can contain values from 0 to 255. Local variables should be declared at the top of a function. Global and module variables must be declared outside functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-uint32">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">UInt32</code>
@@ -11572,7 +11572,7 @@ UShort</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">UInt32 is used to declare variables as integer type. Integer variables can contain values from 0 to 4294967295. Local variables should be declared at the top of a function. Global and module variables must be declared outside functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-ushort">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">UShort</code>
@@ -11580,7 +11580,7 @@ UShort</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">UShort is used to declare variables as integer type. Integer variables can contain values from 0 to 65535. Local variables should be declared at the top of a function. Global and module variables must be declared outside functions.</div></div>
         </div><div class="cmd-card" id="spel-cmd-uint64">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">UInt64</code>
@@ -11622,7 +11622,7 @@ The following example shows a simple program that declares some variabl</div></d
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">You can utilize Epson RC+ security in your application. For example, you can display a menu that allows different users to log into the system. Each type of user can have its own security rights. For more details on security, refer to the following manual: &quot;Epson RC+ User’s Guide&quot; When you are running programs in the development environment, the user before programs are started will be restored after programs stop running. When running the Operator Window in Auto Mode, the application is logged in as a guest user, unless Auto LogIn is enabled, in which case the application is logged in as the current Windows user if such user has been configured in the Epson RC+ system.</div></div>
         </div></div>
     </section>
 <section class="cat-section" id="spel-conveyor-tracking-commands">
@@ -11779,7 +11779,7 @@ Print Cnv_AccelLim (1,2)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets whether to acquire the follow-up delay offset value for conveyor tracking. Execute the Cnv_QueGet function with Cnv_Adjust set to “On” to acquire the offset value. When picking up a workpiece, set Cnv_Adjust to “Off” and execute the Cnv_QueGet function. If Cnv_Adjust is set to “On”, always turn it “Off” once the offset value has been acquired. Cnv_Adjust can only be used with linear conveyors. It cannot be used with circular conveyors. For circular conveyors, the offset value will not be acquired even when turning Cnv_Adjust “On”. The offset value acquired will be cleared when power to the controller is turned off. When turning power to the controller back on, the initial value of “0” will be set. Therefore, after acquiring the offset value, use the print Cnv_AdjustGet statement to return the offset value, and set this offset value using Cnv_AdjustSet before running Cnv_QueGet in the program.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-adjustclear">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_AdjustClear</code>
@@ -11810,7 +11810,7 @@ Cnv_AdjustClear 1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">If the follow-up delay offset value for conveyor tracking has not been acquired using the Cnv_Adjust statement and the Cnv_QueGet function, the return value for each mode number (0 to 2) will be “0”.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-adjustset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_AdjustSet</code>
@@ -11942,7 +11942,7 @@ f = Cnv_Fine(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the tracking state for the tracking abort line.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-mode">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_Mode</code>
@@ -11996,7 +11996,7 @@ Print Cnv_Mode (1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the name of the specified conveyor.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-number">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_Number</code>
@@ -12076,7 +12076,7 @@ offsetAngle = Cnv_OffsetAngle (1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Cnv_Point function must be used to create points that can be added to a conveyor queue. For vision conveyors, sensorX and sensorY are the vision coordinates from the camera. For sensor conveyors, sensorX and sensorY can be 0, since this is the origin of the conveyor&#x27;s coordinate system.</div></div>
         </div><div class="cmd-card" id="spel-cmd-system">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">system</code>
@@ -12126,7 +12126,7 @@ Print &quot;Conveyor 1 position error: &quot;, Cnv_PosErr(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Repeating the operation of stopping and starting the conveyor during conveyor tracking worsens the position deviation between the tracking position and target due to the delay in the robot&#x27;s tracking of the conveyor&#x27;s speed changes. Position deviation can be improved by predicting the conveyor speed after the time set using the offset value. Cnv_PosErrOffset is available only in variable speed conveyor mode. In the case of quantity-priority mode and accuracypriority mode, the position deviation cannot be improved by using the offset value. Notes This command will only work if the Conveyor Tracking option is active.</div></div>
         </div><div class="cmd-card" id="spel-cmd-tracking-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">tracking</code>
@@ -12168,7 +12168,7 @@ Print &quot;Current conveyor position: &quot;, Cnv_Pulse(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">pointData is added to the end of the specified conveyor&#x27;s queue. It is registered together with the currently latched conveyor pulse position. If the distance between pointData and the previous point in the queue is at or below that specified by Cnv_QueReject, the point data will not be added to the queue, and no error will occur. The maximum queue data value is 1000.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-queget">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_QueGet</code>
@@ -12217,7 +12217,7 @@ Cnv_QueRemove 1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Cnv_QueLen is used to find out how many items are available in the queue. Typically, who will want to know how many items are in the pickup area. You can also use Cnv_QueLen as an argument to the Wait statement.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-quelist">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_QueList</code>
@@ -12246,7 +12246,7 @@ Cnv_QueList 1</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Cnv_QueMove is used to move one or more items from a conveyor queue to its associated downstream conveyor queue. If index is specified, the first item (index #0) of the queue is moved.</div></div>
         </div><div class="cmd-card" id="spel-cmd-conveyor-2">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">conveyor</code>
@@ -12412,7 +12412,7 @@ Jump Cn</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">When using multiple robots, you can use Cnv_RobotConveyor to see which conveyor a robot is currently tracking.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-speed">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_Speed</code>
@@ -12442,7 +12442,7 @@ Print &quot;Conveyor speed: &quot;, Cnv_Speed(1)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">CnvTrigger is used if there is no hardware trigger wired to the pulse generator board for the conveyor encoder. Cnv_Trigger is a software trigger. Note that the processing time of the VRun command may vary. Use the Cnv_Trigger command after executing the VRun command.</div></div>
         </div><div class="cmd-card" id="spel-cmd-cnv-upstream">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">Cnv_Upstream</code>
@@ -12498,7 +12498,7 @@ Cnv_Upstream 1,200</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">CloseDB closes the database and Excel book, and releases the database number.</div></div>
         </div><div class="cmd-card" id="spel-cmd-command">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">command</code>
@@ -12592,7 +12592,7 @@ UpdateDB Statement Example</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The PG_FastStop stops the current PG robot immediately with no deceleration. To stop normally, use the PG_SlowStop statement.</div></div>
         </div><div class="cmd-card" id="spel-cmd-pg-lspeed">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">PG_LSpeed</code>
@@ -12684,7 +12684,7 @@ Function main
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"><div class="cmd-desc" style="color:var(--text3);font-style:italic">Content coming in next release.</div></div>
+          <div class="cmd-body"><div class="cmd-desc">PG_SlowStop decelerates the continuous spinning motion of the current PG robot and bring it to a stop.</div><div class="cmd-desc" style="color:var(--text3);font-style:italic">Content coming in next release.</div></div>
         </div></div>
     </section>
 <section class="cat-section" id="spel-collision-detection-commands">
@@ -12896,7 +12896,7 @@ Real mon</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the offset for the consumption rate of the specified parts.</div></div>
         </div><div class="cmd-card" id="spel-cmd-healthctrlreset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HealthCtrlReset</code>
@@ -12981,7 +12981,7 @@ HealthCtrlWarningEnable Function Example</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">This command calculates the parts consumption rate based on the actual operating condition. Notes The recommended replacement time is the recommended time to replace the parts calculated based on statistics. Replacement may be required before the consumption rate reaches 100%. In addition, the parts will not become immediately unusable when the consumption rate reaches 100%. However, it is recommended to replace the parts soon as the possibility of breakage increases after the consumption rate reaches 100%.</div></div>
         </div><div class="cmd-card" id="spel-cmd-healthraterbinfo">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HealthRateRBInfo</code>
@@ -13166,7 +13166,7 @@ The example below displays the remaining mont</code></pre></div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Sets the offset for the consumption rate of the specified parts and joints.</div></div>
         </div><div class="cmd-card" id="spel-cmd-healthrbreset">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HealthRBReset</code>
@@ -13277,7 +13277,7 @@ healthSpeed = H</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Starts calculation of the usable months and elements (torque, speed, and driving amount) for the parts on the specified robot in a particular robot operation cycle. If this command is executed again when the calculation is already started, the previous calculation result will be initialized. Notes This command does not function in Auto mode. This command does not function in dry run mode (including the virtual controller).</div></div>
         </div><div class="cmd-card" id="spel-cmd-healthrbstop">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">HealthRBStop</code>
@@ -13681,7 +13681,7 @@ Print Hand(P1 + P2)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">The Function statement indicates the beginning of a group of SPEL+ statements. To indicate where a function ends we use the Fend statement. All statements located between the Function and Fend statements are considered part of the function. The Function...Fend combination of statements could be thought of as a container where all the statements located between the Function and Fend statements belong to that function. Multiple functions may exist in one program file. If you want to use the return value, assign the value to the variable name which has the same name as the function and then terminate the function.</div></div>
         </div><div class="cmd-card" id="spel-cmd-sf-getparam">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SF_GetParam</code>
@@ -13707,7 +13707,7 @@ Print Hand(P1 + P2)</div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Returns the specified safety function parameter values. Index Constant DRYRUNOFF Dry run is disabled SLS_1_HAND_EN SLS_1 hand speed is monitored SLS_1_SPEED Monitored speed setting value for SLS_1 SLS_1_ELBOW_EN SLS_1 elbow (SCARA robots: J2, 6-axis robots: J3) Speed monitoring status *1 SLS_1_JOINT_EN SLS_1 joint speed is monitored SLS_1_JOINTSPEED Monitored joint speed setting value for SLS_1 SLS_1_WRIST_EN SLS_1 wrist (6-axis robots: J5) speed is monitored *1 SLS_1_SHOULDER_EN SLS_1 shoulder (6-axis robots: J2) speed is monitored *1 SLS_2_HAND_EN SLS_2 hand speed is monitored SLS_2_SPEED Monitored speed setting value for SLS_2 SLS_2_ELBOW_EN SLS_2 elbow (SCARA robots: J2, 6-axis robots: J3) Speed monitoring status *1 SLS_2_JOINT_EN SLS_2 joint speed is monitored SLS_2_JOINTSPEED Monitored joint speed setting value for SLS_2 SLS_2_WRIST_EN SLS_2 wrist (6-axis robots: J5) speed is monitored *1 SLS_2_SHOULDER_EN SLS_2 shoulder (6-axis robots: J2) speed is monitored *1 SLS_3_HAND_EN SLS_3 hand speed is monitored SLS_3_SPEED Monitored speed setting value for SLS_3 SLS_3_ELBOW_EN SLS_3 elbow (SCARA robots: J2, 6-axis robots: J3) Speed monitoring status *1 SLS_3_JOINT_EN SLS_3 joint speed is monitored Index Constant SLS_3_JOINTSPEED Monitored joint speed setting value for SLS_3 SLS_3_WRIST_EN SLS_3 wrist (6-axis robots: J5) speed is monitored *1 SLS_3_SHOULDER_EN SLS_3 shoulder (6-axis robots: J2) speed is monitored *1 SLS_T2_HAND_EN SLS_T2 hand speed is monitored SLS_T2_SPEED Monitored speed setting value for SLS_T2 SLS_T2_ELBOW_EN SLS_T2 elbow (SCARA robots: J2, 6-axis robots: J3) Speed monitoring status *1 SLS_T2_JOINT_EN SLS_T2 joint speed is monitored SLS_T2_JOINTSPEED Monitored joint speed setting value for SLS_T2 SLS_T2_WRIST_EN SLS_T2 wrist (6-axis robots: J5) speed is monitored *1 SLS_T2_SHOULDER_EN SLS_T2 shoulder (6-axis robots: J2) speed is monitored *1 SLS_T_SPEED Monitored speed setting value for SLS_T SLS_T_JOINT_EN SLS_T joint speed is monitored SLS_T_JOINTSPEED Monitored joint speed setting value for SLS_T SLS_HAND_OFS_X TCP offset position in X-axis direction of SLS SLS_HAND_OFS_Y TCP offset position in Y-axis direction of SLS SLS_HAND_OFS_Z TCP offset position in Z-axis direction of SLS SLS_1_DELAY Delay time setting value for SLS_1 SLS_2_DELAY Delay time setting value for SLS_2 SLS_3_DELAY Delay time setting value for SLS_3 SLS_JOINT_POS_EN Joint angle is monitored SLS_JOINT_POS_ANGLE Monitored joint angle setting value SLP_A_XU_EN XU (wall: X2, restricted area: X1) position of SLP_A is monitored *2 SLP_A_XU_POS Setting value for XU (wall: X2, restricted area: X1) monitored position of SLP_A *2 SLP_A_XL_EN XL (wall: X1, restricted area: X2) position of SLP_A is monitored *2 SLP_A_XL_POS Setting value for XL (wall: X1, restricted area: X2) monitored position of SLP_A *2 SLP_A_YU_EN YU (wall: Y2, restricted area: Y1) position of SLP_A is monitored *2 SLP_A_YU_POS Setting value for YU (wall: Y2, restricted area: Y1) monitored position of SLP_A *2 SLP_A_YL_EN YL (wall: Y1, restricted area: Y2) position of SLP_A is monitored *2 SLP_A_YL_POS Setting value for YL (wall: Y1, restricted area: Y2) monitored position of SLP_A *2 SLP_A_ZU_EN Z2 position of SLP_A is monitored *2 Index Constant SLP_A_ZU_POS Setting value for Z2 monitored position of SLP_A *2 SLP_A_ZL_EN Z1 position of SLP_A is monitored *2 SLP_A_ZL_POS Setting value for Z1 monitored position of SLP_A *2 SLP_B_XU_EN XU (wall: X2, restricted area: X1) position of SLP_B is monitored *2 SLP_B_XU_POS Setting value for XU (wall: X2, restricted area: X1) monitored position of SLP_B *2 SLP_B_XL_EN XL (wall: X1, restricted area: X2) position of SLP_B is monitored *2 SLP_B_XL_POS Setting value for XL (wall: X1, restricted area: X2) monitored position of SLP_B *2 SLP_B_YU_EN YU (wall: Y2, restricted area: Y1) position of SLP_B is monitored *2 SLP_B_YU_POS Setting value for YU (wall: Y2, restricted area: Y1) monitored position of SLP_B *2 SLP_B_YL_EN YL (wall: Y1, restricted area: Y2) position of SLP_B is monitored *2 SLP_B_YL_POS Setting value for YL (wall: Y1, restricted area: Y2) monitored position of SLP_B *2 SLP_B_ZU_EN Z2 position of SLP_B is monitored *2 SLP_B_ZU_POS Setting value for Z2 monitored position of SLP_B *2 SLP_B_ZL_EN Z1 position of SLP_B is monitored *2 SLP_B_ZL_POS Setting value for Z1 monitored position of SLP_B *2 SLP_C_XU_EN XU (wall: X2, restricted area: X1) position of SLP_C is monitored *2 SLP_C_XU_POS Setting value for XU (wall: X2, restricted area: X1) monitored position of SLP_C *2 SLP_C_XL_EN XL (wall: X1, restricted area: X2) position of SLP_C is monitored *2 SLP_C_XL_POS Setting value for XL (wall: X1, restricted area: X2) monitored position of SLP_C *2 SLP_C_YU_EN YU (wall: Y2, restricted area: Y1) position of SLP_C is monitored *2 SLP_C_YU_POS Setting value for YU (wall: Y2, restricted area: Y1) monitored position of SLP_C *2 SLP_C_YL_EN YL (wall: Y1, restricted area: Y2) position of SLP_C is monitored *2 SLP_C_YL_POS Setting value for YL (wall: Y1, restricted area: Y2) monitored position of SLP_C *2 SLP_C_ZU_EN Z2 position of SLP_C is monitored *2 SLP_C_ZU_POS Setting value for Z2 monitored position of SLP_C *2 SLP_C_ZL_EN Z1 position of SLP_C is monitored *2 SLP_C_ZL_POS Setting value for Z1 monitored position of SLP_C *2 SLP_J2_MON_RAD Setting value for J2 axis monitored range radius of SLP Index Constant SLP_J3_MON_RAD Setting value for J3 axis monitored range radius of SLP SLP_J5_MON_RAD Setting value for J5 axis monitored range radius of SLP SLP_J6_MON_RAD Setting value for J6 axis monitored range radius of SLP SLP_J1_RANGE_MAX Maximum setting value for J1 axis limit range of soft axis limiting SLP_J1_RANGE_MIN Minimum setting value for J1 axis limit range of soft axis limiting SLP_J2_RANGE_MAX Maximum setting value for J2 axis limit range of soft axis limiting SLP_J2_RANGE_MIN Minimum setting value for J2 axis limit range of soft axis limiting SLP_J3_RANGE_MAX Maximum setting value for J3 axis limit range of soft axis limiting SLP_J3_RANGE_MIN Minimum setting value for J3 axis limit range of soft axis limiting SLP_J4_RANGE_MAX Maximum setting value for J4 axis limit range of soft axis limiting SLP_J4_RANGE_MIN Minimum setting value for J4 axis limit range of soft axis limiting SLP_J5_RANGE_MAX Maximum setting value for J5 axis limit range of soft axis limiting SLP_J5_RANGE_MIN Minimum setting value for J5 axis limit range of soft axis limiting SLP_J6_RANGE_MAX Maximum setting value for J6 axis limit range of soft axis limiting SLP_J6_RANGE_MIN Minimum setting value for J6 axis limit range of soft axis limiting SIN_1_SLS_1_EN SLS_1 function assignment state for SAFETY_IN1 SIN_1_SLS_2_EN SLS_2 function assignment state for SAFETY_IN1 SIN_1_SLS_3_EN SLS_3 function assignment state for SAFETY_IN1 SIN_1_SLP_A_EN SLP_A function assignment state for SAFETY_IN1 SIN_1_SLP_B_EN SLP_B function assignment state for SAFETY_IN1 SIN_1_SLP_C_EN SLP_C function assignment state for SAFETY_IN1 SIN_1_SG_EN Protective stop function assignment state for SAFETY_IN1 SIN_1_ESTOP_EN Emergency stop function assignment state for SAFETY_IN1 SIN_2_SLS_1_EN SLS_1 function assignment state for SAFETY_IN2 SIN_2_SLS_2_EN SLS_2 function assignment state for SAFETY_IN2 SIN_2_SLS_3_EN SLS_3 function assignment state for SAFETY_IN2 SIN_2_SLP_A_EN SLP_A function assignment state for SAFETY_IN2 SIN_2_SLP_B_EN SLP_B function assignment state for SAFETY_IN2 SIN_2_SLP_C_EN SLP_C function assignment state for SAFETY_IN2 SIN_2_SG_EN Protective stop function assignment state for SAFETY_IN2 SIN_2_ESTOP_EN Emergency stop function assignment state for SAFETY_IN2 SIN_3_SLS_1_EN SLS_1 function assignment state for SAFETY_IN3 SIN_3_SLS_2_EN SLS_2 function assignment state for SAFETY_IN3 Index Constant SIN_3_SLS_3_EN SLS_3 function assignment state for SAFETY_IN3 SIN_3_SLP_A_EN SLP_A function assignment state for SAFETY_IN3 SIN_3_SLP_B_EN SLP_B function assignment state for SAFETY_IN3 SIN_3_SLP_C_EN SLP_C function assignment state for SAFETY_IN3 SIN_3_SG_EN Protective stop function assignment state for SAFETY_IN3 SIN_3_ESTOP_EN Emergency stop function assignment state for SAFETY_IN3 SIN_4_SLS_1_EN SLS_1 function assignment state for SAFETY_IN4 SIN_4_SLS_2_EN SLS_2 function assignment state for SAFETY_IN4 SIN_4_SLS_3_EN SLS_3 function assignment state for SAFETY_IN4 SIN_4_SLP_A_EN SLP_A function assignment state for SAFETY_IN4 SIN_4_SLP_B_EN SLP_B function assignment state for SAFETY_IN4 SIN_4_SLP_C_EN SLP_C function assignment state for SAFETY_IN4 SIN_4_SG_EN Protective stop function assignment state for SAFETY_IN4 SIN_4_ESTOP_EN Emergency stop function assignment state for SAFETY_IN4 SIN_5_SLS_1_EN SLS_1 function assignment state for SAFETY_IN5 SIN_5_SLS_2_EN SLS_2 function assignment state for SAFETY_IN5 SIN_5_SLS_3_EN SLS_3 function assignment state for SAFETY_IN5 SIN_5_SLP_A_EN SLP_A function assignment state for SAFETY_IN5 SIN_5_SLP_B_EN SLP_B function assignment state for SAFETY_IN5 SIN_5_SLP_C_EN SLP_C function assignment state for SAFETY_IN5 SIN_5_SG_EN Protective stop function assignment state for SAFETY_IN5 SIN_5_ESTOP_EN Emergency stop function assignment state for SAFETY_IN5 SOUT_1_STO STO function assignment state for SAFETY_OUT1 SOUT_1_SLS_1 SLS_1 function assignment state for SAFETY_OUT1 SOUT_1_SLS_2 SLS_2 function assignment state for SAFETY_OUT1 SOUT_1_SLS_3 SLS_3 function assignment state for SAFETY_OUT1 SOUT_1_SLS_T2 SLS_T2 function assignment state for SAFETY_OUT1 SOUT_1_SLS_T SLS_T function assignment state for SAFETY_OUT1 SOUT_1_SLP_A SLP_A function assignment state for SAFETY_OUT1 SOUT_1_SLP_B SLP_B function assignment state for SAFETY_OUT1 SOUT_1_SLP_C SLP_C function assignment state for SAFETY_OUT1 SOUT_1_EP_RC Emergency stop (Controller) function assignment state for SAFETY_OUT1 SOUT_1_EP_TP Emergency stop (Teach Pendant) function assignment state for SAFETY_OUT1 Index Constant SOUT_1_EN_SW Enable switch function assignment state for SAFETY_OUT1 SOUT_2_STO STO function assignment state for SAFETY_OUT2 SOUT_2_SLS_1 SLS_1 function assignment state for SAFETY_OUT2 SOUT_2_SLS_2 SLS_2 function assignment state for SAFETY_OUT2 SOUT_2_SLS_3 SLS_3 function assignment state for SAFETY_OUT2 SOUT_2_SLS_T2 SLS_T2 function assignment state for SAFETY_OUT2 SOUT_2_SLS_T SLS_T function assignment state for SAFETY_OUT2 SOUT_2_SLP_A SLP_A function assignment state for SAFETY_OUT2 SOUT_2_SLP_B SLP_B function assignment state for SAFETY_OUT2 SOUT_2_SLP_C SLP_C function assignment state for SAFETY_OUT2 SOUT_2_EP_RC Emergency stop (Controller) function assignment state for SAFETY_OUT2 SOUT_2_EP_TP Emergency stop (Teach Pendant) function assignment state for SAFETY_OUT2 SOUT_2_EN_SW Enable switch function assignment state for SAFETY_OUT2 SOUT_3_STO STO function assignment state for SAFETY_OUT3 SOUT_3_SLS_1 SLS_1 function assignment state for SAFETY_OUT3 SOUT_3_SLS_2 SLS_2 function assignment state for SAFETY_OUT3 SOUT_3_SLS_3 SLS_3 function assignment state for SAFETY_OUT3 SOUT_3_SLS_T2 SLS_T2 function assignment state for SAFETY_OUT3 SOUT_3_SLS_T SLS_T function assignment state for SAFETY_OUT3 SOUT_3_SLP_A SLP_A function assignment state for SAFETY_OUT3 SOUT_3_SLP_B SLP_B function assignment state for SAFETY_OUT3 SOUT_3_SLP_C SLP_C function assignment state for SAFETY_OUT3 SOUT_3_EP_RC Emergency stop (Controller) function assignment state for SAFETY_OUT3 SOUT_3_EP_TP Emergency stop (Teach Pendant) function assignment state for SAFETY_OUT3 SOUT_3_EN_SW Enable switch function assignment state for SAFETY_OUT3 POS_ROT_U Setting value for installation plane rotation U_ROT POS_ROT_V Setting value for installation plane rotation V_ROT POS_ROT_W Setting value for installation plane rotation W_ROT POS_OFS_X Setting value for installation position X_OFS POS_OFS_Y Setting value for installation position Y_OFS POS_OFS_Z Setting value for installation position Z_OFS *1 The correspondence between the monitored parts J2, J3, J5 for Safety Limited Speed in Safety Function Manager and the speed exceeded parts hand, wrist, elbow, and shoulder referred in this manual is as follows: SCARA robots J2: Elbow J3: Not applicable 6-axis robots J2: Shoulder J3: Elbow J5: Wrist Hand: Hand *2 The correspondence between the monitored position X1, X2, Y1, Y2, Z1, Z2 for Safety Limited Position in Safety Function Manager and the monitored position XL, XU, YL, YU, ZL, ZU referred in this manual is as follows: When &quot;Wall&quot; is selected for the monitored position X1 = XL, X2 = XU Y1 = YL, Y2 = YU Z1 = ZL, Z2 = ZU (6-axis robots only) When &quot;Restricted Area&quot; is selected for the monitored position X1 = XU, X2 = XL Y1 = YU, Y2 = YL Z1 = ZL, Z2 = ZU (6-axis robots only) This command can be used with the Controllers with Safety Board. SF_GetParam Function Example If SF_GetParam (SLS_1_HAND_EN) = 1 Then Print &quot;SLS_1 hand speed monitoring is enabled.&quot; EndIf</div></div>
         </div><div class="cmd-card" id="spel-cmd-sf-getstatus">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">SF_GetStatus</code>
@@ -14002,7 +14002,7 @@ Speed limiting point number 1 The first speed limi</code></pre></div></div>
             
             <span class="cmd-chevron">›</span>
           </div>
-          <div class="cmd-body"></div>
+          <div class="cmd-body"><div class="cmd-desc">Clears (initializes) the peak speed value for the specified speed monitoring point. If no parameters are specified, the peak speed values for all speed monitoring points are cleared. This command can be used with the Controllers with Safety Board. SF_PeakSpeedSClear Statement Example How to clear the peak speed of the hand SF_PeakSpeedSClear 1 How to clear the peak speed values for all speed monitoring points SF_PeakSpeedSClear Statement</div></div>
         </div><div class="cmd-card" id="spel-cmd-monitoring">
           <div class="cmd-header" onclick="toggleCmd(this)">
             <code class="cmd-name">monitoring</code>
